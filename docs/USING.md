@@ -53,7 +53,7 @@ Every component is in `deck.html` as a working example. Copy any `<section class
 | **Dot flow** | Process diagram. Five steps connected by a thin line. |
 | **Stack grid** | Four cards of categorized tools/items with simple marks. |
 | **Spec block + outputs** | Input → process → outputs vertical flow. |
-| **Product slide** | Palantir-style. Big name on the right, description on the left. |
+| **Product slide** | Showcase style. Big name on the right, description on the left. |
 | **Collage slide** | Full-bleed image or video. Used after a product slide for impact. |
 | **JEDUF three-column** | Two extremes vs the middle path. Hero column is dark. |
 | **Dark slide** | A pivot moment. Marks the turn in the talk. |

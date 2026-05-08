@@ -2,15 +2,19 @@
 
 A minimalist, AI-friendly slide deck framework. One HTML file. No build step. Pair it with Claude Code (or your editor of choice) and write decks like prose.
 
+![cover](assets/cover.png)
+
 ```
 slides/
 ├── deck.html              The template. Edit this.
 ├── design-system.html     Visual showcase of every component.
 ├── media/                 Drop your images and videos here.
-└── docs/
-    ├── USING.md           How to use the template.
-    ├── STORYTELLING.md    How to structure a 20-min talk.
-    └── DESIGN.md          Design tokens, components, and tone rules.
+├── assets/                Screenshots used in this README.
+├── docs/
+│   ├── USING.md           How to use the template.
+│   ├── STORYTELLING.md    How to structure a 20-min talk.
+│   └── DESIGN.md          Design tokens, components, and tone rules.
+└── LICENSE                MIT.
 ```
 
 ---
@@ -89,7 +93,7 @@ The components are the vocabulary. You write the deck like you'd write the talk.
 | Dot flow | Process diagram, 5 steps |
 | Stack grid | Categorized tools/items |
 | Spec block + outputs | Input → process → outputs |
-| Product slide | Palantir-style big-name-on-the-right |
+| Product slide | Showcase style: huge name on the right, story on the left |
 | Collage slide | Full-bleed image or video |
 | JEDUF three-column | Two extremes vs the middle path |
 | Dark slide | Pivot moment |
@@ -120,10 +124,10 @@ The components are the vocabulary. You write the deck like you'd write the talk.
 
 ## License
 
-MIT. Use it, fork it, change it. Pull requests welcome.
+[MIT](LICENSE). Use it, fork it, change it. Pull requests welcome.
 
 ---
 
 ## Credits
 
-Inspired by Palantir's product overview pages, mockups.directory's editorial layouts, and the broader minimalist tradition in tech writing. Built originally for a specific talk and generalized for anyone who wants to present with less friction.
+Inspired by editorial layouts (mockups.directory, NYT) and the broader minimalist tradition in tech writing. Built originally for a specific talk and generalized for anyone who wants to present with less friction.

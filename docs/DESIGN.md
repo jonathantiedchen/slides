@@ -2,7 +2,7 @@
 
 The visual system. Tokens, components, rules.
 
-Light, minimal, type-led. Inspired by editorial layouts (NYT, mockups.directory) and product overview pages (Palantir).
+Light, minimal, type-led. Inspired by editorial layouts and product showcase pages.
 
 The principle: most pages are a headline, two columns, and breathing room. Anything more should earn its place.
 
@@ -106,7 +106,7 @@ Four-column grid of category cards. Each card has uppercase label + list of item
 ### Spec block + context + outputs
 A vertical flow: dark spec block at top → context pills → "Process" divider line → three output cards. Used for showing how a system processes input.
 
-### Product slide (Palantir-style)
+### Product slide (showcase style)
 Big product name on the right. Description on the left with /0n number, tag, headline, body, stat line.
 
 ### Collage slide
