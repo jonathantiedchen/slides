@@ -70,6 +70,19 @@ Every component is in `deck.html` as a working example. Copy any `<section class
 | `Home` | Jump to first slide |
 | `End` | Jump to last slide |
 | `P` | Download PDF |
+| Swipe left/right | Next / previous slide (touch devices) |
+
+---
+
+## Embedding
+
+Add `?embed` to any deck URL to get an embeddable version. The PDF button hides; navigation arrows, slide counter, and progress bar stay visible.
+
+```html
+<iframe src="your-deck.html?embed" style="width:100%; aspect-ratio:16/9; border:none;"></iframe>
+```
+
+Works in blog posts, Notion, documentation sites, or anywhere that renders HTML. The deck is fully interactive inside the iframe — arrow keys, swipe, and click navigation all work.
 
 ---
 

@@ -23,6 +23,82 @@
     padding: 6rem 2.5rem;
   }
 
+  /* --- Site header --- */
+  .site-header {
+    border-bottom: 1px solid #e0e0db;
+    padding: 1.5rem 0;
+  }
+
+  .site-header-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-header-brand {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  .site-header-nav {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .site-header-nav a {
+    color: #6a6a66;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .site-header-nav a:hover {
+    color: #1a1a1a;
+  }
+
+  /* --- Footer --- */
+  .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0db;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #a0a09a;
+  }
+
+  .site-footer a {
+    color: #a0a09a;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .site-footer a:hover {
+    color: #1a1a1a;
+  }
+
+  .site-footer-links {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 720px) {
+    .site-header-inner { padding: 0 1.25rem; }
+    .site-header-nav { gap: 1rem; }
+    .site-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: center;
+    }
+  }
+
   /* --- Top header --- */
   .top-eyebrow {
     font-size: 0.7rem;
@@ -582,9 +658,259 @@
     left: 0;
     color: #b5b5b0;
   }
+
+  /* --- Timeline demo --- */
+  .timeline-demo { display: flex; flex-direction: column; }
+
+  .timeline-row-demo {
+    display: grid;
+    grid-template-columns: 80px 24px 1fr;
+    gap: 0 1rem;
+    align-items: start;
+  }
+
+  .timeline-year-demo {
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-align: right;
+    padding-top: 0.9rem;
+  }
+
+  .timeline-track-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .timeline-dot-demo {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    margin-top: 1rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-line-demo {
+    width: 1px;
+    flex: 1;
+    background: #d5d5d0;
+  }
+
+  .timeline-row-demo:last-child .timeline-line-demo { display: none; }
+
+  .timeline-content-demo { padding: 0.75rem 0 1.5rem; }
+  .timeline-content-demo h5 { font-size: 0.85rem; font-weight: 500; margin-bottom: 0.15rem; }
+  .timeline-content-demo p { font-size: 0.75rem; color: #a0a09a; line-height: 1.5; }
+
+  /* --- Stat grid demo --- */
+  .stat-grid-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
+  }
+
+  .stat-card-demo {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.25rem 1.1rem;
+    background: #fafaf8;
+  }
+
+  .stat-card-demo.stat-dark {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #f5f5f3;
+  }
+
+  .stat-number-demo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-card-demo.stat-dark .stat-number-demo { color: #f5f5f3; }
+
+  .stat-label-demo {
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a0a09a;
+    margin-bottom: 0.3rem;
+  }
+
+  .stat-card-demo.stat-dark .stat-label-demo { color: #888; }
+
+  .stat-desc-demo {
+    font-size: 0.72rem;
+    color: #a0a09a;
+    line-height: 1.45;
+  }
+
+  .stat-card-demo.stat-dark .stat-desc-demo { color: #ccc; }
+
+  /* --- Quote pair demo --- */
+  .quote-pair-demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+
+  .quote-card-demo {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.25rem 1.1rem;
+    background: #fafaf8;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-card-demo.quote-dark {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #f5f5f3;
+  }
+
+  .quote-text-demo {
+    font-size: 0.88rem;
+    font-style: italic;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  .quote-card-demo.quote-dark .quote-text-demo { color: #f5f5f3; }
+
+  .quote-attr-demo {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #a0a09a;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e0e0db;
+  }
+
+  .quote-card-demo.quote-dark .quote-attr-demo {
+    color: #888;
+    border-top-color: #2a2a2a;
+  }
+
+  /* --- Logo grid demo --- */
+  .logo-grid-demo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.85rem;
+  }
+
+  .logo-cell-demo {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.1rem 0.75rem;
+    background: #fafaf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-mark-demo {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    background: #1a1a1a;
+    margin-bottom: 0.6rem;
+  }
+
+  .logo-name-demo { font-size: 0.75rem; font-weight: 500; }
+  .logo-role-demo { font-size: 0.62rem; color: #a0a09a; margin-top: 0.1rem; }
+
+  /* --- Code frame demo --- */
+  .code-frame-demo {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+  }
+
+  .code-frame-header-demo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .code-frame-dot-demo {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #3a3a3a;
+  }
+
+  .code-frame-title-demo {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.62rem;
+    color: #555;
+    margin-left: 0.4rem;
+  }
+
+  .code-frame-demo pre {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    color: #f5f5f3;
+    margin: 0;
+    background: none;
+  }
+
+  .code-frame-demo .c-comment { color: #555; }
+  .code-frame-demo .c-keyword { color: #b5b5b0; font-weight: 500; }
+  .code-frame-demo .c-string { color: #ccc; }
+  .code-frame-demo .c-dim { color: #888; }
+
+  /* --- Mobile --- */
+  @media (max-width: 720px) {
+    .container { padding: 3rem 1.5rem; }
+    .page-intro { margin-bottom: 3rem; }
+    section.demo-section { margin-bottom: 3rem; padding-bottom: 2.5rem; }
+    .frame { padding: 1.5rem 1.25rem; }
+
+    .colors { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .type-row { grid-template-columns: 1fr; gap: 0.5rem; }
+    .two-col-demo { grid-template-columns: 1fr; gap: 1.5rem; }
+    .three-col-demo { grid-template-columns: 1fr; gap: 1.5rem; }
+    .cap-row { grid-template-columns: 1fr; gap: 0.5rem; }
+    .dot-flow-demo { grid-template-columns: repeat(3, 1fr); }
+    .stack-grid-demo { grid-template-columns: 1fr 1fr; }
+    .outputs-row-demo { grid-template-columns: 1fr; }
+    .product-demo { grid-template-columns: 1fr; gap: 1.5rem; }
+    .product-name-demo { text-align: left; }
+    .jeduf-demo { grid-template-columns: 1fr; }
+    .stat-grid-demo { grid-template-columns: 1fr; }
+    .quote-pair-demo { grid-template-columns: 1fr; }
+    .logo-grid-demo { grid-template-columns: 1fr 1fr; }
+    .timeline-row-demo { grid-template-columns: 60px 24px 1fr; }
+  }
 </style>
 </head>
 <body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-header-brand">Slides&#8482;</a>
+    <nav class="site-header-nav">
+      <a href="design-system.html">Design system</a>
+      <a href="https://github.com/noskillish/slides/blob/main/docs/USING.md" target="_blank">Docs</a>
+      <a href="https://github.com/noskillish/slides" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</header>
 
 <div class="container">
 
@@ -902,9 +1228,123 @@
     </div>
   </section>
 
+  <!-- Timeline -->
+  <section class="demo-section">
+    <div class="section-label">14 · Component</div>
+    <h2 class="section-title">Timeline</h2>
+    <p class="section-desc">Vertical timeline with year labels, connecting dots, and content. Used for journeys, histories, roadmaps. The connecting line hides on the last row automatically.</p>
+
+    <div class="frame">
+      <div class="timeline-demo">
+        <div class="timeline-row-demo">
+          <div class="timeline-year-demo">Year 1</div>
+          <div class="timeline-track-demo"><div class="timeline-dot-demo"></div><div class="timeline-line-demo"></div></div>
+          <div class="timeline-content-demo"><h5>The starting point</h5><p>Where things began. Initial conditions and constraints.</p></div>
+        </div>
+        <div class="timeline-row-demo">
+          <div class="timeline-year-demo">Year 2</div>
+          <div class="timeline-track-demo"><div class="timeline-dot-demo"></div><div class="timeline-line-demo"></div></div>
+          <div class="timeline-content-demo"><h5>Early progress</h5><p>First experiments. Initial wins. Lessons learned.</p></div>
+        </div>
+        <div class="timeline-row-demo">
+          <div class="timeline-year-demo">Now</div>
+          <div class="timeline-track-demo"><div class="timeline-dot-demo"></div><div class="timeline-line-demo"></div></div>
+          <div class="timeline-content-demo"><h5>Where we are</h5><p>Current state. What's been achieved. What's next.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stat grid -->
+  <section class="demo-section">
+    <div class="section-label">15 · Component</div>
+    <h2 class="section-title">Stat grid</h2>
+    <p class="section-desc">Big numbers with context. Three cards in a row. Use .stat-dark on one card to highlight the hero metric. Weight 600 on the number for emphasis.</p>
+
+    <div class="frame">
+      <div class="stat-grid-demo">
+        <div class="stat-card-demo">
+          <div class="stat-label-demo">Metric one</div>
+          <div class="stat-number-demo">7×</div>
+          <div class="stat-desc-demo">What this number means. Be specific.</div>
+        </div>
+        <div class="stat-card-demo stat-dark">
+          <div class="stat-label-demo">Metric two</div>
+          <div class="stat-number-demo">42</div>
+          <div class="stat-desc-demo">The hero number. Dark card draws attention.</div>
+        </div>
+        <div class="stat-card-demo">
+          <div class="stat-label-demo">Metric three</div>
+          <div class="stat-number-demo">91%</div>
+          <div class="stat-desc-demo">Another measurement with context.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote pair -->
+  <section class="demo-section">
+    <div class="section-label">16 · Component</div>
+    <h2 class="section-title">Quote pair</h2>
+    <p class="section-desc">Two perspectives side by side. One light, one dark. Used for debates, contrasts, or "what they said vs what we heard." Attribution below a border-top.</p>
+
+    <div class="frame">
+      <div class="quote-pair-demo">
+        <div class="quote-card-demo">
+          <div class="quote-text-demo">"The first perspective. A position or belief that one side holds."</div>
+          <div class="quote-attr-demo">Perspective A</div>
+        </div>
+        <div class="quote-card-demo quote-dark">
+          <div class="quote-text-demo">"The counterpoint. A contrasting view that creates tension."</div>
+          <div class="quote-attr-demo">Perspective B</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo grid -->
+  <section class="demo-section">
+    <div class="section-label">17 · Component</div>
+    <h2 class="section-title">Logo grid</h2>
+    <p class="section-desc">Four-column grid of partner/client cards. Each has a monochrome mark (swap for &lt;img&gt; with real logos), name, and role/team label. Used for "who uses this" slides.</p>
+
+    <div class="frame">
+      <div class="logo-grid-demo">
+        <div class="logo-cell-demo"><div class="logo-mark-demo"></div><div class="logo-name-demo">Partner A</div><div class="logo-role-demo">Role</div></div>
+        <div class="logo-cell-demo"><div class="logo-mark-demo"></div><div class="logo-name-demo">Partner B</div><div class="logo-role-demo">Role</div></div>
+        <div class="logo-cell-demo"><div class="logo-mark-demo"></div><div class="logo-name-demo">Partner C</div><div class="logo-role-demo">Role</div></div>
+        <div class="logo-cell-demo"><div class="logo-mark-demo"></div><div class="logo-name-demo">Partner D</div><div class="logo-role-demo">Role</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code slide -->
+  <section class="demo-section">
+    <div class="section-label">18 · Component</div>
+    <h2 class="section-title">Code block</h2>
+    <p class="section-desc">Dark rounded frame with macOS-style header dots and a filename. Monochrome syntax highlighting via semantic classes: .c-keyword, .c-comment, .c-string, .c-dim.</p>
+
+    <div class="frame">
+      <div class="code-frame-demo">
+        <div class="code-frame-header-demo">
+          <div class="code-frame-dot-demo"></div>
+          <div class="code-frame-dot-demo"></div>
+          <div class="code-frame-dot-demo"></div>
+          <div class="code-frame-title-demo">example.html</div>
+        </div>
+<pre><span class="c-comment">&lt;!-- A slide is just a section --&gt;</span>
+<span class="c-keyword">&lt;section</span> <span class="c-dim">class=</span><span class="c-string">"slide"</span><span class="c-keyword">&gt;</span>
+  <span class="c-keyword">&lt;div</span> <span class="c-dim">class=</span><span class="c-string">"slide-inner"</span><span class="c-keyword">&gt;</span>
+    <span class="c-keyword">&lt;h1&gt;</span>Anchor. <span class="c-keyword">&lt;span</span> <span class="c-dim">class=</span><span class="c-string">"dim"</span><span class="c-keyword">&gt;</span>Extension.<span class="c-keyword">&lt;/span&gt;&lt;/h1&gt;</span>
+  <span class="c-keyword">&lt;/div&gt;</span>
+<span class="c-keyword">&lt;/section&gt;</span></pre>
+      </div>
+    </div>
+  </section>
+
   <!-- Tone & Voice -->
   <section class="demo-section">
-    <div class="section-label">14 · Rules</div>
+    <div class="section-label">19 · Rules</div>
     <h2 class="section-title">Tone &amp; voice</h2>
     <p class="section-desc">Opinions. Lean into them. The voice is part of the design.</p>
 
@@ -921,7 +1361,7 @@
 
   <!-- Page formats -->
   <section class="demo-section">
-    <div class="section-label">15 · Formats</div>
+    <div class="section-label">20 · Formats</div>
     <h2 class="section-title">Page formats</h2>
     <p class="section-desc">Three canonical formats. Each has its own conventions.</p>
 
@@ -940,6 +1380,15 @@
       </div>
     </div>
   </section>
+
+  <footer class="site-footer">
+    <span>Slides — MIT License</span>
+    <div class="site-footer-links">
+      <a href="index.html">Home</a>
+      <a href="deck.html">Open deck</a>
+      <a href="https://github.com/noskillish/slides" target="_blank">GitHub</a>
+    </div>
+  </footer>
 
 </div>
 

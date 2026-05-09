@@ -10,26 +10,40 @@
 
   - Each slide is a <section class="slide">
   - Add as many slides as you need by copying any section below
-  - Navigate with arrow keys, space, or the on-screen buttons
+  - Navigate with arrow keys, space, swipe, or the on-screen buttons
   - Press P or click the button to download as PDF
   - Drop images and videos into media/ and reference with relative paths
 
   COMPONENT INDEX
     1.  Cover slide
-    2.  Quote slide (the bold statement)
-    3.  Eyebrow + Headline + Subtitle
-    4.  Two-column (problem / fix)
-    5.  Three-column (why / how / what)
+    2.  Quote slide (bold statement)
+    3.  Eyebrow + Headline + Subtitle (default text slide)
+    4.  Two-column (any side-by-side comparison)
+    4b. Two-column step stack (sequential steps with status)
+    5.  Three-column (structural breakdown)
     6.  Capability list (Q&A rows)
     7.  Dark callout (one per deck max)
-    8.  Dot flow (process)
-    9.  Stack grid (logos / categories)
-    10. Spec block + context + outputs
+    8.  Dot flow (process / pipeline)
+    9.  Stack grid (categories / tools / partners)
+    10. Spec block + context + outputs (input → process → output)
     11. Product slide (showcase style)
-    12. Collage slide (full media)
-    13. JEDUF three-column comparison
-    14. Dark slide (emphasis moment)
-    15. Closing slide
+    12. Collage slide (full-bleed media)
+    13. JEDUF three-column comparison (two extremes + middle path)
+    14. Timeline (vertical, year-based)
+    15. Stat grid (big numbers with context)
+    16. Quote pair (two perspectives side by side)
+    17. Logo grid (partners / clients / team)
+    18. Code slide (syntax-highlighted code block)
+    19. Dark slide (emphasis / pivot moment)
+    20. Closing slide
+    21. Thanks slide
+
+  STORYTELLING STRUCTURE (six beats)
+    Open → Act 1 (The World Before) → Act 2 (The Turn) →
+    Act 3 (The Evidence) → Act 4 (The Honest Part) → Close
+
+    Works for any format: talks, pitches, strategy decks,
+    product launches, team updates, investor presentations.
 
   THE HEADLINE PATTERN
     Bold-then-dim. Anchor + extension.
@@ -41,6 +55,7 @@
     Specific numbers beat vague claims.
 
   See docs/USING.md, docs/STORYTELLING.md, and docs/DESIGN.md for more.
+  AI agents: see AGENTS.md for full component reference and instructions.
   ============================================================
 -->
 <style>
@@ -515,6 +530,264 @@
     color: #f5f5f3;
   }
 
+  /* --- Timeline --- */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .timeline-row {
+    display: grid;
+    grid-template-columns: 120px 24px 1fr;
+    gap: 0 1.5rem;
+    align-items: start;
+  }
+
+  .timeline-year {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: right;
+    padding-top: 1.1rem;
+    color: #1a1a1a;
+  }
+
+  .timeline-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
+
+  .timeline-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    margin-top: 1.25rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-line {
+    width: 1px;
+    flex: 1;
+    background: #d5d5d0;
+  }
+
+  .timeline-row:last-child .timeline-line { display: none; }
+
+  .timeline-content {
+    padding: 1rem 0 2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.82rem;
+    color: #a0a09a;
+    line-height: 1.55;
+  }
+
+  /* --- Stat grid --- */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .stat-card {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.5rem 1.4rem;
+    background: #fafaf8;
+  }
+
+  .stat-card.stat-dark {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #f5f5f3;
+  }
+
+  .stat-number {
+    font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-card.stat-dark .stat-number { color: #f5f5f3; }
+
+  .stat-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a0a09a;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-card.stat-dark .stat-label { color: #888; }
+
+  .stat-desc {
+    font-size: 0.82rem;
+    color: #a0a09a;
+    line-height: 1.5;
+  }
+
+  .stat-card.stat-dark .stat-desc { color: #ccc; }
+
+  /* --- Quote pair --- */
+  .quote-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .quote-card {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.75rem 1.5rem;
+    background: #fafaf8;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-card.quote-dark {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #f5f5f3;
+  }
+
+  .quote-text {
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    font-weight: 400;
+    line-height: 1.5;
+    flex: 1;
+    font-style: italic;
+    color: #1a1a1a;
+    margin-bottom: 1.25rem;
+  }
+
+  .quote-card.quote-dark .quote-text { color: #f5f5f3; }
+
+  .quote-attr {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #a0a09a;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0db;
+  }
+
+  .quote-card.quote-dark .quote-attr {
+    color: #888;
+    border-top-color: #2a2a2a;
+  }
+
+  /* --- Logo grid --- */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .logo-cell {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    background: #fafaf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+  }
+
+  .logo-cell img {
+    max-height: 36px;
+    max-width: 80%;
+    margin-bottom: 0.75rem;
+    object-fit: contain;
+  }
+
+  .logo-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: #1a1a1a;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .logo-name {
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+
+  .logo-role {
+    font-size: 0.7rem;
+    color: #a0a09a;
+    margin-top: 0.15rem;
+  }
+
+  /* --- Code slide --- */
+  .code-frame {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem 1.75rem;
+    margin-top: 2rem;
+    overflow-x: auto;
+  }
+
+  .code-frame-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .code-frame-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3a3a3a;
+  }
+
+  .code-frame-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    color: #555;
+    margin-left: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  .code-frame pre {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: #f5f5f3;
+    margin: 0;
+    background: none;
+  }
+
+  .code-frame .code-comment { color: #555; }
+  .code-frame .code-keyword { color: #b5b5b0; font-weight: 500; }
+  .code-frame .code-string { color: #ccc; }
+  .code-frame .code-dim { color: #888; }
+
   /* --- Dark slide --- */
   .slide.dark { background: #1a1a1a; color: #f5f5f3; }
   .slide.dark h1 { color: #f5f5f3; }
@@ -664,7 +937,7 @@
     </div>
   </section>
 
-  <!-- ========== 4b. TWO-COLUMN STEP STACK (the "old way" pattern) ========== -->
+  <!-- ========== 4b. TWO-COLUMN STEP STACK ========== -->
   <section class="slide">
     <div class="slide-inner">
       <div class="two-col">
@@ -823,7 +1096,7 @@
           <div class="product-num">/01</div>
           <div class="product-tag">A short, punchy quote or hook.</div>
           <h3 class="product-headline">One-line description of what this thing does.</h3>
-          <p class="product-desc">Two or three sentences that explain the build. Keep it personal and concrete. Avoid corporate language. Tell the story behind it.</p>
+          <p class="product-desc">Two or three sentences that explain it. Keep it concrete. Avoid abstract language. Tell the story behind it.</p>
           <div class="product-stat">A few hours · One weekend · Or whatever's true</div>
         </div>
         <div class="product-name">Name<sup>™</sup></div>
@@ -879,7 +1152,123 @@
     </div>
   </section>
 
-  <!-- ========== 14. DARK SLIDE (EMPHASIS) ========== -->
+  <!-- ========== 14. TIMELINE ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">The journey</div>
+      <h2>How we got here. <span class="dim">Year by year.</span></h2>
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="timeline-year">Year 1</div>
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content"><h4>The starting point</h4><p>Where things began. The initial conditions and constraints.</p></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-year">Year 2</div>
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content"><h4>Early progress</h4><p>First experiments. Initial wins. Lessons learned.</p></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-year">Year 3</div>
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content"><h4>The inflection</h4><p>The moment things accelerated. What changed and why.</p></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-year">Now</div>
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content"><h4>Where we are</h4><p>Current state. What's been achieved. What's next.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 15. STAT GRID ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">The numbers</div>
+      <h2>Impact you can measure. <span class="dim">Not just feel.</span></h2>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">Metric one</div>
+          <div class="stat-number">N×</div>
+          <div class="stat-desc">What this number means in context. Be specific.</div>
+        </div>
+        <div class="stat-card stat-dark">
+          <div class="stat-label">Metric two</div>
+          <div class="stat-number">00</div>
+          <div class="stat-desc">The hero number. Dark card draws attention here.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Metric three</div>
+          <div class="stat-number">00%</div>
+          <div class="stat-desc">Another concrete measurement with context.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 16. QUOTE PAIR ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Two perspectives</div>
+      <h2>The debate. <span class="dim">Both sides, one slide.</span></h2>
+      <div class="quote-pair">
+        <div class="quote-card">
+          <div class="quote-text">"The first perspective. A position or belief that one side holds."</div>
+          <div class="quote-attr">Perspective A</div>
+        </div>
+        <div class="quote-card quote-dark">
+          <div class="quote-text">"The counterpoint. A contrasting view that creates tension with the first."</div>
+          <div class="quote-attr">Perspective B</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 17. LOGO GRID ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Who uses this</div>
+      <h2>Trusted by teams <span class="dim">who ship.</span></h2>
+      <div class="logo-grid">
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner A</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner B</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner C</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner D</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner E</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner F</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner G</div><div class="logo-role">Role or team</div></div>
+        <div class="logo-cell"><div class="logo-mark"></div><div class="logo-name">Partner H</div><div class="logo-role">Role or team</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 18. CODE SLIDE ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Under the hood</div>
+      <h2>How it works. <span class="dim">The code behind it.</span></h2>
+      <div class="code-frame">
+        <div class="code-frame-header">
+          <div class="code-frame-dot"></div>
+          <div class="code-frame-dot"></div>
+          <div class="code-frame-dot"></div>
+          <div class="code-frame-title">deck.html</div>
+        </div>
+<pre><span class="code-comment">&lt;!-- A slide is just a section --&gt;</span>
+<span class="code-keyword">&lt;section</span> <span class="code-dim">class=</span><span class="code-string">"slide dark"</span><span class="code-keyword">&gt;</span>
+  <span class="code-keyword">&lt;div</span> <span class="code-dim">class=</span><span class="code-string">"slide-inner"</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;div</span> <span class="code-dim">class=</span><span class="code-string">"eyebrow"</span><span class="code-keyword">&gt;</span>The shift<span class="code-keyword">&lt;/div&gt;</span>
+    <span class="code-keyword">&lt;h1&gt;</span>The bottleneck moved.
+      <span class="code-keyword">&lt;span</span> <span class="code-dim">class=</span><span class="code-string">"dim"</span><span class="code-keyword">&gt;</span>Ideas are the new blocker.<span class="code-keyword">&lt;/span&gt;</span>
+    <span class="code-keyword">&lt;/h1&gt;</span>
+  <span class="code-keyword">&lt;/div&gt;</span>
+<span class="code-keyword">&lt;/section&gt;</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 19. DARK SLIDE (EMPHASIS) ========== -->
   <section class="slide dark">
     <div class="slide-inner">
       <div class="eyebrow">Section label</div>
@@ -888,14 +1277,14 @@
     </div>
   </section>
 
-  <!-- ========== 15. CLOSING SLIDE ========== -->
+  <!-- ========== 20. CLOSING SLIDE ========== -->
   <section class="slide dark quote-slide">
     <div class="slide-inner">
-      <h1>The mic-drop line.<br><span class="dim">Slow down for it.</span></h1>
+      <h1>The closing line.<br><span class="dim">Slow down for it.</span></h1>
     </div>
   </section>
 
-  <!-- ========== 16. THANKS ========== -->
+  <!-- ========== 21. THANKS ========== -->
   <section class="slide">
     <div class="slide-inner">
       <h1 style="font-size: clamp(2.5rem, 5vw, 4rem);">Thanks.</h1>
@@ -946,6 +1335,28 @@
     document.title = 'deck';
     window.print();
     setTimeout(() => { document.title = originalTitle; }, 1000);
+  }
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const SWIPE_THRESHOLD = 50;
+
+  document.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    const dy = e.changedTouches[0].screenY - touchStartY;
+    if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dy) > Math.abs(dx)) return;
+    if (dx < 0) next();
+    else prev();
+  }, { passive: true });
+
+  const isEmbed = new URLSearchParams(window.location.search).has('embed');
+  if (isEmbed) {
+    document.querySelector('.pdf-btn').style.display = 'none';
   }
 
   show(0);

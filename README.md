@@ -1,17 +1,21 @@
 # slides
 
-A minimalist, AI-friendly slide deck framework. One HTML file. No build step. Pair it with Claude Code (or your editor of choice) and write decks like prose.
+A minimalist, AI-friendly slide deck framework. One HTML file. No build step. Pair it with any AI coding assistant and write decks like prose.
 
 ```
 slides/
-├── deck.html              The template. Edit this.
+├── deck.html              The template deck. Edit this.
 ├── design-system.html     Visual showcase of every component.
+├── index.html             Landing page (uses Tailwind CDN).
+├── AGENTS.md              AI agent instructions — design system + components + storytelling.
 ├── media/                 Drop your images and videos here.
-├── assets/                Screenshots used in this README.
 ├── docs/
 │   ├── USING.md           How to use the template.
-│   ├── STORYTELLING.md    How to structure a 20-min talk.
+│   ├── STORYTELLING.md    How to structure any presentation.
 │   └── DESIGN.md          Design tokens, components, and tone rules.
+├── .github/
+│   └── workflows/
+│       └── deploy.yml     Auto-deploy to GitHub Pages on push.
 └── LICENSE                MIT.
 ```
 
@@ -24,10 +28,11 @@ Slides are usually built in PowerPoint, Keynote, or Google Slides. Those tools a
 - Treat your deck like a document you can *write*, not a canvas you have to *arrange*
 - Pair with an AI assistant to draft, edit, and iterate
 - Keep your slides in version control
+- Embed your deck anywhere with a single iframe
 - Print to PDF without losing fidelity
 - Stop fighting auto-formatting
 
-This framework is a single HTML file with a small library of components. You edit it like a webpage. You present it in a browser. You pair with Claude Code (or any AI assistant) to write slides through prompts.
+This framework is a single HTML file with a library of 21 components. You edit it like a webpage. You present it in a browser. You pair with an AI assistant to write slides through conversation.
 
 ---
 
@@ -47,32 +52,47 @@ This framework is a single HTML file with a small library of components. You edi
 
 5. **Drop media** into `media/` and reference with relative paths.
 
-6. **Present** in full-screen (F11), navigate with arrow keys.
+6. **Present** in full-screen (F11). Navigate with arrow keys or swipe on touch devices.
 
 7. **Export to PDF** by clicking the button or pressing `P`.
 
 ---
 
-## The Claude Code workflow
+## AI workflow
 
 This template was made with AI assistance in mind. The workflow:
 
-1. Open the repo in your editor with Claude Code running.
-2. Tell Claude what slide you want: *"Add a quote slide that says 'Coding is solved' as the opening."*
-3. Claude inserts a slide using the right component.
+1. Open the repo in your editor with your AI assistant running.
+2. Tell it what slide you want: *"Add a quote slide that says 'Coding is solved' as the opening."*
+3. The AI inserts a slide using the right component.
 4. Iterate by feedback: *"Make it dark."* *"Move it to slide 3."* *"Shorten the headline."*
 5. Drop in media as you go: *"Wire `media/demo.mp4` to the collage on slide 8 with controls."*
 
-The components are the vocabulary. You write the deck like you'd write the talk. See [docs/USING.md](docs/USING.md) for the full workflow.
+The AI reads `AGENTS.md` to understand the design system, all 21 components, the storytelling framework, and the tone rules. It can also freestyle new components as long as they stay on-token.
+
+See [docs/USING.md](docs/USING.md) for the full workflow.
+
+---
+
+## Embedding
+
+Add `?embed` to any deck URL and drop it in an iframe. The PDF button hides; navigation stays.
+
+```html
+<iframe src="your-deck.html?embed" style="width:100%; aspect-ratio:16/9; border:none;"></iframe>
+```
+
+Works in blog posts, Notion, documentation sites, or anywhere that renders HTML.
 
 ---
 
 ## Documentation
 
 - **[docs/USING.md](docs/USING.md)** — How to use the template, components, keyboard shortcuts, PDF export, troubleshooting.
-- **[docs/STORYTELLING.md](docs/STORYTELLING.md)** — How to structure a 20-minute talk that lands. The 4-act pattern, the headline rule, common mistakes.
+- **[docs/STORYTELLING.md](docs/STORYTELLING.md)** — How to structure a presentation. The six-beat framework, the headline pattern, common mistakes. Works for talks, pitches, strategy decks, and more.
 - **[docs/DESIGN.md](docs/DESIGN.md)** — Design tokens, components, tone & voice rules.
 - **[design-system.html](design-system.html)** — Visual showcase of every component, rendered.
+- **[AGENTS.md](AGENTS.md)** — AI agent context file. Everything an AI needs to produce correct, on-brand slides.
 
 ---
 
@@ -83,49 +103,56 @@ The components are the vocabulary. You write the deck like you'd write the talk.
 | Cover | Title slide |
 | Quote slide | One bold statement, no other elements |
 | Eyebrow + headline + subtitle | Default text slide |
-| Two-column | Problem/fix, before/after |
-| Step stack | The "old way" pattern with cumulative steps |
+| Two-column | Problem/fix, before/after, any side-by-side |
+| Step stack | Sequential steps with status markers |
 | Three-column | Why/how/what or any structural breakdown |
 | Capability list | Q&A rows for "what it solves" |
 | Dark callout | One-per-deck emphasis |
-| Dot flow | Process diagram, 5 steps |
-| Stack grid | Categorized tools/items |
+| Dot flow | Process diagram, pipeline |
+| Stack grid | Categorized tools/items/partners |
 | Spec block + outputs | Input → process → outputs |
-| Product slide | Showcase style: huge name on the right, story on the left |
+| Product slide | Showcase style: big name right, story left |
 | Collage slide | Full-bleed image or video |
 | JEDUF three-column | Two extremes vs the middle path |
+| Timeline | Vertical year-based progression |
+| Stat grid | Big numbers with context |
+| Quote pair | Two perspectives side by side |
+| Logo grid | Partners, clients, team members |
+| Code slide | Syntax-highlighted code block |
 | Dark slide | Pivot moment |
-| Closing | Mic-drop |
+| Closing | Mic-drop line + thanks |
 
 ---
 
-## Keyboard shortcuts
+## Navigation
 
-| Key | Action |
+| Input | Action |
 |---|---|
 | `→` `Space` `PageDown` | Next slide |
 | `←` `PageUp` | Previous slide |
 | `Home` / `End` | First / last slide |
 | `P` | Download PDF |
+| Swipe left / right | Next / previous (touch devices) |
 
 ---
 
 ## Tech
 
-- One HTML file per deck. No JavaScript framework.
-- Inter font from Google Fonts (the only external dependency).
-- Self-contained. No build step. No npm install.
-- Works in any modern browser.
-- PDF export via `window.print()` with print-optimized CSS.
+- **One HTML file per deck.** No JavaScript framework. No build step. No npm install.
+- **Self-contained.** `deck.html` and `design-system.html` have zero external dependencies beyond Google Fonts (Inter).
+- **`index.html` is the landing page.** It uses the Tailwind CDN for responsive layout — it's a marketing page, not a deck file. The product files stay dependency-free.
+- **Works in any modern browser.** Present, share, embed.
+- **PDF export** via `window.print()` with print-optimized CSS (`@page` set to 16:9).
+- **Auto-deploy** to GitHub Pages on push to `main` via the included GitHub Action.
 
 ---
 
 ## License
 
-[MIT](LICENSE). Use it, fork it, change it. Pull requests welcome.
+[MIT](LICENSE). Use it, fork it, change it.
 
 ---
 
 ## Credits
 
-Inspired by editorial layouts (mockups.directory, NYT) and the broader minimalist tradition in tech writing. Built originally for a specific talk and generalized for anyone who wants to present with less friction.
+Built originally for a specific talk and generalized for anyone who wants to present with less friction. Inspired by editorial layouts and the broader minimalist tradition in tech writing.
