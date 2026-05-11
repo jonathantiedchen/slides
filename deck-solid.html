@@ -1415,7 +1415,7 @@
   <!-- ========== 12. COLLAGE SLIDE ========== -->
   <section class="slide collage-slide">
     <div class="collage">
-      <div class="placeholder">[ Replace with image or video from media/ ]</div>
+      <img src="media/KMS529.jpg" alt="" style="width:100%;height:100%;object-fit:cover;">
     </div>
   </section>
 
@@ -1659,9 +1659,6 @@
   }, { passive: true });
 
   const isEmbed = new URLSearchParams(window.location.search).has('embed');
-  if (isEmbed) {
-    document.querySelector('.pdf-btn').style.display = 'none';
-  }
 
   show(0);
 </script>
