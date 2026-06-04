@@ -290,22 +290,6 @@
     font-weight: 300;
     line-height: 1.5;
   }
-  .install-block {
-    position: relative;
-    max-width: 420px;
-    margin-top: 2rem;
-  }
-  .install-block pre {
-    background: var(--ink); color: #f5f5f3;
-    padding: 1rem 1.25rem;
-    border-radius: var(--radius);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    line-height: 1.8;
-    overflow-x: auto;
-  }
-  .install-block .line-dim { color: #666; user-select: none; margin-right: 0.5rem; }
-
   /* Theme switcher */
   .theme-btn {
     padding: 0.4rem 1rem; border-radius: 999px;
@@ -342,8 +326,7 @@
     <div class="clone-block">
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       <pre><span class="line-dim">$</span>git clone https://github.com/noskillish/slides.git
-<span class="line-dim">$</span>cd slides && claude install .
-<span class="line-dim">$</span>/slides "a 20-min talk on why we rebuilt our pipeline"</pre>
+<span class="line-dim">$</span>cd slides</pre>
     </div>
 
     <div class="cta-row">
@@ -484,11 +467,7 @@
       </div>
     </div>
 
-    <div class="install-block">
-      <button class="copy-btn" onclick="copyInstall(this)">Copy</button>
-      <pre><span class="line-dim">$</span>git clone https://github.com/noskillish/slides.git
-<span class="line-dim">$</span>cd slides && claude install .</pre>
-    </div>
+    <p style="font-size: 0.85rem; color: var(--dim); font-weight: 300; margin-top: 2rem; line-height: 1.6;">Clone the repo. Open it in your editor. The plugin loads automatically from the project files. Type <code style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; background: rgba(0,0,0,0.04); padding: 0.15rem 0.4rem; border-radius: 4px;">/slides</code> in the chat to get started.</p>
   </div>
 </section>
 
@@ -567,15 +546,6 @@ function switchTheme(theme, btn) {
   document.getElementById('demo-frame').src = file + '?embed';
   document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-}
-
-function copyInstall(btn) {
-  var text = 'git clone https://github.com/noskillish/slides.git\ncd slides && claude install .';
-  navigator.clipboard.writeText(text).then(function() {
-    btn.textContent = 'Copied';
-    btn.classList.add('copied');
-    setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
-  });
 }
 
 function copyCode(btn) {
