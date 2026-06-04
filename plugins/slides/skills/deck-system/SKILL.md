@@ -529,12 +529,20 @@ You can invent new slide layouts when needed. Rules:
 
 1. **Bold the keyword. Dim the rest.** Every headline.
 2. **No em-dashes.** Anywhere. Use periods, commas, or colons instead.
-3. **No contrast framing.** Never write "Not X. Y." or "X, not Y." Say what it IS. Lead with the positive statement.
+3. **No contrast framing. Zero tolerance.** This is the most common mistake. Scan every sentence you write. If it contains any of these patterns, rewrite it:
+   - "X, not Y." → Say what X is. Drop the Y.
+   - "Not X. Y." → Say what Y is. Drop the negation.
+   - "I thought X. Actually Y." → Say what Y is directly.
+   - "X is the work, not the leftover." → "X is the work."
+   - "That is not a cat skill. That is the whole assignment." → "That is the whole assignment."
+   - "I thought I was adopting a cat. Molly was adopting a project." → "Molly adopted a project."
+   - Any sentence that defines something by what it is NOT is contrast framing. Delete the negative half. Keep the positive claim.
 4. **No fluff.** If a sentence does not add information, delete it.
 5. **Specific numbers.** "7x" beats "huge gains."
 6. **Headlines are statements.** Exception: Q&A rows.
 7. **Use names.** Say the product or feature name instead of "it."
 8. **Pick one term and stick with it.** Do not paraphrase your own product.
+9. **Self-check before output.** Read every slide. If any sentence uses "not", "instead of", "rather than", or "but" to set up a contrast between what something ISN'T and what it IS, rewrite it. Keep only the positive claim.
 
 ---
 
