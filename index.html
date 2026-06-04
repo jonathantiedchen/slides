@@ -273,6 +273,49 @@
     gap: 1rem;
     align-items: flex-start;
   }
+  /* Storytelling grid */
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+  }
+  @media (min-width: 768px) { .story-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .story-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .story-card .story-label {
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .story-card h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .story-card p {
+    font-size: 0.78rem;
+    color: var(--dim);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .story-card .story-beats {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--faint);
+    line-height: 1.7;
+    margin-top: 0.25rem;
+  }
+
   .command-card code {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
@@ -427,6 +470,54 @@
       <div class="feature-card">
         <h4>Open source</h4>
         <p>MIT licensed. Fork it, theme it, ship it. Your slides live in a git repo. Version controlled forever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Storytelling -->
+<section>
+  <div class="container">
+    <div class="eyebrow">Storytelling formats</div>
+    <h2>Six structures. <span class="dim">Pick the right one.</span></h2>
+    <p class="section-subtitle">Every deck follows a proven narrative structure. The agent selects the format based on your description, or you choose it yourself.</p>
+
+    <div class="story-grid">
+      <div class="story-card">
+        <div class="story-label">Conference talk</div>
+        <h4>TED Talk six-beat</h4>
+        <p>Hook the audience, build empathy, introduce the insight, show evidence, expand the vision, close with a callback.</p>
+        <div class="story-beats">Hook &rarr; Empathy &rarr; Insight &rarr; Evidence &rarr; Vision &rarr; Close</div>
+      </div>
+      <div class="story-card">
+        <div class="story-label">Fundraising</div>
+        <h4>Sequoia pitch deck</h4>
+        <p>The format investors expect. Problem, solution, market size, product, traction, team, financials, the ask.</p>
+        <div class="story-beats">Problem &rarr; Solution &rarr; Market &rarr; Product &rarr; Traction &rarr; Ask</div>
+      </div>
+      <div class="story-card">
+        <div class="story-label">Strategy</div>
+        <h4>McKinsey SCR</h4>
+        <p>Situation, complication, resolution. The pyramid principle for executive audiences who want the answer first.</p>
+        <div class="story-beats">Situation &rarr; Complication &rarr; Resolution &rarr; Evidence</div>
+      </div>
+      <div class="story-card">
+        <div class="story-label">Product</div>
+        <h4>Apple-style launch</h4>
+        <p>Set the stage, reveal the product, demo the features, prove the impact, make the call to action.</p>
+        <div class="story-beats">Stage &rarr; Reveal &rarr; Demo &rarr; Impact &rarr; CTA</div>
+      </div>
+      <div class="story-card">
+        <div class="story-label">Reporting</div>
+        <h4>Board update</h4>
+        <p>Executive summary, KPIs, progress against plan, risks, decisions needed. Clear and scannable.</p>
+        <div class="story-beats">Summary &rarr; KPIs &rarr; Progress &rarr; Risks &rarr; Decisions</div>
+      </div>
+      <div class="story-card">
+        <div class="story-label">Revenue</div>
+        <h4>Sales deck</h4>
+        <p>Identify the pain, agitate the cost of inaction, present the solution, prove it with evidence, close.</p>
+        <div class="story-beats">Pain &rarr; Cost &rarr; Solution &rarr; Proof &rarr; Close</div>
       </div>
     </div>
   </div>
