@@ -8,9 +8,9 @@ Convert a deck from one visual theme to another.
 
 ## Usage
 
-- `/slides-theme craft` — switch to the Craft theme
-- `/slides-theme solid` — switch to the Solid theme
-- `/slides-theme default` — switch to the Default theme
+- `/slides-theme craft`: switch to the Craft theme
+- `/slides-theme solid`: switch to the Solid theme
+- `/slides-theme default`: switch to the Default theme
 
 ## Available themes
 

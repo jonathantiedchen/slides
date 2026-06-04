@@ -8,8 +8,8 @@ Get a structured review of your deck before you present.
 
 ## Usage
 
-- `/slides-review` — review the current deck.html
-- `/slides-review deck-craft.html` — review a specific file
+- `/slides-review`: review the current deck.html
+- `/slides-review deck-craft.html`: review a specific file
 
 ## What the command does
 
@@ -22,12 +22,12 @@ Reads the deck and evaluates it across six dimensions:
 
 ### 2. Pacing
 - Are there too many text-heavy slides in a row?
-- Are dark slides and quote slides used as punctuation, not decoration?
+- Are dark slides and quote slides used as punctuation?
 - Is Act 3 (evidence) roughly 40% of the deck?
 
 ### 3. Headline pattern
 - Do headlines use bold-then-dim (`<span class="dim">`)?
-- Are headlines statements, not questions?
+- Are headlines statements?
 - Are they specific enough?
 
 ### 4. Component variety

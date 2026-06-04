@@ -2,9 +2,9 @@
 
 How to build a sales deck that actually closes.
 
-A sales deck is a conversation tool, not a monologue. Every slide should open a door for the prospect to walk through. The goal isn't to present — it's to get them to say "tell me more."
+A sales deck is a conversation tool. Every slide should open a door for the prospect to walk through. The goal is to get them to say "tell me more."
 
-The difference between a sales deck and a keynote: a keynote is a performance. A sales deck is a collaboration. You're not the protagonist. They are. Your job is to hold up a mirror and show them what their life looks like — before you, and after you.
+The difference between a sales deck and a keynote: a keynote is a performance. A sales deck is a collaboration. They are the protagonist. Your job is to hold up a mirror and show them what their life looks like: before you, and after you.
 
 ---
 
@@ -17,7 +17,7 @@ Start ────────────────────────�
 │ Hook │ Pain │ Cost │ Solution │ Proof │ How │ Pricing │ Ask │ Close │
 ```
 
-Nine beats. The timing flexes for your deal — a 10-minute discovery call won't cover all of them. But when you have the full meeting, these are the proportions:
+Nine beats. The timing flexes for your deal. A 10-minute discovery call won't cover all of them. But when you have the full meeting, these are the proportions:
 
 | Beat | ~Share | Purpose |
 |------|--------|---------|
@@ -33,9 +33,9 @@ Nine beats. The timing flexes for your deal — a 10-minute discovery call won't
 
 ---
 
-### The Hook — *start in their world*
+### The Hook: *start in their world*
 
-Start with a problem they recognize. A stat that makes them uncomfortable. A question they've been avoiding. Not your company bio. Not your founding story. Not "thanks for taking the time."
+Start with a problem they recognize. A stat that makes them uncomfortable. A question they've been avoiding. Lead with their world, their numbers, their friction.
 
 The first slide belongs to them. If it's about you, you've already lost momentum.
 
@@ -55,44 +55,44 @@ Examples:
 **Components:** Quote slide or cover slide with bold-then-dim headline. Dark slide works if the stat is stark enough.
 
 **Common mistakes:**
-- Opening with "We're [Company], we help [category] do [thing]." Nobody cares yet. They need a reason to care first.
+- Opening with "We're [Company], we help [category] do [thing]." Give them a reason to care first.
 - Using a generic industry stat instead of something specific to their situation.
 - Making the hook about you instead of them.
 
 ---
 
-### The Pain — *deepen the problem*
+### The Pain: *deepen the problem*
 
-Now expand. What does this problem actually cost them? Not in theory. In their daily life. The rep who quits. The deal that slips. The report that takes four hours. The meeting where nobody has the number.
+Now expand. What does this problem actually cost them? In their daily life. The rep who quits. The deal that slips. The report that takes four hours. The meeting where nobody has the number.
 
-Make the status quo feel expensive. Not with scare tactics — with recognition. They should see themselves in this slide and think "yeah, that's us."
+Make the status quo feel expensive through recognition. They should see themselves in this slide and think "yeah, that's us."
 
 Examples:
 
 > **"Manual reporting** <span class="dim">costs your team 12 hours every week."</span>
-> **"Today vs. what it costs you"** — two-column: left is what they do, right is the price they pay.
-> **"Three things that slow you down"** — capability list of friction points.
+> **"Today vs. what it costs you"**: two-column, left is what they do, right is the price they pay.
+> **"Three things that slow you down"**: capability list of friction points.
 
-**Purpose:** Build enough tension that the prospect is ready for a solution. Don't rush this. If the pain isn't vivid, the solution won't feel urgent.
+**Purpose:** Build enough tension that the prospect is ready for a solution. Let this section breathe. If the pain isn't vivid, the solution won't feel urgent.
 
 **What belongs:** Specifics. Numbers. Day-in-the-life descriptions. Quotes from people in their role. The friction they've normalized.
 
-**What doesn't:** Your product. You haven't earned the right to talk about yourself yet. Also: don't invent problems they don't have. If you're wrong about the pain, the whole deck collapses.
+**What doesn't:** Your product. You haven't earned the right to talk about yourself yet. Stick to problems they actually have. If you're wrong about the pain, the whole deck collapses.
 
 **Components:** Two-column (what they do today vs. what it costs). Capability list (friction points as rows). Eyebrow + headline + subtitle for the framing slide.
 
 **Common mistakes:**
-- Listing pain points they don't actually feel. Do your discovery first.
+- Listing pain points they haven't actually felt. Do your discovery first.
 - Being too generic. "Companies like yours struggle with…" is weaker than "Your team told us onboarding takes 6 weeks."
 - Rushing through this to get to your product. Sit in the pain. Let them feel it.
 
 ---
 
-### Cost of Inaction — *make doing nothing expensive*
+### Cost of Inaction: *make doing nothing expensive*
 
-This is the urgency slide. What happens if they don't change? The gap widens. Competitors move. The problem compounds.
+This is the urgency slide. What happens if they stay the course? The gap widens. Competitors move. The problem compounds.
 
-Most deals don't die to a competitor. They die to "no decision." This beat exists to make "do nothing" feel like a choice — an expensive one.
+Most deals die to "no decision." This beat exists to make "do nothing" feel like a choice, an expensive one.
 
 Examples:
 
@@ -100,13 +100,13 @@ Examples:
 > **"Your competitors aren't waiting."** <span class="dim">They shipped this last quarter.</span>
 > **"The gap compounds.** <span class="dim">6 months from now, it's twice as hard to close."</span>
 
-**Purpose:** Eliminate "let's revisit next quarter" as an option. Create a ticking clock without being manipulative.
+**Purpose:** Eliminate "let's revisit next quarter" as an option. Create a ticking clock while staying honest about it.
 
 **What belongs:** Compounding cost projections. Competitor moves. Market shifts. The trajectory if nothing changes.
 
-**What doesn't:** Fear-mongering. Made-up urgency. Artificial deadlines. If the urgency isn't real, don't manufacture it — find a different angle.
+**What doesn't:** Fear-mongering. Made-up urgency. Artificial deadlines. If the urgency feels thin, find a different angle.
 
-**Components:** Dark callout or dark slide. The black background signals weight. One stat, one line, maximum impact. Or a simple two-column: "If you act now" vs "If you wait 6 months."
+**Components:** Dark callout or dark slide. The black background signals weight. One stat, one line, maximum impact. Timeline showing cost compounding over quarters: visualize how the gap widens the longer they wait. Or a simple two-column: "If you act now" vs "If you wait 6 months."
 
 **Common mistakes:**
 - Skipping this beat entirely. Without it, "we'll think about it" is too comfortable.
@@ -115,25 +115,25 @@ Examples:
 
 ---
 
-### The Solution — *what you built*
+### The Solution: *what you built*
 
-Now — and only now — you've earned the right to talk about yourself. But keep it tight. Three capabilities, not thirty features. The prospect doesn't need to understand your architecture. They need to understand what changes for them.
+Only now have you earned the right to talk about yourself. Keep it tight. Three capabilities with clear outcomes. The prospect needs to understand what changes for them.
 
-Frame it as: "Here's what becomes possible." Not: "Here's what our product does."
+Frame it as: "Here's what becomes possible." Lead with outcomes, always.
 
 Examples:
 
-> **"Three things that change"** — three-column: each column is one capability with a 1-sentence payoff.
-> **"One platform.** <span class="dim">Pipeline, forecasting, coaching — connected."</span>
-> **"What you get"** — capability list: left column is the capability, right column is the outcome.
+> **"Three things that change"**: three-column, each column is one capability with a 1-sentence payoff.
+> **"One platform.** <span class="dim">Pipeline, forecasting, coaching. Connected."</span>
+> **"What you get"**: capability list, left column is the capability, right column is the outcome.
 
-**Purpose:** Show the prospect a world where the pain they just felt doesn't exist. Paint the after, not the feature set.
+**Purpose:** Show the prospect a world where the pain they just felt doesn't exist. Paint the after.
 
 **What belongs:** Three core capabilities. Outcome-first language. The "what changes for you" framing. Simple visual structure.
 
 **What doesn't:** Feature lists. Technical architecture. Roadmap items you haven't built. Comparisons to competitors (that comes later, if at all). Anything that requires a glossary.
 
-**Components:** Three-column (one capability per column). Capability list (feature → outcome rows). Eyebrow + headline + subtitle for the positioning line.
+**Components:** Three-column (one capability per column). Feature card row (capability + icon + payoff per card). Capability list (feature → outcome rows). Art overlay when the solution has a strong visual or product screenshot worth anchoring. Eyebrow + headline + subtitle for the positioning line.
 
 **Common mistakes:**
 - Feature dumping. If you show 15 features, they remember zero.
@@ -142,7 +142,7 @@ Examples:
 
 ---
 
-### Proof — *customers like them*
+### Proof: *customers like them*
 
 The most important section of the deck. Everything before this was a promise. This is where you deliver evidence. Specific customers. Specific metrics. Specific timelines.
 
@@ -151,8 +151,8 @@ The best proof is a customer who looks like them, had the same problem, and solv
 Examples:
 
 > **"Acme reduced onboarding from 6 weeks to 4 days."**
-> **"3 customers.** <span class="dim">Same problem. Same result."</span> — testimonial grid.
-> **"40% fewer stalled deals.** <span class="dim">In the first quarter."</span> — stat grid.
+> **"3 customers.** <span class="dim">Same problem. Same result."</span>: testimonial grid.
+> **"40% fewer stalled deals.** <span class="dim">In the first quarter."</span>: stat grid.
 > A logo bar of recognizable names in their industry.
 
 **Purpose:** Shift from "trust us" to "look at the data." Let other customers make your argument for you.
@@ -161,26 +161,26 @@ Examples:
 
 **What doesn't:** Anonymous case studies ("a Fortune 500 company"). Vanity metrics ("10,000 users!"). Results that aren't relevant to their problem. Logos from a different industry unless they're famous enough to impress anyway.
 
-**Components:** Stat grid (three to four big numbers with labels). Two-column (before/after a customer implemented). Capability list (customer quotes as rows). Logo bar. Collage slide if you have a compelling screenshot of the customer's success.
+**Components:** Stat grid (three to four big numbers with labels). Two-column (before/after a customer implemented). Capability list (customer quotes as rows). Testimonial grid (multiple customer voices side by side). Logo bar. Product slide for a customer case showcase: screenshot, metric, and quote in one frame. Collage slide if you have a compelling visual of the customer's success.
 
 **Common mistakes:**
 - Using proof that doesn't match the prospect's situation. A fintech case study doesn't help a healthcare buyer.
-- Too many logos, not enough depth. One deep story beats ten logos.
+- Too many logos, too little depth. One deep story beats ten logos.
 - Metrics without context. "Saved 12 hours/week" is good. "Saved 12 hours/week for a team of 8, paying for itself in 3 weeks" is better.
 
 ---
 
-### How It Works — *remove friction*
+### How It Works: *remove friction*
 
 The prospect is interested. Now their brain shifts to: "Okay, but what does this actually look like? How hard is it to switch? How long until we see value?"
 
-Answer that. Show the path from "yes" to "first value." Make it feel easy — or at least manageable.
+Answer that. Show the path from "yes" to "first value." Make it feel easy, or at least manageable.
 
 Examples:
 
-> **"Live in 2 weeks.** <span class="dim">Not 2 quarters."</span>
+> **"Live in 2 weeks.** <span class="dim">From handshake to first value."</span>
 > A dot flow: Discovery → Setup → Import → Training → First Win.
-> **"What happens after you say yes"** — five steps, each with a timeline and outcome.
+> **"What happens after you say yes"**: five steps, each with a timeline and outcome.
 
 **Purpose:** Remove the implementation objection before they raise it. Show them the bridge between today and the world you just promised.
 
@@ -188,22 +188,22 @@ Examples:
 
 **What doesn't:** Technical implementation details. Migration specs. API documentation. Anything that makes it feel harder than it is.
 
-**Components:** Dot flow (the horizontal step-by-step). Capability list (step → description rows). Three-column if there are three clear phases.
+**Components:** Dot flow (the horizontal step-by-step). Step stack (vertical sequence when the process is more than five steps). Spec block (input → process → output for technical buyers who want clarity). Capability list (step → description rows). Three-column if there are three clear phases.
 
 **Common mistakes:**
-- Skipping this entirely. The prospect's brain is asking "but how?" — answer it.
+- Skipping this entirely. The prospect's brain is asking "but how?" Answer it.
 - Making it sound too easy. If implementation takes 8 weeks, say 8 weeks. Lying here kills trust later.
-- Too much detail. This is an overview, not a project plan. Save the gantt chart for after they sign.
+- Too much detail. This is an overview. Save the gantt chart for after they sign.
 
 ---
 
-### Pricing / Packaging — *anchor value*
+### Pricing / Packaging: *anchor value*
 
-Clear. Simple. No games.
+Clear. Simple. Honest.
 
-Show what they get. Show what it costs. If you have tiers, make the difference between them obvious. Anchor the price against the cost of the problem, not against your competitors.
+Show what they get. Show what it costs. If you have tiers, make the difference between them obvious. Anchor the price against the cost of the problem.
 
-"You're spending $400K/year on this problem. We solve it for $80K" is better than "We're cheaper than [Competitor]."
+"You're spending $400K/year on this problem. We solve it for $80K" is stronger than any competitor comparison.
 
 Examples:
 
@@ -215,9 +215,9 @@ Examples:
 
 **What belongs:** Clear pricing (or pricing framework if it's usage-based). What's included. The anchor: cost of the problem vs. cost of the solution. Contract terms if they're simple.
 
-**What doesn't:** Complex pricing matrices. Per-seat calculations for 47 different team sizes. Discounts you haven't discussed yet. "Contact us for pricing" — if you're in a live meeting, show the number.
+**What doesn't:** Complex pricing matrices. Per-seat calculations for 47 different team sizes. Discounts you haven't discussed yet. "Contact us for pricing." If you're in a live meeting, show the number.
 
-**Components:** Two-column (tier comparison). Capability list (what's included). Stat grid if the value/cost ratio is compelling enough to deserve big numbers.
+**Components:** Two-column (tier comparison). JEDUF for presenting tiers as a spectrum: let the buyer see themselves on a continuum from starter to full platform. Capability list (what's included). Stat grid if the value/cost ratio is compelling enough to deserve big numbers.
 
 **Common mistakes:**
 - Apologizing for the price. State it with confidence. You just spent five slides proving the value.
@@ -226,11 +226,11 @@ Examples:
 
 ---
 
-### The Ask — *one clear next step*
+### The Ask: *one clear next step*
 
-Not "let us know what you think." Not "we'd love to continue the conversation." One specific action with a specific timeline.
+One specific action with a specific timeline. Own it. Propose the next step yourself.
 
-You're the one proposing next steps. Don't leave it to them. Tell them what happens next and ask if that works.
+You're the one proposing next steps. Own the momentum. Tell them what happens next and ask if that works.
 
 Examples:
 
@@ -248,16 +248,16 @@ Examples:
 
 **Common mistakes:**
 - Being vague. "Let's find time next week" is a non-ask.
-- Giving them homework. "Take a look at our docs and let us know." That's not a next step. That's a dead deal.
+- Giving them homework. "Take a look at our docs and let us know." That's a dead deal, every time.
 - Skipping the ask entirely and hoping they'll propose something. They won't.
 
 ---
 
-### Close — *the line they'll repeat*
+### Close: *the line they'll repeat*
 
 One line. The thing they'll say to their boss when they're selling this internally. Make it stick.
 
-This isn't a summary. It's not "thanks for your time." It's the sentence that crystallizes everything you just said into something memorable.
+This is the sentence that crystallizes everything you just said into something memorable. One line that sticks.
 
 Examples:
 
@@ -275,9 +275,9 @@ Examples:
 **Components:** Closing slide (dark or light). Quote slide. The bold-then-dim headline pattern at its most powerful.
 
 **Common mistakes:**
-- Ending with "thank you" or "any questions?" That's not a close. That's a surrender.
+- Ending with "thank you" or "any questions?" Close with conviction instead.
 - Summarizing everything you said. They were there. They heard it.
-- Adding your email and phone number on the closing slide. That's a business card, not a mic drop.
+- Adding your email and phone number on the closing slide. That's a business card.
 
 ---
 
@@ -287,12 +287,12 @@ After you finish your deck, ask this question: could your prospect use this deck
 
 If the answer is no, the deck isn't done.
 
-Your prospect is your champion. After the meeting, they'll go to their VP, their CFO, their procurement team. They'll pull up your deck — or worse, try to summarize it from memory. Your deck needs to work both ways: as a conversation tool with you present, and as a standalone argument when you're not.
+Your prospect is your champion. After the meeting, they'll go to their VP, their CFO, their procurement team. They'll pull up your deck, or worse, try to summarize it from memory. Your deck needs to work both ways: as a conversation tool with you present, and as a standalone argument when you're gone.
 
 **What this means practically:**
 - Headlines should carry the full argument. If someone only reads the headlines, they should understand your pitch.
-- Proof slides should be self-explanatory. Names, metrics, timelines — all legible without narration.
-- The ask slide should make sense to someone who wasn't in the room.
+- Proof slides should be self-explanatory. Names, metrics, timelines, all legible without narration.
+- The ask slide should make sense to someone who walked in cold.
 - Body copy should do more work than you'd normally include in a live deck.
 
 If you're sending the deck afterward, add subtitles to slides that rely on your narration. Let the bold-then-dim headlines carry the arc.
@@ -303,11 +303,11 @@ If you're sending the deck afterward, add subtitles to slides that rely on your 
 
 A generic deck is a dead deck. The minimum viable personalization:
 
-1. **Their logo** on the cover or hook slide. Not yours.
-2. **Their metrics** in the pain section. "Your team of 45" not "teams like yours."
+1. **Their logo** on the cover or hook slide. Lead with their brand.
+2. **Their metrics** in the pain section. "Your team of 45" instead of "teams like yours."
 3. **A customer in their industry** in the proof section. If you don't have one, find the closest analog and acknowledge it.
-4. **Their language.** Use the words they used in discovery. If they said "pipeline velocity," use "pipeline velocity" — not "deal acceleration."
-5. **Their timeline.** "Ready for your Q3 planning cycle" not "whenever you're ready."
+4. **Their language.** Use the words they used in discovery. If they said "pipeline velocity," use "pipeline velocity." Mirror their exact words.
+5. **Their timeline.** "Ready for your Q3 planning cycle" instead of "whenever you're ready."
 
 The deeper you personalize, the harder it is to say no. It stops being "a sales pitch" and starts being "a plan for us."
 
@@ -315,15 +315,15 @@ The deeper you personalize, the harder it is to say no. It stops being "a sales 
 
 ## Discovery-first selling
 
-The deck is a conversation guide, not a script. The best sales meetings use maybe 40% of the slides.
+The deck is a conversation guide. The best sales meetings use maybe 40% of the slides.
 
 **How to use the deck as a conversation tool:**
 
 - **Open with the hook.** Then pause. Ask: "Does this resonate? Is this what you're seeing?"
 - **Show the pain slide.** Then ask: "What does this cost you? Am I close?"
 - **Skip slides freely.** If they're already convinced of the problem, jump to the solution. If they want proof first, go there.
-- **Let them drive.** If they ask about pricing on slide 3, show them pricing. The structure exists to orient you, not imprison you.
-- **Use the deck as a whiteboard.** "Let me show you what this looks like for a team like yours" — then walk through the relevant slides.
+- **Let them drive.** If they ask about pricing on slide 3, show them pricing. The structure exists to orient you. Follow the energy in the room.
+- **Use the deck as a whiteboard.** "Let me show you what this looks like for a team like yours." Then walk through the relevant slides.
 
 The worst sales call: you present 35 slides in order while the prospect checks email. The best sales call: you show 8 slides and spend 40 minutes in conversation.
 
@@ -361,15 +361,15 @@ The worst sales call: you present 35 slides in order while the prospect checks e
 ### Live meeting (you're presenting)
 
 - Lean headlines, minimal body copy. You are the body copy.
-- Use dark slides and quote slides for emphasis — you control the pacing.
+- Use dark slides and quote slides for emphasis. You control the pacing.
 - Skip slides freely based on the conversation.
-- The deck is your back-up singer, not the lead.
+- The deck is your back-up singer. You are the lead.
 
 ### Async / emailed deck (they're reading alone)
 
 - Add subtitles to every slide. The headline + subtitle should tell the full story.
 - Body copy does more work. Two to three sentences per slide instead of one.
-- The bold-then-dim headlines are even more important — they carry the argument.
+- The bold-then-dim headlines are even more important. They carry the argument.
 - Include a "How to read this deck" note on slide 2 if the structure is non-obvious.
 - The ask slide needs to be complete: what you're proposing, timeline, how to respond.
 - Consider adding a short Loom or video walkthrough link on the cover slide.
@@ -378,7 +378,7 @@ The worst sales call: you present 35 slides in order while the prospect checks e
 
 - Personalize heavily. Reference things they said.
 - Open with: "Based on our conversation, here's what we heard."
-- Skip the generic pain slides — replace them with their specific pain.
+- Skip the generic pain slides. Replace them with their specific pain.
 - Proof section should be tailored to their objections.
 - The ask should reference the next step you already agreed on.
 
@@ -386,7 +386,7 @@ The worst sales call: you present 35 slides in order while the prospect checks e
 
 ## Handling objections
 
-You don't need a slide for every objection. But you need to know which slides to skip to.
+Keep slides ready for common objections. Know which slide to skip to.
 
 | Objection | Go to |
 |-----------|-------|
@@ -394,11 +394,11 @@ You don't need a slide for every objection. But you need to know which slides to
 | "We've tried tools like this before" | Proof (find a customer who switched from their old tool) |
 | "How long does this take to implement?" | How It Works |
 | "It's too expensive" | Go back to Pain + Cost of Inaction, then show pricing in context |
-| "I need to get buy-in from my team" | The champion test — make sure the deck works standalone |
+| "I need to get buy-in from my team" | The champion test: make sure the deck works standalone |
 | "Can you show me how it works?" | Skip ahead to a demo or the How It Works flow |
-| "What about [Competitor]?" | Don't trash them. Go to Proof. Let results speak. |
+| "What about [Competitor]?" | Stay gracious. Go to Proof. Let results speak. |
 
-**The meta-move:** When an objection comes up, don't defend. Ask a question back. "What would you need to see to feel confident about this?" Then show that slide.
+**The meta-move:** When an objection comes up, stay curious. Ask a question back. "What would you need to see to feel confident about this?" Then show that slide.
 
 ---
 
@@ -408,22 +408,22 @@ You don't need a slide for every objection. But you need to know which slides to
 Nobody opens a sales meeting wanting to hear your founding story, your headcount, or your investor list. Start with their problem. They can read your About page later.
 
 ### 2. Feature dumping
-Fifteen features on one slide is not impressive — it's overwhelming. Three capabilities with clear outcomes beats a feature matrix every time. If they want the full list, send it after.
+Fifteen features on one slide is overwhelming. Three capabilities with clear outcomes beats a feature matrix every time. If they want the full list, send it after.
 
 ### 3. No social proof
 Claims without evidence are just opinions. If you don't have named customers, use aggregated metrics. If you don't have metrics, get them before you build the deck.
 
 ### 4. Vague CTA
-"Let us know if you'd like to continue the conversation" is not a call to action. It's a shrug. Propose something specific. Own the next step.
+"Let us know if you'd like to continue the conversation" is a shrug, and prospects treat it like one. Propose something specific. Own the next step.
 
 ### 5. Talking about yourself instead of them
-Count the slides. If more than 30% are about your company, your team, your vision, your roadmap — you've lost the thread. Flip it. Make it about their outcomes.
+Count the slides. If more than 30% are about your company, your team, your vision, your roadmap, you've lost the thread. Flip it. Make it about their outcomes.
 
 ### 6. One deck for everyone
-The deck you show a VP of Sales is not the deck you show a CFO. Personalize. Swap the proof stories. Change the metrics. Adjust the language. Same structure, different flavor.
+The deck you show a VP of Sales differs from the one you show a CFO. Personalize. Swap the proof stories. Change the metrics. Adjust the language. Same structure, different flavor.
 
 ### 7. No pause for conversation
-If you present for 25 minutes straight without asking a question, you're not selling — you're lecturing. Build pauses into the structure. After the hook. After the pain. After the proof. Ask: "Does this match what you're seeing?"
+If you present for 25 minutes straight without asking a question, you're lecturing. Build pauses into the structure. After the hook. After the pain. After the proof. Ask: "Does this match what you're seeing?"
 
 ### 8. Burying the price
 If pricing is complex or hidden, the prospect spends the whole meeting wondering about it instead of listening. Show it clearly. Show it with confidence. Show it in context of the value.
@@ -437,11 +437,11 @@ The bold-then-dim pattern is especially powerful in sales because it does two th
 ```html
 <h1>Pipeline grew 40%. <span class="dim">In one quarter.</span></h1>
 <h1>One platform. <span class="dim">Every rep. Every deal.</span></h1>
-<h1>6 weeks to value. <span class="dim">Not 6 months.</span></h1>
-<h1>Your problem isn't effort. <span class="dim">It's visibility.</span></h1>
+<h1>6 weeks to value. <span class="dim">From handshake to results.</span></h1>
+<h1>The bottleneck is visibility. <span class="dim">And it's solvable.</span></h1>
 ```
 
-The bold part is the claim. The dim part is the context, the contrast, or the surprise. Together they create a headline with built-in tension.
+The bold part is the claim. The dim part is the context, the surprise, or the payoff. Together they create a headline with built-in tension.
 
 For sales specifically:
 - **Hook headlines:** Bold = their problem. Dim = the scale of it.
@@ -453,9 +453,9 @@ For sales specifically:
 
 ## One more thing
 
-The best sales deck in the world doesn't close a deal. The conversation does.
+The conversation closes the deal. Every time.
 
-The deck is the scaffolding. It's the thing that keeps the conversation on track, surfaces the right proof at the right moment, and gives your champion something to carry upstairs. But the words you say — the questions you ask, the way you listen, the specificity of your follow-up — that's what actually moves the deal.
+The deck is the scaffolding. It keeps the conversation on track, surfaces the right proof at the right moment, and gives your champion something to carry upstairs. The words you say, the questions you ask, the way you listen, the specificity of your follow-up: that's what actually moves the deal.
 
 Spend 50% of your prep on the deck. 50% on understanding the prospect.
 

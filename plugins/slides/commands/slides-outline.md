@@ -10,7 +10,7 @@ Draft the structure of a deck before writing any HTML.
 
 - `/slides-outline "a 15-minute talk about why we rebuilt our data pipeline"`
 - `/slides-outline --format sequoia "pitch for a developer productivity tool"`
-- `/slides-outline` — then describe in the follow-up
+- `/slides-outline`, then describe in the follow-up
 
 ## What the command does
 
@@ -20,7 +20,7 @@ Draft the structure of a deck before writing any HTML.
 ```
 | # | Beat | Component | Headline | Notes |
 |---|------|-----------|----------|-------|
-| 1 | Open | Quote slide | "We threw away six months of work." | Hook — surprise |
+| 1 | Open | Quote slide | "We threw away six months of work." | Hook, surprise |
 | 2 | Act 1 | Eyebrow + headline | The old pipeline. | Status quo |
 | 3 | Act 1 | Two-column | Before vs. after. | Pain points |
 | ... | | | | |

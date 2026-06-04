@@ -7,7 +7,7 @@ slides/
 ├── deck.html              The template deck. Edit this.
 ├── design-system.html     Visual showcase of every component.
 ├── index.html             Landing page (uses Tailwind CDN).
-├── AGENTS.md              AI agent instructions — design system + components + storytelling.
+├── AGENTS.md              AI agent instructions. Design system + components + storytelling.
 ├── media/                 Drop your images and videos here.
 ├── docs/
 │   ├── USING.md           How to use the template.
@@ -25,7 +25,7 @@ slides/
 
 Slides are usually built in PowerPoint, Keynote, or Google Slides. Those tools are great if you like dragging text boxes. They're terrible if you want to:
 
-- Treat your deck like a document you can *write*, not a canvas you have to *arrange*
+- Treat your deck like a document you can *write*
 - Pair with an AI assistant to draft, edit, and iterate
 - Keep your slides in version control
 - Embed your deck anywhere with a single iframe
@@ -121,16 +121,16 @@ The plugin auto-detects the best storytelling format from your description:
 
 ## Documentation
 
-- **[docs/USING.md](docs/USING.md)** — How to use the template, components, keyboard shortcuts, PDF export, troubleshooting.
-- **[docs/STORYTELLING.md](docs/STORYTELLING.md)** — TED Talk / six-beat narrative structure.
-- **[docs/STORYTELLING-sequoia.md](docs/STORYTELLING-sequoia.md)** — Sequoia pitch deck format.
-- **[docs/STORYTELLING-mbb.md](docs/STORYTELLING-mbb.md)** — McKinsey SCR / pyramid principle.
-- **[docs/STORYTELLING-product-launch.md](docs/STORYTELLING-product-launch.md)** — Apple-style product launch.
-- **[docs/STORYTELLING-board.md](docs/STORYTELLING-board.md)** — Board and strategy updates.
-- **[docs/STORYTELLING-sales.md](docs/STORYTELLING-sales.md)** — Sales presentations.
-- **[docs/DESIGN.md](docs/DESIGN.md)** — Design tokens, components, tone & voice rules.
-- **[design-system.html](design-system.html)** — Visual showcase of every component, rendered.
-- **[AGENTS.md](AGENTS.md)** — AI agent context file. Everything an AI needs to produce correct, on-brand slides.
+- **[docs/USING.md](docs/USING.md):** How to use the template, components, keyboard shortcuts, PDF export, troubleshooting.
+- **[docs/STORYTELLING.md](docs/STORYTELLING.md):** TED Talk / six-beat narrative structure.
+- **[docs/STORYTELLING-sequoia.md](docs/STORYTELLING-sequoia.md):** Sequoia pitch deck format.
+- **[docs/STORYTELLING-mbb.md](docs/STORYTELLING-mbb.md):** McKinsey SCR / pyramid principle.
+- **[docs/STORYTELLING-product-launch.md](docs/STORYTELLING-product-launch.md):** Apple-style product launch.
+- **[docs/STORYTELLING-board.md](docs/STORYTELLING-board.md):** Board and strategy updates.
+- **[docs/STORYTELLING-sales.md](docs/STORYTELLING-sales.md):** Sales presentations.
+- **[docs/DESIGN.md](docs/DESIGN.md):** Design tokens, components, tone & voice rules.
+- **[design-system.html](design-system.html):** Visual showcase of every component, rendered.
+- **[AGENTS.md](AGENTS.md):** AI agent context file. Everything an AI needs to produce correct, on-brand slides.
 
 ---
 
@@ -178,7 +178,7 @@ The plugin auto-detects the best storytelling format from your description:
 
 - **One HTML file per deck.** No JavaScript framework. No build step. No npm install.
 - **Self-contained.** `deck.html` and `design-system.html` have zero external dependencies beyond Google Fonts (Inter).
-- **`index.html` is the landing page.** It uses the Tailwind CDN for responsive layout — it's a marketing page, not a deck file. The product files stay dependency-free.
+- **`index.html` is the landing page.** It uses the Tailwind CDN for responsive layout. It's a marketing page for the project. The product files stay dependency-free.
 - **Works in any modern browser.** Present, share, embed.
 - **PDF export** via `window.print()` with print-optimized CSS (`@page` set to 16:9).
 - **Auto-deploy** to GitHub Pages on push to `main` via the included GitHub Action.

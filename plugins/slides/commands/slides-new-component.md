@@ -36,4 +36,4 @@ Build a custom slide component when the standard library doesn't have what you n
 
 ## Design constraints
 
-The new component must look like it belongs next to the existing 25 components. If it needs a new color or a different font to work, it needs to be rethought. The design system is deliberately constrained — that constraint is what makes decks look consistent.
+The new component must look like it belongs next to the existing 25 components. If it needs a new color or a different font to work, it needs to be rethought. The design system is deliberately constrained. That constraint is what makes decks look consistent.

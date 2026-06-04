@@ -1,4 +1,4 @@
-# Slides — Agent Instructions
+# Slides: Agent Instructions
 
 You are helping a human build a slide deck using the Slides framework. This file is everything you need to produce correct, on-brand slides.
 
@@ -522,10 +522,10 @@ Every presentation follows six beats. The timing scales to your format.
 | Beat | ~Share | Purpose |
 |------|--------|---------|
 | Open | 10% | Hook the room. A confession, a contradiction, a surprising fact. Not your bio. |
-| Act 1 — The World Before | 15% | The status quo. The old way. Build empathy. |
-| Act 2 — The Turn | 15% | Something changed. State it cleanly. |
-| Act 3 — The Evidence | 40% | 3–5 concrete examples. Before → action → after. |
-| Act 4 — The Honest Part | 15% | Doubt, risk, what you're still figuring out. |
+| Act 1. The World Before | 15% | The status quo. The old way. Build empathy. |
+| Act 2. The Turn | 15% | Something changed. State it cleanly. |
+| Act 3. The Evidence | 40% | 3–5 concrete examples. Before → action → after. |
+| Act 4. The Honest Part | 15% | Doubt, risk, what you're still figuring out. |
 | Close | 5% | The closing line. Slow down. Stop talking. |
 
 ### Show, don't tell
@@ -553,12 +553,25 @@ Adding `?embed` to the deck URL produces an embeddable version. The PDF button h
 ## Tone rules (follow strictly)
 
 1. **Bold the keyword. Dim the rest.** Every headline.
-2. **No em-dashes in body copy.** Use periods or shorter sentences.
-3. **No fluff.** If a sentence doesn't add information, delete it.
-4. **Specific numbers.** "7×" beats "huge gains." "35 use cases/week" beats "much faster."
-5. **Headlines are statements, not questions.** Exception: Q&A rows.
-6. **Use names, not pronouns.** Say the product/feature name, not "it."
-7. **Pick one term and stick with it.** Don't paraphrase your own product.
+2. **No em-dashes.** Anywhere: headlines, body copy, meta text. Use periods, commas, or colons instead.
+3. **No contrast framing.** Never write "Not X. Y." or "X, not Y." Say what it IS. Lead with the positive statement. Rewrite "Three capabilities, not thirty features" as "Three capabilities. Keep it tight."
+4. **No fluff.** If a sentence doesn't add information, delete it.
+5. **Specific numbers.** "7x" beats "huge gains." "35 use cases per week" beats "much faster."
+6. **Headlines are statements.** Exception: Q&A rows.
+7. **Use names.** Say the product or feature name. Avoid generic pronouns like "it."
+8. **Pick one term and stick with it.** Do not paraphrase your own product.
+
+---
+
+## Component diversity
+
+Use the full component library. Do not default to the same five component types.
+
+- For decks over 10 slides: use at least 5 different component types.
+- For decks over 20 slides: use at least 8 different component types.
+- Every deck should have at least one visual-heavy slide (Collage, Art overlay, or Product slide).
+- Before finalizing, check: did you use any of these components? Timeline, Product slide, JEDUF, Quote pair, Spec block, Stack grid, Art overlay, Testimonial grid, Feature card row, Update row, Code slide, Logo bar, Logo grid, Step stack, Collage slide.
+- If a beat would benefit from a component that does not exist yet, suggest it. Describe what it would look like and ask the user: "This slide would work better with a [description]. Want me to build it?" If yes, create it on-token before continuing.
 
 ---
 
@@ -575,7 +588,7 @@ Adding `?embed` to the deck URL produces an embeddable version. The PDF button h
 
 ## Freestyle: creating new components
 
-The 25 components above are the standard library, not a ceiling. You are encouraged to invent new slide layouts when the content demands it. Follow these rules when freestyling:
+The 25 components above are the starting library. You are encouraged to invent new slide layouts when the content demands it. Follow these rules when freestyling:
 
 1. **Stay on-token.** Use only the colors, fonts, weights, and spacing from the design tokens table. No new colors, no new fonts.
 2. **Use the headline pattern.** Any new layout with a headline should use bold-then-dim (`<span class="dim">`).

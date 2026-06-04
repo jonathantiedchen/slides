@@ -18,7 +18,7 @@ Add slides to an existing deck without regenerating the whole thing.
 2. Determine the right component type for the requested content
 3. Generate the new slide HTML using the same design tokens and patterns
 4. Insert at the specified position (or suggest the best position if not specified)
-5. Update nothing else — the JS counter and progress bar adjust automatically
+5. Update nothing else. The JS counter and progress bar adjust automatically
 
 ## Tips
 

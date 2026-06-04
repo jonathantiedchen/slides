@@ -15,33 +15,33 @@ Start ────────────────────────�
 │ Open │  Act 1  │  Act 2  │     Act 3      │ Act 4 │ Close │
 ```
 
-Six beats. The timing scales to your format — 5 minutes, 20 minutes, 45 minutes. The proportions stay roughly the same.
+Six beats. The timing scales to your format: 5 minutes, 20 minutes, 45 minutes. The proportions stay roughly the same.
 
 | Beat | ~Share | Purpose |
 |------|--------|---------|
 | Open | 10% | Hook the room |
-| Act 1 — The World Before | 15% | Build empathy |
-| Act 2 — The Turn | 15% | Name the change |
-| Act 3 — The Evidence | 40% | Prove it |
-| Act 4 — The Honest Part | 15% | Earn trust |
+| Act 1: The World Before | 15% | Build empathy |
+| Act 2: The Turn | 15% | Name the change |
+| Act 3: The Evidence | 40% | Prove it |
+| Act 4: The Honest Part | 15% | Earn trust |
 | Close | 5% | Land the line |
 
-### Open — *hook the room*
+### Open: *hook the room*
 
-Start with something that earns the next 30 seconds. A confession, a contradiction, a surprising fact, a provocation. Not your bio. Not your agenda. Not "thanks for having me."
+Start with something that earns the next 30 seconds. A confession, a contradiction, a surprising fact, a provocation.
 
 Examples across contexts:
 
-> *"I have a confession. I am not a very patient person."* — personal talk
-> *"Last quarter we lost our biggest customer. Here's what we learned."* — team update
-> *"This market will be worth $40B by 2028. Nobody's serving it well yet."* — investor pitch
-> *"We've been solving the wrong problem for two years."* — strategy pivot
+> *"I have a confession. I am not a very patient person."*, personal talk
+> *"Last quarter we lost our biggest customer. Here's what we learned."*, team update
+> *"This market will be worth $40B by 2028. Nobody's serving it well yet."*, investor pitch
+> *"We've been solving the wrong problem for two years."*, strategy pivot
 
 One beat. Pause. Let the room come to you.
 
-### Act 1 — The World Before
+### Act 1: The World Before
 
-The status quo. The old way. The problem as the audience knows it. This is where you build empathy — they should recognize their own experience.
+The status quo. The old way. The problem as the audience knows it. This is where you build empathy. They should recognize their own experience.
 
 Adapt to your context:
 - **Conference talk:** The pain of the old workflow. What used to be hard.
@@ -56,7 +56,7 @@ End Act 1 with something quiet. A line that closes the chapter:
 > *"Nobody questioned it. It was just the cost of doing business."*
 > *"We accepted it. Until we couldn't."*
 
-### Act 2 — The Turn
+### Act 2: The Turn
 
 Something changed. A new tool, a new insight, a market shift, a decision, a realization. State it cleanly:
 
@@ -65,11 +65,11 @@ Something changed. A new tool, a new insight, a market shift, a decision, a real
 > *"The data told a different story."*
 > *"A new approach emerged."*
 
-Don't over-explain. The audience is smart. Name the shift, then move to the evidence.
+Keep it clean. The audience is smart. Name the shift, then move to the evidence.
 
-### Act 3 — The Evidence
+### Act 3: The Evidence
 
-The longest section. The meat. This is where you prove the turn with concrete examples. Not theory. Not promises. Real things that happened.
+The longest section. The meat. This is where you prove the turn with concrete examples. Real things that happened.
 
 **For a talk:** Three to five build stories. Each one: a frustration → what you did → what it meant.
 
@@ -81,18 +81,18 @@ The longest section. The meat. This is where you prove the turn with concrete ex
 
 The pattern is always the same: *before → action → after*. Repeat it three to five times. Each story should feel complete on its own but build toward a larger point.
 
-Don't recite them. Tell them like you're remembering them.
+Tell them like you're remembering them.
 
-### Act 4 — The Honest Part
+### Act 4: The Honest Part
 
-The part most presentations skip. The doubt, the risk, the open question, the thing you're still figuring out. This is where the audience trusts you — because you stopped selling.
+The part most presentations skip. The doubt, the risk, the open question, the thing you're still figuring out. This is where the audience trusts you, because you stopped selling.
 
-> *"Speed is not the same as wisdom."* — tech talk
-> *"We don't know if this scales past 50 customers yet."* — pitch
-> *"This strategy assumes the market holds. It might not."* — strategy deck
-> *"We shipped fast. We also broke things. Here's what we'd do differently."* — retro
+> *"Speed is not the same as wisdom."*, tech talk
+> *"We don't know if this scales past 50 customers yet."*, pitch
+> *"This strategy assumes the market holds. It might not."*, strategy deck
+> *"We shipped fast. We also broke things. Here's what we'd do differently."*, retro
 
-If you're not willing to say something here that costs you a little, the presentation won't land. Vulnerability is what separates a talk from a brochure.
+This part only works if you're willing to say something that costs you a little. Vulnerability is what separates a talk from a brochure.
 
 ### Close
 
@@ -103,7 +103,7 @@ The mic drop. One or two lines. Slow down for them.
 > *"We're not asking for belief. We're showing you the data."*
 > *"The question isn't whether to move. It's how fast."*
 
-Pause. Stop talking. Don't explain. Don't say "and that's it." Just end.
+Pause. Stop talking. Let the line breathe. Just end.
 
 ---
 
@@ -111,7 +111,7 @@ Pause. Stop talking. Don't explain. Don't say "and that's it." Just end.
 
 ### Short formats (5–10 min)
 
-Compress Acts 1 and 2 into a single slide. Cut Act 3 to two examples. Keep the Open, the Honest Part, and the Close — those are non-negotiable.
+Compress Acts 1 and 2 into a single slide. Cut Act 3 to two examples. Keep the Open, the Honest Part, and the Close. Those are non-negotiable.
 
 ### Long formats (30–45 min)
 
@@ -123,7 +123,7 @@ The same structure works for decks that get emailed or shared without a speaker.
 
 ### Non-narrative formats
 
-Some decks aren't stories. Quarterly reviews, technical specs, status updates. The six-beat structure still helps — it just maps differently:
+Some decks are purely informational. Quarterly reviews, technical specs, status updates. The six-beat structure still helps. It just maps differently:
 
 | Beat | Narrative deck | Status update | Technical spec |
 |------|---------------|---------------|----------------|
@@ -145,13 +145,13 @@ Every slide that has a headline uses the same trick: **bold-then-dim**.
 > **Revenue doubled.** *Churn didn't.*
 > **The old playbook** *stopped working.*
 
-The first phrase carries weight. The second fades to gray. This gives every headline a built-in narrative — anchor + extension. It's the most consistent visual identity in the deck.
+The first phrase carries weight. The second fades to gray. This gives every headline a built-in narrative: anchor + extension. It's the most consistent visual identity in the deck.
 
 ```html
 <h1>Anchor. <span class="dim">Extension.</span></h1>
 ```
 
-Use it everywhere. Don't fight it.
+Use it everywhere. Lean into it.
 
 ---
 
@@ -160,7 +160,7 @@ Use it everywhere. Don't fight it.
 A deck without rhythm is just a wall of text. Use these to break it up:
 
 ### Quote slides
-A single bold statement. No subtitle. No supporting text. Just the line, taking up the whole slide.
+A single bold statement. Just the line, taking up the whole slide.
 
 Use one to open. Use one to close. Maybe one in the middle as a turning point.
 
@@ -183,7 +183,7 @@ Use them between Acts. They give the audience a beat to absorb before you push f
 
 ---
 
-## Show, don't tell
+## Show it
 
 Wherever you have a story, use the **setup slide → evidence slide** pair:
 
@@ -192,7 +192,7 @@ Wherever you have a story, use the **setup slide → evidence slide** pair:
 
 Read the copy → advance → visual lands. Brutal punch.
 
-This works for product demos, customer results, before/after comparisons, data reveals — anything where seeing it is more powerful than reading about it.
+This works for product demos, customer results, before/after comparisons, data reveals. Anything where seeing it is more powerful than reading about it.
 
 If you have video, use it. Even a five-second loop is more memorable than three sentences of description.
 
@@ -201,16 +201,16 @@ If you have video, use it. Even a five-second loop is more memorable than three 
 ## Common mistakes
 
 ### 1. Too much evidence
-You have ten great examples. Show three. Pick the ones with the strongest emotional hook. More evidence isn't more convincing — it's more exhausting.
+You have ten great examples. Show three. Pick the ones with the strongest emotional hook. Extra evidence exhausts the audience.
 
 ### 2. Skipping the honest part
-Everyone wants to look smart/successful/confident. Nobody wants to show doubt. But the honest part is where the audience decides whether they believe you. Without it, you're a brochure.
+Everyone wants to look smart and confident. The honest part is where the audience decides whether they believe you. Showing doubt is what separates a talk from a brochure.
 
 ### 3. Leading with credentials
-The audience didn't show up to hear about you or your company. They showed up to hear something useful. Mention your role at the start if you must, then move on. Spend the rest on ideas, not branding.
+The audience showed up to hear something useful. Mention your role at the start if you must, then move on. Spend the rest on ideas.
 
 ### 4. Forcing humor
-If you're naturally funny, it'll show. If you're not, don't force it. A clear, calm delivery beats a forced punchline every time.
+If you're naturally funny, it'll show. A clear, calm delivery beats a forced punchline every time.
 
 ### 5. Reading the slides
 The slide is the punchline. You're the setup. If you read the slide, the audience has already absorbed it before you finish. Talk to the audience. Glance at the slide.
@@ -222,7 +222,7 @@ Every presentation should end with the audience knowing what to do next. Buy, ap
 
 ## A formula that works
 
-If you don't know where to start:
+A place to start:
 
 ```
 1. Hook with something true.
@@ -233,7 +233,7 @@ If you don't know where to start:
 6. Close with one line you've practiced.
 ```
 
-Six beats. Use them. Skip them. Reorder them. They're a starting point, not a script.
+Six beats. Use them. Skip them. Reorder them. They're scaffolding.
 
 ---
 
@@ -250,11 +250,11 @@ Practice saying it out loud. Slow down for it. Then stop.
 
 Examples across formats:
 
-> *"The tools changed. The instinct is still yours."* — tech talk
-> *"We're not pitching a product. We're showing you what's already working."* — sales
-> *"The question was never if. It was when."* — strategy
-> *"What gets specced is what gets built."* — process talk
-> *"This is year one. Imagine year three."* — investor pitch
+> *"The tools changed. The instinct is still yours."*, tech talk
+> *"We're not pitching a product. We're showing you what's already working."*, sales
+> *"The question was never if. It was when."*, strategy
+> *"What gets specced is what gets built."*, process talk
+> *"This is year one. Imagine year three."*, investor pitch
 
 You'll know yours when you find it.
 
@@ -262,9 +262,9 @@ You'll know yours when you find it.
 
 ## One more thing
 
-The deck doesn't make the presentation. The presentation makes the presentation.
+The presentation makes the presentation.
 
-The deck supports it. The deck is the page numbers. The deck is the punctuation. But the words — said with conviction, timed with intention — are the actual product.
+The deck supports it. The deck is the page numbers. The deck is the punctuation. The words, said with conviction and timed with intention, are the actual product.
 
 Spend 80% of your prep on the story. 20% on the slides.
 

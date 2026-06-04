@@ -1,4 +1,4 @@
-# Storytelling — Sequoia pitch deck
+# Storytelling: Sequoia pitch deck
 
 How to build an investor deck that survives the first two minutes.
 
@@ -15,7 +15,7 @@ Start ────────────────────────�
 │ Purpose │ Problem │ Solution │ Why now │ Market │ Product │ Model │ Traction │ Team │ Competition │ Financials │ Ask │
 ```
 
-Twelve beats. Most decks run 12–18 slides total — some beats share a slide, some take two. The percentages below are time shares for a live pitch. For a read-only deck, they're rough page-weight guides.
+Twelve beats. Most decks run 12–18 slides total. Some beats share a slide, some take two. The percentages below are time shares for a live pitch. For a read-only deck, they're rough page-weight guides.
 
 | Beat | ~Share | Purpose |
 |------|--------|---------|
@@ -64,9 +64,9 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **What it accomplishes:** Makes the investor feel the pain. If they don't feel it, the solution won't matter.
 
-**What to include:** Who has this problem (be specific — job title, company size, industry). How they cope today (manual process, bad software, spreadsheet, workaround). What it costs them (time, money, risk, opportunity cost). Use a real example or a real quote if you have one.
+**What to include:** Who has this problem (be specific: job title, company size, industry). How they cope today (manual process, bad software, spreadsheet, workaround). What it costs them (time, money, risk, opportunity cost). Use a real example or a real quote if you have one.
 
-**What to leave out:** Your solution. Don't hint at it yet. Let the problem breathe.
+**What to leave out:** Your solution. Let the problem breathe first.
 
 **Headlines:**
 
@@ -89,7 +89,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **What it accomplishes:** Answers "so what did you build?" Clean, concrete, visual if possible.
 
-**What to include:** What you built. How it fixes the problem from beat 2. The core insight — the one thing you do differently. Keep it to one or two slides. This isn't the full product section — that comes later.
+**What to include:** What you built. How it fixes the problem from beat 2. The core insight: the one thing you do differently. Keep it to one or two slides. This is a preview. The full product section comes later.
 
 **What to leave out:** Feature lists. Architecture diagrams. Implementation details. Anything that requires technical context the investor doesn't have yet.
 
@@ -101,11 +101,11 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 <h1>Replace the spreadsheet. <span class="dim">Keep the workflow.</span></h1>
 ```
 
-**Best components:** Eyebrow + headline + subtitle to state the solution, then a Collage slide with a product screenshot for visual proof. If the solution has two or three pillars, use a Three-column. Don't use more than three.
+**Best components:** Eyebrow + headline + subtitle to state the solution, then a Collage slide with a product screenshot for visual proof. If the solution has two or three pillars, use a Three-column. Three is the maximum. If the product transforms an input into an output (data in, report out; raw footage, polished edit), a Spec block makes the mechanism immediately tangible.
 
 **Common mistakes:**
 - Listing features instead of describing the solution. Features come in the Product section. Here you need the shape of the answer.
-- Being too technical. The investor is evaluating the business, not the architecture. "We use a graph database" is not a solution — "we show every dependency in one view" is.
+- Being too technical. The investor is evaluating the business. Lead with what the user sees: "we show every dependency in one view" is a solution. "We use a graph database" is an implementation detail.
 - Forgetting to connect back to the problem. The solution slide should feel like the natural answer to the problem slide. If you have to re-explain the problem, the framing was wrong.
 
 ---
@@ -138,7 +138,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **What it accomplishes:** Proves the opportunity is large enough to build a venture-scale business.
 
-**What to include:** TAM (total addressable market), SAM (serviceable addressable market), SOM (serviceable obtainable market). Both top-down (industry reports, analyst numbers) and bottom-up (number of potential customers × average revenue per customer). Specific numbers with sources. The bottom-up number matters more — it shows you understand your actual customer.
+**What to include:** TAM (total addressable market), SAM (serviceable addressable market), SOM (serviceable obtainable market). Both top-down (industry reports, analyst numbers) and bottom-up (number of potential customers × average revenue per customer). Specific numbers with sources. The bottom-up number matters more. It shows you understand your actual customer.
 
 **What to leave out:** TAM-only slides. Nobody believes your $50B TAM. They want to see the bottom-up math.
 
@@ -150,7 +150,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 <h1>Bottom-up: $1.7B. <span class="dim">Top-down confirms it.</span></h1>
 ```
 
-**Best components:** Stat grid or a Two-column layout — top-down on the left, bottom-up on the right. If you're showing growth, use a simple number with a label, not a chart. Charts invite scrutiny; clean numbers invite agreement.
+**Best components:** Stat grid or a Two-column layout: top-down on the left, bottom-up on the right. If you're showing growth over time, a Timeline makes the trajectory concrete. For the core numbers, use a simple stat with a label. Clean numbers invite agreement; charts invite scrutiny.
 
 **Common mistakes:**
 - Only showing TAM. Investors discount TAM by 90% in their heads. Show the SAM and SOM so they don't have to guess.
@@ -163,9 +163,9 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **What it accomplishes:** Shows the thing itself. After five slides of framing, the investor wants to see what they're buying into. This is where you earn credibility.
 
-**What to include:** How it works. Screenshots, a short demo flow, or a simplified architecture view. Show the user experience, not the infrastructure. Walk through one workflow end-to-end. If you have a live demo, this is where it goes. If not, use screenshots with annotations.
+**What to include:** How it works. Screenshots, a short demo flow, or a simplified architecture view. Show the user experience. Focus on what the customer sees. Walk through one workflow end-to-end. If you have a live demo, this is where it goes. If not, use screenshots with annotations.
 
-**What to leave out:** Every feature. Pick the three or four that matter most and show those. The investor doesn't need a feature tour — they need to believe the product is real, usable, and differentiated.
+**What to leave out:** Everything beyond the top three or four features. Show enough to prove the product is real, usable, and differentiated.
 
 **Headlines:**
 
@@ -175,11 +175,11 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 <h1>The workflow. <span class="dim">No training required.</span></h1>
 ```
 
-**Best components:** This section usually takes two to three slides. Start with an Eyebrow + headline + subtitle for the overview, then a Collage slide for the product screenshot or demo. If you're walking through steps, use a Dot flow. For a before/after, use Two-column. Product slide (showcase style) works well if you're naming distinct product areas.
+**Best components:** This section usually takes two to three slides. Start with an Eyebrow + headline + subtitle for the overview, then a Product slide (showcase style) for the hero screenshot or a Collage slide for a multi-angle product view. If you're walking through steps, use a Dot flow. A Feature card row works well when you have three or four distinct capabilities to highlight side by side. For a before/after, use Two-column. Art overlay is effective when a bold product visual tells the story better than text.
 
 **Common mistakes:**
 - Showing too many screenshots. Each one dilutes the impact of the others. Three is the maximum. One great screenshot beats three mediocre ones.
-- Showing the admin panel. Investors want to see the user experience, not the configuration screen.
+- Showing the admin panel. Investors want to see the user experience. Show what the customer interacts with.
 - Skipping the demo. If your product works and looks good, showing it live is the single most persuasive thing you can do. If it doesn't work or doesn't look good, that's a different problem.
 
 ---
@@ -205,7 +205,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 **Common mistakes:**
 - Making the model too complicated. If you can't explain how you make money in two sentences, simplify.
 - Hiding bad unit economics. If your LTV/CAC is below 3:1, don't hide it. Acknowledge it and explain the path to improvement. Investors will find it anyway.
-- Showing a pricing page screenshot. This isn't a product walkthrough. Distill the model to its essence.
+- Showing a pricing page screenshot. Distill the model to its essence.
 
 ---
 
@@ -225,7 +225,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 <h1>0 to 340 customers. <span class="dim">No sales team.</span></h1>
 ```
 
-**Best components:** Stat grid for the key numbers — three to five metrics, each with a label and a value. Two-column for before/after growth. If you have logos worth showing, add a simple row of four to six customer logos below the stats. Use a Quote slide for one strong customer testimonial, then follow with the numbers.
+**Best components:** Stat grid for the key numbers: three to five metrics, each with a label and a value. Two-column for before/after growth. If you have logos worth showing, a Logo bar of four to six customer marks anchors credibility instantly. For social proof at scale, a Testimonial grid lets you show three or four customer voices in one view. Use an Update row to convey shipping velocity: a tight list of recent launches or milestones that signals momentum. Use a Quote slide for one strong customer testimonial, then follow with the numbers.
 
 **Common mistakes:**
 - Showing a graph without labeling the axes. Every chart needs numbers, not just a line going up.
@@ -237,9 +237,9 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 ### 9. Team
 
-**What it accomplishes:** Answers "why will this team win?" Not a resumé. A case for competence.
+**What it accomplishes:** Answers "why will this team win?" A case for competence.
 
-**What to include:** Founders and key hires (four people max on the slide). For each: name, role, and the one thing that makes them credible for this specific company. Relevant experience — not career history, just the part that matters. Unfair advantages: domain expertise, prior exits, technical depth, network, proprietary insight.
+**What to include:** Founders and key hires (four people max on the slide). For each: name, role, and the one thing that makes them credible for this specific company. Relevant experience: the specific part that matters for this company. Unfair advantages: domain expertise, prior exits, technical depth, network, proprietary insight.
 
 **What to leave out:** Advisory boards (unless the advisor is actively involved and the name carries weight). Headshots that look like stock photos. Org charts.
 
@@ -251,7 +251,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 <h1>The team. <span class="dim">Domain-first.</span></h1>
 ```
 
-**Best components:** Three-column or a Two-column layout. Each column: name, role, one-line credibility statement. Keep it tight. If one founder has a standout background, use a Quote slide with their insight before the team slide — it's more memorable than a bullet point.
+**Best components:** Three-column or a Two-column layout. Each column: name, role, one-line credibility statement. Keep it tight. If one founder has a standout background, use a Quote slide with their insight before the team slide. A quote is more memorable than a bullet point. If you have notable investors or advisors worth surfacing, a Logo grid reinforces the network behind the team without taking up slide real estate.
 
 **Common mistakes:**
 - Listing every hire. The slide should have three or four people. Everyone else is implied.
@@ -264,19 +264,19 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **What it accomplishes:** Shows you understand the landscape and have a defensible position within it.
 
-**What to include:** Who the real competitors are (including the spreadsheet, the manual process, or "do nothing"). Your positioning — not feature-by-feature, but the strategic difference. Why customers choose you over alternatives. One or two lines on defensibility: network effects, data moats, switching costs, regulatory advantage.
+**What to include:** Who the real competitors are (including the spreadsheet, the manual process, or "do nothing"). Your positioning: the strategic difference, stated in one line. Why customers choose you over alternatives. One or two lines on defensibility: network effects, data moats, switching costs, regulatory advantage.
 
-**What to leave out:** Feature comparison matrices. The 2×2 quadrant where you're conveniently in the top right. Dismissive language about competitors ("they don't get it").
+**What to leave out:** Feature comparison matrices. The 2x2 quadrant where you're conveniently in the top right. Dismissive language about competitors.
 
 **Headlines:**
 
 ```html
 <h1>They sell software. <span class="dim">We sell outcomes.</span></h1>
 <h1>The landscape. <span class="dim">And where we sit.</span></h1>
-<h1>Built for SMB. <span class="dim">Not downsold from enterprise.</span></h1>
+<h1>Built for SMB. <span class="dim">From the ground up.</span></h1>
 ```
 
-**Best components:** Two-column (competitors on the left, your positioning on the right). Three-column if you want to frame it as "Legacy tool / Horizontal SaaS / Us (vertical-specific)." Capability list (Q&A) works if you want to list competitors with one-line positioning for each. Never use a feature matrix — it invites line-item comparison and you'll lose on at least three rows.
+**Best components:** Two-column (competitors on the left, your positioning on the right). Three-column if you want to frame it as "Legacy tool / Horizontal SaaS / Us (vertical-specific)." A JEDUF works well when your positioning is the middle path between two extremes: the incumbent that over-serves and the lightweight tool that under-delivers. Capability list (Q&A) works if you want to list competitors with one-line positioning for each. Skip the feature matrix. It invites line-item comparison and you will lose on at least three rows.
 
 **Common mistakes:**
 - The 2×2 magic quadrant. Every startup puts themselves in the upper right. Investors have seen this a thousand times. It communicates nothing.
@@ -287,9 +287,9 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 ### 11. Financials
 
-**What it accomplishes:** Shows you've thought about the path from here to a real business. Not a prediction — a framework for thinking about growth.
+**What it accomplishes:** Shows you've thought about the path from here to a real business. A framework for thinking about growth.
 
-**What to include:** Revenue forecast for the next 18–24 months (not five years — nobody believes year-five projections). Current burn rate. Runway with current cash. Path to profitability or path to next fundraise. Key assumptions behind the forecast (customer growth rate, expansion revenue, churn improvement).
+**What to include:** Revenue forecast for the next 18–24 months. Focus on what you can credibly project. Current burn rate. Runway with current cash. Path to profitability or path to next fundraise. Key assumptions behind the forecast (customer growth rate, expansion revenue, churn improvement).
 
 **What to leave out:** Detailed P&L projections. Five-year hockey sticks. Revenue forecasts that assume 100% quarter-over-quarter growth for three years straight. Anything you can't defend in a follow-up question.
 
@@ -301,7 +301,7 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 <h1>The model. <span class="dim">Conservative case.</span></h1>
 ```
 
-**Best components:** Capability list (Q&A) for key assumptions and numbers. Three-column for three scenarios (conservative, base, aggressive) — but only if you actually have three distinct models. A simple Eyebrow + headline + subtitle works for early-stage decks where the financial plan is short.
+**Best components:** Capability list (Q&A) for key assumptions and numbers. Three-column for three scenarios (conservative, base, aggressive), but only if you actually have three distinct models. A simple Eyebrow + headline + subtitle works for early-stage decks where the financial plan is short.
 
 **Common mistakes:**
 - The hockey stick graph. Every startup shows one. None of them are accurate. Use specific numbers with specific assumptions instead.
@@ -314,9 +314,9 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **What it accomplishes:** Tells the investor exactly what you want and exactly what it buys.
 
-**What to include:** How much you're raising. What the money will be used for (hiring, product, go-to-market — two or three line items). What milestones it unlocks (next revenue target, product launch, market expansion). The implied next step: "This gets us to Series A metrics by Q3 2026."
+**What to include:** How much you're raising. What the money will be used for (hiring, product, go-to-market, in two or three line items). What milestones it unlocks (next revenue target, product launch, market expansion). The implied next step: "This gets us to Series A metrics by Q3 2026."
 
-**What to leave out:** Valuation (discuss that in the meeting, not on a slide). Detailed budget breakdowns. Cap table structure.
+**What to leave out:** Valuation (save for the meeting). Detailed budget breakdowns. Cap table structure.
 
 **Headlines:**
 
@@ -328,12 +328,12 @@ Twelve beats. Most decks run 12–18 slides total — some beats share a slide, 
 
 **Best components:** Eyebrow + headline + subtitle for the core ask, then a Three-column or Dot flow showing how the capital maps to milestones. Keep it to one slide. If you need two, the first slide has the number and the second has the milestone roadmap.
 
-End with a closing line. Not "thank you" — a line that sticks. See the section on closing lines below.
+End with a closing line. A line that sticks. See the section on closing lines below.
 
 **Common mistakes:**
-- Not specifying the amount. "We're raising a round" is not an ask. "$3M at $15M post" is an ask (but save valuation for the conversation).
+- Being vague about the amount. "$3M at $15M post" is an ask (but save valuation for the conversation). "We're raising a round" is a wish.
 - Listing too many uses of funds. Three line items maximum. More than that and it looks like you don't have priorities.
-- Forgetting the milestones. The money is a means, not an end. Tell the investor what it buys: "This round gets us to 1,000 customers, $3M ARR, and Series A readiness."
+- Forgetting the milestones. The money is a means to specific milestones. Tell the investor what it buys: "This round gets us to 1,000 customers, $3M ARR, and Series A readiness."
 
 ---
 
@@ -343,7 +343,7 @@ The twelve beats stay the same. The emphasis shifts.
 
 ### Pre-seed
 
-You have an idea, maybe a prototype, maybe early design partners. Lead with Problem and Why Now — those carry the deck. Product is a mockup or early build. Traction is qualitative: "12 design partners, 3 LOIs." Team is the main asset. Financials are a back-of-napkin model. The ask is small and specific.
+You have an idea, maybe a prototype, maybe early design partners. Lead with Problem and Why Now. Those carry the deck. Product is a mockup or early build. Traction is qualitative: "12 design partners, 3 LOIs." Team is the main asset. Financials are a back-of-napkin model. The ask is small and specific.
 
 | Beat | Weight |
 |------|--------|
@@ -356,7 +356,7 @@ You have an idea, maybe a prototype, maybe early design partners. Lead with Prob
 
 ### Seed / Series A
 
-You have a product, customers, and early revenue. Lead with Traction and Product — those carry the deck. Problem and Solution are tight (one slide each). Market size needs real bottom-up math. Team shows you've started hiring key roles. Financials show a credible path to the next round.
+You have a product, customers, and early revenue. Lead with Traction and Product. Those carry the deck. Problem and Solution are tight (one slide each). Market size needs real bottom-up math. Team shows you've started hiring key roles. Financials show a credible path to the next round.
 
 | Beat | Weight |
 |------|--------|
@@ -369,7 +369,7 @@ You have a product, customers, and early revenue. Lead with Traction and Product
 
 ### Series B+
 
-You have significant revenue and a clear growth engine. Lead with Traction and Financials — the numbers carry the deck. Product shows the roadmap and expansion opportunities. Competition matters more — you're defending a position now, not just entering a market. The ask is large and tied to a specific scaling plan.
+You have significant revenue and a clear growth engine. Lead with Traction and Financials. The numbers carry the deck. Product shows the roadmap and expansion opportunities. Competition matters more here: you're defending a position, and the landscape is crowded. The ask is large and tied to a specific scaling plan.
 
 | Beat | Weight |
 |------|--------|
@@ -378,7 +378,7 @@ You have significant revenue and a clear growth engine. Lead with Traction and F
 | Market size | Heavy (expansion TAM) |
 | Product | Medium (roadmap focus) |
 | Competition | Medium |
-| Team | Light (org, not bios) |
+| Team | Light (org structure) |
 
 ---
 
@@ -386,7 +386,7 @@ You have significant revenue and a clear growth engine. Lead with Traction and F
 
 ### 10-minute meeting
 
-You have ten minutes. Assume five for the pitch, five for questions. Cut to eight slides: Purpose, Problem, Solution, Product (one screenshot), Traction, Team, Ask. Skip Why Now (weave it into Problem), skip Market (mention one number verbally), skip Competition (address in Q&A), skip Financials (have them ready but don't present them).
+You have ten minutes. Assume five for the pitch, five for questions. Cut to eight slides: Purpose, Problem, Solution, Product (one screenshot), Traction, Team, Ask. Skip Why Now (weave it into Problem), skip Market (mention one number verbally), skip Competition (address in Q&A), skip Financials (have them ready as backup).
 
 ### 30-minute pitch
 
@@ -394,7 +394,7 @@ The full twelve beats. Take your time on Problem (let them feel it), Product (sh
 
 ### Read-only deck (emailed, no presenter)
 
-Every slide needs to stand alone. Add subtitles to every headline — they do the work the presenter would do verbally. Use body copy more generously. Add a one-page executive summary as slide 2 (after the cover) — investors who skim will read the summary and the traction slide. Everything else is supporting detail.
+Every slide needs to stand alone. Add subtitles to every headline. They do the work the presenter would do verbally. Use body copy more generously. Add a one-page executive summary as slide 2 (after the cover). Investors who skim will read the summary and the traction slide. Everything else is supporting detail.
 
 The headline arc should tell the story by itself. If you read only the headlines in order, the pitch should make sense.
 
@@ -404,12 +404,12 @@ The headline arc should tell the story by itself. If you read only the headlines
 
 Spend more time on your closing line than any other line in the deck.
 
-The last slide is not "Thank you." It's not "Questions?" It's not your logo on a black background. It's the line the investor repeats when they pitch your company to their partners on Monday morning.
+The last slide is the line the investor repeats when they pitch your company to their partners on Monday morning.
 
 It should be:
 - **Short.** One sentence.
-- **Forward-looking.** It points at the future, not the present.
-- **Inevitable.** It should feel like a conclusion, not a hope.
+- **Forward-looking.** It points at the future.
+- **Inevitable.** It should feel like a conclusion.
 
 Examples:
 
@@ -417,7 +417,7 @@ Examples:
 > *"Every manufacturer will automate this. We're the ones building it."*
 > *"The question isn't whether this gets funded. It's by whom."*
 > *"This is year one. Imagine year three."*
-> *"We're not pitching a vision. We're showing you what's already working."*
+> *"We're showing you what's already working."*
 
 Use a Dark slide or a Quote slide. Large type. Nothing else on the slide. Pause before you say it. Pause after. Then stop talking.
 
@@ -431,7 +431,7 @@ Fifteen is the ceiling. Twelve is the target. Every slide past fifteen dilutes t
 
 ### Hiding bad metrics
 
-Investors notice what's missing more than what's present. If your churn is high, show it and explain the plan. If your CAC is unsustainable, show it and explain the trend. Hiding a number doesn't make it disappear — it makes the investor distrust every other number on the slide.
+Investors notice what's missing more than what's present. If your churn is high, show it and explain the plan. If your CAC is unsustainable, show it and explain the trend. Hiding a number raises suspicion about every other number on the slide.
 
 ### Feature matrices instead of positioning
 
@@ -439,7 +439,7 @@ A four-column table where you have checkmarks and competitors have X marks tells
 
 ### Burying the traction
 
-If your traction is strong, don't wait until slide 10 to show it. Consider moving key metrics to slide 2 or 3 — right after the purpose. Some investors flip to traction first anyway. Give them the number early, then explain the story behind it.
+If your traction is strong, move key metrics up to slide 2 or 3, right after the purpose. Some investors flip to traction first anyway. Give them the number early, then explain the story behind it.
 
 ### The "we're the Uber of X" analogy
 
@@ -447,7 +447,7 @@ Analogies are crutches. They invite the wrong comparisons and let the investor f
 
 ### Putting valuation on a slide
 
-Valuation is a conversation, not a slide. Putting it in writing anchors you before the negotiation starts. State the raise amount. Leave valuation for the meeting.
+Valuation belongs in the conversation. Putting it in writing anchors you before the negotiation starts. State the raise amount. Leave valuation for the meeting.
 
 ### Forgetting the ask
 
@@ -463,7 +463,7 @@ If you don't know where to start:
 1.  Say what you do in one sentence.
 2.  Show the pain. Make them feel it.
 3.  Show the fix. Make it obvious.
-4.  Explain why now, not five years ago.
+4.  Explain why now. Why this moment.
 5.  Size the market with real math.
 6.  Show the product. The real thing.
 7.  Explain how money flows.
@@ -482,7 +482,7 @@ Twelve beats. The order is the structure. The headlines are the story. The data 
 
 The best pitch decks don't feel like pitch decks. They feel like a conversation with someone who deeply understands a problem, has built something real to fix it, and can prove it's working.
 
-The structure is a scaffold. The components are the vocabulary. But the conviction — the thing that makes an investor lean forward instead of checking their phone — that comes from you knowing your business cold.
+The structure is a scaffold. The components are the vocabulary. The conviction that makes an investor lean forward comes from you knowing your business cold.
 
 If you know your numbers, your customers, and your market better than anyone in the room, the deck will work. If you don't, no amount of design will save it.
 

@@ -1,8 +1,8 @@
-# Storytelling — MBB Consulting Format
+# Storytelling: MBB Consulting Format
 
 How to build a consulting deck that drives a decision.
 
-This is the second storytelling guide for the Slides framework. Where [STORYTELLING.md](STORYTELLING.md) covers the TED Talk six-beat structure — designed to move an audience emotionally — this one covers the McKinsey / MBB (McKinsey, Bain, BCG) consulting structure. Designed to move an executive to action. Same template, different narrative engine.
+This is the second storytelling guide for the Slides framework. Where [STORYTELLING.md](STORYTELLING.md) covers the TED Talk six-beat structure, designed to move an audience emotionally, this one covers the McKinsey / MBB (McKinsey, Bain, BCG) consulting structure. Designed to move an executive to action. Same template, different narrative engine.
 
 The difference is simple: a TED talk earns belief. A consulting deck earns a decision. Everything in this guide serves that goal.
 
@@ -41,16 +41,16 @@ In a novel, you build toward the conclusion. In a consulting deck, you lead with
 
 ### The governing thought
 
-Every slide has a **governing thought** — a single sentence headline that carries the argument. Not a topic label. Not a category. A complete assertion.
+Every slide has a **governing thought**: a complete assertion, stated as a single sentence headline that carries the argument.
 
-> **"Revenue grew 23% YoY"** — governing thought
-> **"Revenue performance"** — topic title
+> **"Revenue grew 23% YoY"**: governing thought
+> **"Revenue performance"**: topic title
 
 The first one tells you something. The second one tells you nothing. Topic titles are the single most common mistake in consulting decks. Kill them all.
 
 ### The headline test
 
-If you read only the slide headlines in sequence, top to bottom, they should tell the complete story. No body text. No charts. Just the headlines. If the narrative breaks — if a headline says "Market overview" instead of "The European market contracted 12% in Q3" — you have a topic title. Fix it.
+If you read only the slide headlines in sequence, top to bottom, they should tell the complete story. No body text. No charts. Just the headlines. If the narrative breaks, if a headline says "Market overview" instead of "The European market contracted 12% in Q3", you have a topic title. Fix it.
 
 This is the governing thought test. Run it on every draft. Print the headlines as a list. Read them aloud. If they don't make an argument, the deck doesn't make an argument.
 
@@ -84,7 +84,7 @@ Consulting decks have a standard shape. The proportions flex, but the order does
 | Implementation / next steps | 10% | How to do it |
 | Appendix | 5% | Reference material |
 
-### Executive summary — *the whole deck in one slide*
+### Executive summary: *the whole deck in one slide*
 
 The single most important slide. State the recommendation, the two or three key findings that support it, and the immediate next steps. One slide. No preamble.
 
@@ -99,27 +99,27 @@ A busy executive may read only this slide. A partner skimming before a meeting w
 **Example governing thoughts:**
 
 > **Consolidate to three vendors** *to reduce procurement cost by $14M annually.*
-> **Enter Southeast Asia in Q2** *— the window closes by year-end.*
+> **Enter Southeast Asia in Q2.** *The window closes by year-end.*
 > **Divest the consumer segment.** *It's diluting margins across the portfolio.*
 
-**Best Slides components:** Eyebrow + headline + subtitle for the recommendation line. A short bullet list or two-column layout beneath it. Keep it tight — this slide should feel dense but scannable.
+**Best Slides components:** Eyebrow + headline + subtitle for the recommendation line. Stat grid with stat-dark highlight for the key metrics that anchor the recommendation. A short bullet list or two-column layout beneath it. Keep it tight: this slide should feel dense but scannable.
 
 **Common mistakes:**
 - Making it two slides. It's one. Always one.
 - Writing it last instead of first. Write the executive summary before you build the deck. It forces you to know your answer.
-- Softening the recommendation. "Consider exploring potential options for…" — no. State what you think they should do.
+- Softening the recommendation. "Consider exploring potential options for…" is weak. State what you think they should do.
 
 ---
 
-### Situation — *common ground*
+### Situation: *common ground*
 
-The current state. Facts the audience already knows and agrees with. You're not teaching them anything here — you're demonstrating that you understand their world.
+The current state. Facts the audience already knows and agrees with. You're demonstrating that you understand their world.
 
 This section builds alignment. If the audience disagrees with your situation, they'll reject everything that follows. So keep it factual, verifiable, and uncontroversial.
 
 **Purpose:** Establish shared context so the complication lands.
 
-**What belongs:** Market size, company position, recent performance, strategic context, regulatory environment — whatever frames the problem.
+**What belongs:** Market size, company position, recent performance, strategic context, regulatory environment. Whatever frames the problem.
 
 **What doesn't belong:** Your opinion. Any tension. Anything the audience would push back on. Save that for the complication.
 
@@ -132,12 +132,12 @@ This section builds alignment. If the audience disagrees with your situation, th
 **Best Slides components:** Two-column for market context (left: your company, right: the market). Eyebrow + headline + subtitle for single-point context slides. Capability list for summarizing the current operating model.
 
 **Common mistakes:**
-- Going too deep. Two to four slides max. The audience knows their own situation — you're just proving you do too.
+- Going too deep. Two to four slides max. The audience knows their own situation. You're just proving you do too.
 - Including data that isn't relevant to the complication. Every fact in the situation should set up the tension that follows.
 
 ---
 
-### Complication — *the tension*
+### Complication: *the tension*
 
 What changed. What's broken. What's at risk. This is the "but" after the situation's "and."
 
@@ -147,7 +147,7 @@ The complication is the reason the deck exists. Without it, there's no need for 
 
 **What belongs:** The problem, the threat, the missed opportunity, the trend that changes everything. Data that shows the gap between where they are and where they need to be.
 
-**What doesn't belong:** The solution. Don't jump to the answer yet — let the tension build.
+**What doesn't belong:** The solution. Let the tension build before introducing the answer.
 
 **Example governing thoughts:**
 
@@ -163,9 +163,9 @@ The complication is the reason the deck exists. Without it, there's no need for 
 
 ---
 
-### Key findings — *the evidence*
+### Key findings: *the evidence*
 
-The longest section. This is where you prove your argument with data. Each slide makes exactly one point. Its governing thought headline states the finding. The body — chart, table, analysis — supports it.
+The longest section. This is where you prove your argument with data. Each slide makes exactly one point. Its governing thought headline states the finding. The body (chart, table, analysis) supports it.
 
 **Purpose:** Build the analytical case for your recommendation, one finding at a time.
 
@@ -178,11 +178,11 @@ The longest section. This is where you prove your argument with data. Each slide
 > **Vendor consolidation saved comparable companies 15–22%** *across three benchmarked cases.*
 > **Southeast Asian demand is growing 3× faster than domestic,** *with margins 8 points higher.*
 > **The consumer segment contributes 12% of revenue** *but consumes 31% of management attention.*
-> **Customer churn correlates with onboarding time,** *not product satisfaction scores.*
+> **Customer churn correlates with onboarding time** *rather than product satisfaction scores.*
 
-**Best Slides components:** Eyebrow + headline + subtitle as the default — the headline carries the finding, the subtitle gives nuance. Two-column for comparisons (your client vs benchmark, segment A vs segment B). Three-column for breaking a finding into components. Stack grid for categorizing drivers or factors.
+**Best Slides components:** Eyebrow + headline + subtitle as the default: the headline carries the finding, the subtitle gives nuance. Two-column for comparisons (your client vs benchmark, segment A vs segment B). Three-column for breaking a finding into components. Timeline for trend data and longitudinal analysis. JEDUF for positioning choices between strategic options. Feature card row for highlighting distinct capabilities or attributes side by side. Stack grid for categorizing drivers or factors.
 
-**MECE your findings.** Each finding should be mutually exclusive (no overlap) and collectively exhaustive (no gaps). If your three findings are "costs are too high," "spending is excessive," and "expenses are above benchmark" — that's one finding stated three ways. Restructure until each finding adds something the others don't.
+**MECE your findings.** Each finding should be mutually exclusive (no overlap) and collectively exhaustive (no gaps). If your three findings are "costs are too high," "spending is excessive," and "expenses are above benchmark": that's one finding stated three ways. Restructure until each finding adds something the others don't.
 
 **Common mistakes:**
 - Topic title headlines. "Cost analysis" tells the reader nothing. "Costs exceed benchmark by 23% due to fragmented procurement" tells them everything.
@@ -191,15 +191,15 @@ The longest section. This is where you prove your argument with data. Each slide
 
 ---
 
-### Recommendation — *what to do*
+### Recommendation: *what to do*
 
 State what you think they should do. Be specific. Be direct. Include who does what, by when, and what it costs.
 
 **Purpose:** Translate findings into action.
 
-**What belongs:** The recommendation (one clear statement). The supporting rationale (why this option, not the alternatives). Impact projections. Owners. Timeline. Investment required.
+**What belongs:** The recommendation (one clear statement). The supporting rationale (why this option over the alternatives). Impact projections. Owners. Timeline. Investment required.
 
-**What doesn't belong:** Hedging. "We recommend the client consider…" — no. "Consolidate to three vendors by Q3" — yes.
+**What doesn't belong:** Hedging. "We recommend the client consider…" is hedging. Say "Consolidate to three vendors by Q3" instead.
 
 **Example governing thoughts:**
 
@@ -208,7 +208,7 @@ State what you think they should do. Be specific. Be direct. Include who does wh
 > **Divest the consumer segment within 18 months** *to unlock $80M in capital for reinvestment.*
 > **Hire a Chief Data Officer by Q2** *to own the analytics transformation.*
 
-**Best Slides components:** Eyebrow + headline + subtitle for the primary recommendation. Two-column for recommendation vs alternative considered. Dot flow for a phased implementation sequence. Three-column for a multi-track recommendation (what to do now / next quarter / next year).
+**Best Slides components:** Eyebrow + headline + subtitle for the primary recommendation. Two-column for recommendation vs alternative considered. Dot flow for a phased implementation sequence. Three-column for a multi-track recommendation (what to do now / next quarter / next year) or for comparing strategic options side by side.
 
 **Common mistakes:**
 - Burying the recommendation at the end of a paragraph. Put it in the headline. First words on the slide.
@@ -217,7 +217,7 @@ State what you think they should do. Be specific. Be direct. Include who does wh
 
 ---
 
-### Implementation / next steps — *how to do it*
+### Implementation / next steps: *how to do it*
 
 The bridge from strategy to execution. This is where the recommendation becomes a plan.
 
@@ -225,7 +225,7 @@ The bridge from strategy to execution. This is where the recommendation becomes 
 
 **What belongs:** Workstreams. Milestones. Owners. Timeline (8–12 weeks, quarterly, etc.). Key risks and mitigations. Quick wins vs structural changes.
 
-**What doesn't belong:** Exhaustive project plans. Gantt charts with 200 line items. Save that for the implementation phase — this is the "we've thought it through" proof, not the actual project plan.
+**What doesn't belong:** Exhaustive project plans. Gantt charts with 200 line items. Save that for the implementation phase. This section is the "we've thought it through" proof, showing the plan's shape.
 
 **Example governing thoughts:**
 
@@ -233,15 +233,15 @@ The bridge from strategy to execution. This is where the recommendation becomes 
 > **Quick wins in weeks 1–4** *build momentum and fund the longer transformation.*
 > **The critical risk is supplier pushback.** *Mitigate with early engagement in week 2.*
 
-**Best Slides components:** Dot flow for the phased timeline. Two-column for workstream breakdown (left: what, right: who/when). Eyebrow + headline + subtitle for the summary view.
+**Best Slides components:** Dot flow for the phased timeline. Step stack for sequencing discrete implementation phases. Update row for workstream milestones and status tracking. Two-column for workstream breakdown (left: what, right: who/when). Eyebrow + headline + subtitle for the summary view.
 
 **Common mistakes:**
 - Skipping this section. A recommendation without implementation feels theoretical. Even two slides of "here's how this would work" changes the conversation from "interesting idea" to "let's discuss timing."
-- Over-detailing. Three to four slides max. You're showing the shape of the plan, not the plan itself.
+- Over-detailing. Three to four slides max. You're showing the shape of the plan.
 
 ---
 
-### Appendix — *reference material*
+### Appendix: *reference material*
 
 Everything that supports the argument but doesn't belong in the narrative flow. Methodology. Detailed data tables. Alternative scenarios. Interview summaries. Sensitivity analyses.
 
@@ -249,7 +249,7 @@ Everything that supports the argument but doesn't belong in the narrative flow. 
 
 **What belongs:** Anything a skeptical executive might ask about. Detailed breakdowns of summary numbers. Methodology notes. Sources.
 
-**What doesn't belong:** In the presentation. The appendix is referenced, not presented. If you're presenting appendix slides, they should have been in the main deck.
+**What doesn't belong:** In the presentation. The appendix is referenced during Q&A and follow-up. If you're presenting appendix slides, they should have been in the main deck.
 
 **Example governing thoughts:**
 
@@ -257,12 +257,12 @@ Everything that supports the argument but doesn't belong in the narrative flow. 
 > **Full supplier spend breakdown** *by category, region, and contract type.*
 > **Sensitivity analysis:** *savings range from $9M to $18M depending on consolidation pace.*
 
-**Best Slides components:** Capability list for detailed Q&A-style backup. Stack grid for categorized reference data. Two-column for methodology notes.
+**Best Slides components:** Capability list for detailed Q&A-style backup. Stack grid for categorized reference data. Code slide for technical appendix material (data schemas, query logic, model parameters). Two-column for methodology notes.
 
 **Common mistakes:**
 - Presenting the appendix. It exists for Q&A and follow-up. If someone asks "how did you calculate that?", you flip to the appendix. Otherwise, skip it.
 - Not having one. A deck without an appendix signals shallow analysis. Even if nobody opens it, knowing it's there builds credibility.
-- Putting important findings in the appendix. If it matters to the argument, it goes in the main deck. The appendix is for supporting detail, not buried conclusions.
+- Putting important findings in the appendix. If it matters to the argument, it goes in the main deck. The appendix is for supporting detail only.
 
 ---
 
@@ -285,9 +285,9 @@ If you can't write an action title for a slide, the slide doesn't have a point y
 
 ---
 
-## MECE — structuring breakdowns
+## MECE: structuring breakdowns
 
-**Mutually Exclusive, Collectively Exhaustive.** Every time you break something into parts — segments, categories, options, causes — the parts should not overlap (ME) and should cover everything (CE).
+**Mutually Exclusive, Collectively Exhaustive.** Every time you break something into parts (segments, categories, options, causes), the parts should not overlap (ME) and should cover everything (CE).
 
 **Good MECE breakdown of revenue decline:**
 1. Volume declined 8% due to customer churn
@@ -332,10 +332,10 @@ Apply MECE to:
 
 ### Working team
 
-- Lighten the executive summary — they know the context.
+- Lighten the executive summary. They know the context.
 - Expand key findings and implementation. This is their section.
 - Include more detail on methodology and assumptions.
-- Total deck: 20–35 slides. Appendix is critical — they'll reference it.
+- Total deck: 20–35 slides. Appendix is critical. They'll reference it.
 - This deck may be read more than presented.
 
 ---
@@ -348,17 +348,17 @@ The default consulting deck. Presented live, typically 30–60 minutes including
 
 ### Full analysis deck (the deep dive)
 
-A read-only document, often 50–80 pages. The structure is the same, but every section expands. Body copy does more work. Charts have full annotations. Headlines still carry the story — this is even more important when there's no presenter to explain.
+A read-only document, often 50–80 pages. The structure is the same, but every section expands. Body copy does more work. Charts have full annotations. Headlines still carry the story, and this is even more important when there's no presenter to explain.
 
 ### One-pager (the decision doc)
 
-A single page (or a single slide). Executive summary format: recommendation, three supporting points, next steps. Use when the audience needs to approve, not analyze.
+A single page (or a single slide). Executive summary format: recommendation, three supporting points, next steps. Use when the audience needs to approve a decision.
 
 Use the Eyebrow + headline + subtitle component for the recommendation, followed by a tight three-column layout for the supporting arguments.
 
 ### Pre-read deck
 
-Sent before the meeting. Same structure as the steering committee deck, but write it to be read, not heard. More subtitle text. More context in the body. The audience should arrive at the meeting having already absorbed the argument — the meeting itself is for discussion, not presentation.
+Sent before the meeting. Same structure as the steering committee deck, but write it to be read independently. More subtitle text. More context in the body. The audience should arrive at the meeting having already absorbed the argument. The meeting itself is for discussion and decisions.
 
 ---
 
@@ -380,7 +380,7 @@ Before you present, run this test. Extract every slide headline into a list:
 
 Read them in sequence. Do they tell a complete, coherent story? Does each headline follow logically from the one before? Does the recommendation feel inevitable by the time you reach it?
 
-If yes, your deck works. If no — if there are gaps, jumps, or topic titles — fix the headlines first. The body and the visuals follow the headlines, not the other way around.
+If yes, your deck works. If there are gaps, jumps, or topic titles, fix the headlines first. The body and the visuals follow the headlines.
 
 ---
 
@@ -390,7 +390,7 @@ If yes, your deck works. If no — if there are gaps, jumps, or topic titles —
 Already covered above, but it's worth repeating because it's the most common problem by a wide margin. "Market overview" is not a headline. "The market contracted 12% and shows no signs of recovery" is.
 
 ### 2. Burying the recommendation
-The recommendation goes in the executive summary on slide one and again in the recommendation section. Not at the end of a buildup. Not after thirty slides of analysis. The audience should know what you think they should do before they see why.
+The recommendation goes in the executive summary on slide one and again in the recommendation section. Lead with it early. The audience should know what you think they should do before they see why.
 
 ### 3. Too much appendix on-screen
 The appendix is backup. If you're presenting it, it should be in the main deck. If you find yourself flipping to appendix slides during the flow, move them into the narrative.
@@ -399,7 +399,7 @@ The appendix is backup. If you're presenting it, it should be in the main deck. 
 Showing data is not the same as making an argument. Every chart needs a governing thought. Every finding needs a "so what." If the audience has to draw their own conclusion from a chart, you haven't done your job.
 
 ### 5. Hedging the recommendation
-"We suggest the client may want to consider exploring…" — this is not a recommendation. It's a hedge dressed as advice. State what you think they should do. Defend it. If you're wrong, the discussion will surface it. But at least there's something to discuss.
+"We suggest the client may want to consider exploring…" is hedging dressed as advice. State what you think they should do. Defend it. If you're wrong, the discussion will surface it. But at least there's something to discuss.
 
 ### 6. Skipping the situation
 Jumping straight to the complication feels efficient but loses the audience. They need to see that you understand their world before they'll accept your diagnosis of what's wrong with it. Two to four slides of situation earns you the right to deliver a complication.
@@ -415,7 +415,7 @@ If you don't know where to start:
 
 ```
 1. Write the recommendation in one sentence.
-2. Write the executive summary slide — recommendation, three findings, next steps.
+2. Write the executive summary slide: recommendation, three findings, next steps.
 3. Write all the headlines in sequence. Run the governing thought test.
 4. Fill in the body, charts, and evidence under each headline.
 5. Build the appendix from whatever didn't make the cut.
@@ -432,7 +432,7 @@ Spend more time on the executive summary than any other slide.
 
 It should be:
 - **Complete.** A reader who sees only this slide should know your recommendation, your reasoning, and what happens next.
-- **Specific.** Numbers, names, dates. "Consolidate to three vendors by Q3 to save $14M" — not "optimize the vendor landscape."
+- **Specific.** Numbers, names, dates. "Consolidate to three vendors by Q3 to save $14M" rather than "optimize the vendor landscape."
 - **One slide.** If it spills to two, you haven't synthesized enough. Cut until it fits.
 
 Write it first. Rewrite it last. It bookends the entire process.
@@ -443,7 +443,7 @@ Write it first. Rewrite it last. It bookends the entire process.
 
 A consulting deck is not a report. It's an argument.
 
-Reports present information. Arguments present a point of view. The structure, the headlines, the pyramid — they all exist to make one thing unmistakable: what you think the client should do, and why.
+Reports present information. Arguments present a point of view. The structure, the headlines, the pyramid: they all exist to make one thing unmistakable: what you think the client should do, and why.
 
 If the audience finishes your deck and says "interesting analysis," you've written a report. If they say "let's discuss the timeline for option A," you've written a consulting deck.
 

@@ -1,8 +1,8 @@
-# Storytelling — Board Presentations
+# Storytelling: Board Presentations
 
 How to build a board deck that earns its time slot.
 
-Board decks are decision-support tools. The audience is time-poor, context-rich, and looking for signal. Every slide must justify its existence. No warm-ups, no build-up — lead with what matters. If a slide doesn't change a decision or surface a risk, delete it.
+Board decks are decision-support tools. The audience is time-poor, context-rich, and looking for signal. Every slide must justify its existence. Lead with what matters from the first slide. If a slide doesn't change a decision or surface a risk, delete it.
 
 ---
 
@@ -13,7 +13,7 @@ Start ────────────────────────�
 │ Exec summary │ KPIs │ Progress │ Initiatives │ Risks │ Decisions │ Appendix │
 ```
 
-Seven beats. The proportions flex to your context, but the sequence is fixed. Board members will scan for the first two beats immediately — make them standalone.
+Seven beats. The proportions flex to your context, but the sequence is fixed. Board members will scan for the first two beats immediately. Make them standalone.
 
 | Beat | ~Share | Purpose |
 |------|--------|---------|
@@ -27,7 +27,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 
 ---
 
-### 1. Executive summary — *the whole deck on one slide*
+### 1. Executive summary: *the whole deck on one slide*
 
 **Purpose:** If a board member reads nothing else, this slide should be enough. Status. Key metrics. Decisions needed. Done.
 
@@ -51,11 +51,11 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 **Common mistakes:**
 - Making it two slides. It's one. Compress harder.
 - Including anything that requires explanation. If it needs a footnote, it belongs in a later beat.
-- Being vague. "Things are going well" is not a summary. "Revenue +18% vs plan, burn on target, need approval for Series B timeline" is.
+- Being vague. "Things are going well" is a label. "Revenue +18% vs plan, burn on target, need approval for Series B timeline" is a summary.
 
 ---
 
-### 2. KPIs / scorecard — *the numbers*
+### 2. KPIs / scorecard: *the numbers*
 
 **Purpose:** The quantitative health check. Revenue, growth, retention, burn, runway. Every metric compared to plan and prior period.
 
@@ -74,7 +74,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 > **Five green. Two yellow.** <span class="dim">No red.</span>
 > **Revenue on plan.** <span class="dim">Net retention slipping.</span>
 
-**Best components:** Stat grid (the primary tool here). Use the big number style for the headline metric, then a row of supporting stats beneath. Capability list works for a more detailed metric-by-metric breakdown with RAG indicators.
+**Best components:** Stat grid (the primary tool here). Use the big number style for the headline metric, then a row of supporting stats beneath. Feature card row works well for initiative dashboards where each metric connects to a specific workstream. Capability list works for a more detailed metric-by-metric breakdown with RAG indicators.
 
 **Common mistakes:**
 - Too many metrics. If you have fifteen KPIs, you have zero. Pick five to eight.
@@ -83,7 +83,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 
 ---
 
-### 3. Progress vs plan — *accountability*
+### 3. Progress vs plan: *accountability*
 
 **Purpose:** What you committed to last quarter. What actually happened. Honest accounting. This is where trust is built or eroded.
 
@@ -102,7 +102,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 > **Plan vs actual.** <span class="dim">Honest accounting.</span>
 > **Two misses.** <span class="dim">Both understood.</span>
 
-**Best components:** Two-column (plan vs actual) is the natural format here. Left column = what you said you'd do. Right column = what happened. Capability list also works — question column is the commitment, answer column is the result plus one-line explanation.
+**Best components:** Two-column (plan vs actual) is the natural format here. Left column = what you said you'd do. Right column = what happened. Timeline shows the sequence of milestones with actual vs planned dates. Update row lets you stack multiple commitment status lines. Step stack visualizes progress through phases. Capability list also works, with the question column as the commitment and the answer column as the result plus one-line explanation.
 
 **Common mistakes:**
 - Redefining success after the fact. If you said "ship v2" and shipped v1.5, say that.
@@ -111,7 +111,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 
 ---
 
-### 4. Key initiatives — *what you're betting on*
+### 4. Key initiatives: *what you're betting on*
 
 **Purpose:** Three to five things that matter most right now. Each gets one slide: what it is, where it stands, what's next.
 
@@ -123,7 +123,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 - One risk or dependency per initiative
 
 **What doesn't belong:**
-- More than five initiatives. If everything is a priority, nothing is. Feature lists. Tactical details.
+- More than five initiatives. Focus demands constraint. Feature lists. Tactical details.
 
 **Example headlines:**
 
@@ -131,18 +131,18 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 > **Platform migration.** <span class="dim">60% complete. At risk.</span>
 > **New pricing model.** <span class="dim">Testing with 12 accounts.</span>
 
-**Best components:** Eyebrow (initiative name) + headline (status) + subtitle (what's next). One slide per initiative. Dot flow works if you want to show a timeline of milestones. Dark callout for an at-risk initiative that needs board attention.
+**Best components:** Eyebrow (initiative name) + headline (status) + subtitle (what's next). One slide per initiative. Product slide showcases a specific initiative with visual context. Collage slide works when an initiative spans multiple workstreams worth showing together. Dot flow works if you want to show a timeline of milestones. Dark callout for an at-risk initiative that needs board attention.
 
 **Common mistakes:**
-- Too many initiatives. Three to five. Not eight. Not twelve.
+- Too many initiatives. Three to five. Strict limit.
 - No status indicator. Every initiative needs a clear on track / at risk / blocked signal.
 - Missing the "what's next." Boards want to know what happens between now and the next meeting.
 
 ---
 
-### 5. Risks & blockers — *what could go wrong*
+### 5. Risks & blockers: *what could go wrong*
 
-**Purpose:** What's already going wrong. What could go wrong. What you're doing about it. This is where you earn trust — by surfacing problems before they become crises.
+**Purpose:** What's already going wrong. What could go wrong. What you're doing about it. This is where you earn trust by surfacing problems before they become crises.
 
 **What belongs:**
 - The biggest risk, given prominence
@@ -159,18 +159,18 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 > **Three blockers.** <span class="dim">One needs board action.</span>
 > **Churn risk is real.** <span class="dim">Mitigation plan in appendix.</span>
 
-**Best components:** Dark callout for the single biggest risk — give it the visual weight it deserves. Capability list for the remaining risks (left column = risk, right column = mitigation + status). Two-column works for a likelihood/impact matrix approach.
+**Best components:** Dark callout for the single biggest risk, giving it the visual weight it deserves. JEDUF shows the risk spectrum from acceptable to critical, helping the board calibrate severity. Capability list for the remaining risks (left column = risk, right column = mitigation + status). Two-column works for a likelihood/impact matrix approach.
 
 **Common mistakes:**
 - Hiding bad news in the appendix. If it's a real risk, it belongs here.
 - Listing risks without mitigations. A risk without a plan is just anxiety.
-- Being falsely optimistic. Boards prefer "this is a real problem and here's what we're doing" over "everything's fine" followed by a surprise next quarter.
+- Being falsely optimistic. Boards prefer "this is a real problem and here's what we're doing" over vague reassurance followed by a surprise next quarter.
 
 ---
 
-### 6. Decisions needed — *specific asks*
+### 6. Decisions needed: *specific asks*
 
-**Purpose:** The reason this meeting exists. What you need the board to approve, discuss, or decide. Specific. Actionable. Not vague.
+**Purpose:** The reason this meeting exists. What you need the board to approve, discuss, or decide. Specific. Actionable. Concrete.
 
 **What belongs:**
 - Two to four specific decisions
@@ -179,7 +179,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 - Any pre-reads or context needed (link to appendix)
 
 **What doesn't belong:**
-- FYIs disguised as decisions. Updates that don't require action. Decisions you've already made.
+- FYIs disguised as decisions. Updates that require no action. Decisions you've already made.
 
 **Example headlines:**
 
@@ -187,18 +187,18 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 > **Approve Series B timeline.** <span class="dim">Recommendation: Q1.</span>
 > **Choose pricing strategy.** <span class="dim">Option A vs Option B.</span>
 
-**Best components:** Two-column for Option A vs Option B comparisons. Eyebrow ("Decision 1 of 2") + headline (the ask) + subtitle (your recommendation). Capability list if you have multiple decisions to lay out in sequence.
+**Best components:** Two-column for Option A vs Option B comparisons. Quote pair presents both sides of a decision with equal weight, letting the board see the tradeoff clearly. Eyebrow ("Decision 1 of 2") + headline (the ask) + subtitle (your recommendation). Capability list if you have multiple decisions to lay out in sequence.
 
 **Common mistakes:**
-- No clear recommendation. Don't just present options — say which one you'd pick and why.
-- Being vague. "Discuss strategy" is not a decision. "Approve $2M additional spend on hiring" is.
+- No clear recommendation. Present your recommendation with reasons, alongside the alternatives.
+- Being vague. "Approve $2M additional spend on hiring" is a clear decision. "Discuss strategy" leaves the ask undefined.
 - Too many decisions. Boards can handle two to four per meeting. More than that and nothing gets proper attention.
 
 ---
 
-### 7. Appendix — *available if needed*
+### 7. Appendix: *available if needed*
 
-**Purpose:** Detailed data, methodology, deep dives, supporting analysis. Not presented proactively. Available if a board member asks "tell me more about X."
+**Purpose:** Detailed data, methodology, deep dives, supporting analysis. Available on request when a board member asks "tell me more about X."
 
 **What belongs:**
 - Detailed financial models
@@ -217,7 +217,7 @@ Seven beats. The proportions flex to your context, but the sequence is fixed. Bo
 > **Financial model.** <span class="dim">Full assumptions.</span>
 > **Churn analysis.** <span class="dim">Cohort-level detail.</span>
 
-**Best components:** Stat grid for data tables. Capability list for detailed breakdowns. Two-column for methodology explanations. Keep the same visual system — the appendix shouldn't look like a different deck.
+**Best components:** Stat grid for data tables. Code slide for technical architecture or implementation details. Stack grid for multi-dimensional data where you need to show several items at once. Capability list for detailed breakdowns. Two-column for methodology explanations. Keep the same visual system. The appendix should feel like part of the main deck.
 
 **Common mistakes:**
 - Using the appendix to hide bad news. If something is important enough to influence a decision, it goes in the main deck.
@@ -238,7 +238,7 @@ You shipped the new pricing page. **So what?** It means you're ready to test ent
 
 If a slide presents a fact without a "so what," add the implication. If there is no implication, delete the slide.
 
-The headline is where the "so what" lives. Not "Revenue: $4.2M" — that's a label. Instead: **Revenue ahead of plan.** <span class="dim">Investing the surplus in engineering.</span>
+The headline is where the "so what" lives. Lead with the implication: **Revenue ahead of plan.** <span class="dim">Investing the surplus in engineering.</span>
 
 ---
 
@@ -252,11 +252,11 @@ Red/Amber/Green indicators are useful shorthand. They become useless when:
 
 **Rules for RAG:**
 - Define thresholds upfront. Green = within 5% of plan. Amber = 5–15% off. Red = more than 15% off or qualitative blocker.
-- Red is not a failure — it's a signal. Use it willingly.
-- Don't use RAG for everything. Five to eight metrics with RAG status. Not fifteen.
+- Red is a signal. Use it willingly.
+- Five to eight metrics with RAG status work best. Fifteen dilutes the system.
 - If a metric has been amber for three consecutive meetings, it's red. Persistent amber is a failure to escalate.
 
-Use RAG in the Stat grid component. The big number in the metric's color (or a colored dot/indicator beside it). Don't turn your deck into a traffic light dashboard — the colors should recede, not dominate.
+Use RAG in the Stat grid component. The big number in the metric's color (or a colored dot/indicator beside it). Keep colors subtle. They should recede into the background as quiet indicators.
 
 ---
 
@@ -296,15 +296,15 @@ They care about: operational detail, cross-functional dependencies, team health,
 ### Early-stage (pre-Series B)
 
 - Fewer KPIs (you might only have three that matter)
-- Progress vs plan is about product milestones, not financial targets
+- Progress vs plan is about product milestones and qualitative learning
 - Risks are existential (product-market fit, runway, key person)
-- Decisions are about direction, not optimization
-- Appendix is lighter — you don't have much historical data yet
+- Decisions are about direction and big bets
+- Appendix is lighter. You have limited historical data at this stage.
 
 ### Growth stage (Series B–D)
 
 - Full KPI scorecard with financial and operational metrics
-- Progress vs plan is quantitative — you committed to numbers
+- Progress vs plan is quantitative. You committed to numbers.
 - Risks shift to execution and market (competition, hiring, retention)
 - Decisions are about resource allocation and strategic bets
 - Appendix includes detailed cohort analysis, financial models
@@ -313,7 +313,7 @@ They care about: operational detail, cross-functional dependencies, team health,
 
 - Highly structured with regulatory awareness
 - KPIs aligned to what you report externally
-- Progress vs plan is strict — you guided the street
+- Progress vs plan is strict. You guided the street.
 - Risks include compliance, reputation, market perception
 - Decisions require clear governance and documentation
 - Appendix is comprehensive and auditable
@@ -327,7 +327,7 @@ They care about: operational detail, cross-functional dependencies, team health,
 - Lighter deck (8–12 slides)
 - Focus on KPIs and any urgent decisions
 - Progress vs plan is more tactical (this month vs last month)
-- Skip the full initiative review — highlight changes only
+- Skip the full initiative review. Highlight changes only.
 - Appendix is minimal
 
 ### Quarterly
@@ -364,8 +364,8 @@ Your appendix is your credibility insurance. Build it right:
 - Group by topic, matching the order of the main deck
 
 **When to pull it up:**
-- When asked. Not before.
-- If a discussion is going in circles, offer "I have the detail in the appendix — want me to pull it up?"
+- When asked. Only then.
+- If a discussion is going in circles, offer "I have the detail in the appendix. Want me to pull it up?"
 - If you anticipate a specific challenge, know the appendix slide number before the meeting starts
 
 ---
@@ -373,34 +373,34 @@ Your appendix is your credibility insurance. Build it right:
 ## Common mistakes
 
 ### 1. Too much detail
-A board deck is not a report. It's a decision tool. If your deck has 40 slides, you're presenting a document. Cut to 15–20. Move the rest to appendix.
+A board deck is a decision tool. If your deck has 40 slides, you're presenting a document. Cut to 15–20. Move the rest to appendix.
 
 ### 2. No decisions asked
-If you don't ask for anything, the meeting becomes an update call. Updates can be emails. Meetings are for decisions. Always have at least one specific ask.
+Meetings exist for decisions. Send updates by email. Always bring at least one specific ask.
 
 ### 3. Hiding bad news in the appendix
 Board members notice. If something is going wrong, surface it in the main deck with your mitigation plan. Being the one to raise it is a strength. Being caught hiding it is fatal.
 
 ### 4. Too many slides
-A 45-minute board meeting with 30 content slides means 90 seconds per slide. That's a read-through, not a discussion. Aim for 12–20 slides in the main deck. Spend the time on discussion, not presentation.
+A 45-minute board meeting with 30 content slides means 90 seconds per slide. That leaves no room for discussion. Aim for 12–20 slides in the main deck. Spend the time on discussion.
 
 ### 5. Using the deck as a report
-A report is comprehensive. A board deck is selective. You're not documenting everything that happened — you're surfacing what matters for decisions. Different job. Different output.
+A board deck is selective. Surface what matters for decisions. Different job. Different output.
 
 ### 6. No "so what" in the headlines
-"Revenue: $4.2M" tells the board nothing. "Revenue 18% ahead of plan" tells them something. "Revenue ahead — accelerating hiring" tells them what it means. Always land the implication.
+"Revenue: $4.2M" tells the board nothing. "Revenue 18% ahead of plan" tells them something. "Revenue ahead, accelerating hiring" tells them what it means. Always land the implication.
 
 ### 7. Burying the lead
-Don't build to a reveal. Board members will scan ahead. Put the conclusion first, then the supporting evidence. Inverted pyramid, not narrative arc.
+Put the conclusion first. Board members will scan ahead. Lead with findings, then provide supporting evidence. Inverted pyramid structure.
 
 ### 8. Being falsely optimistic
-Boards have seen hundreds of decks. They can smell spin. "This is hard and here's our plan" lands better than "everything's great" followed by a miss next quarter. Candor compounds.
+Boards have seen hundreds of decks. They can smell spin. "This is hard and here's our plan" earns trust. Candor compounds.
 
 ---
 
 ## The headline pattern for board decks
 
-Same bold-then-dim system. But board headlines follow a different rhythm than narrative decks:
+Same bold-then-dim system. Board headlines follow their own rhythm:
 
 **Narrative deck headlines** tell a story:
 > **The old playbook** <span class="dim">stopped working.</span>
@@ -417,10 +417,10 @@ The bold part is the signal. The dim part is the "so what" or the action. Togeth
 
 ## One more thing
 
-Board meetings are not presentations. They're conversations with a visual aid.
+Board meetings are conversations with a visual aid.
 
-Your deck exists to make the conversation more efficient — to get everyone to the same starting point faster, so the discussion can happen at a higher level.
+Your deck exists to make the conversation more efficient. It gets everyone to the same starting point faster, so the discussion can happen at a higher level.
 
-If you're spending more than 15 minutes presenting and less than 30 minutes discussing, your deck is doing too much talking and not enough supporting.
+If you're spending more than 15 minutes presenting and less than 30 minutes discussing, your deck is talking when it should be supporting.
 
-Build a deck that makes the discussion better. Not one that replaces it.
+Build a deck that makes the discussion better.

@@ -2,7 +2,7 @@
 
 How to build a product launch deck that makes people want what you've made.
 
-Product launches are performances. The deck is the pacing mechanism. Every section is a reveal. The audience should feel like they're unwrapping something — layer by layer, each one more exciting than the last. The moment you show the product before you've built anticipation, you've lost the plot.
+Product launches are performances. The deck is the pacing mechanism. Every section is a reveal. The audience should feel like they're unwrapping something, layer by layer, each one more exciting than the last. The moment you show the product before you've built anticipation, you've lost the plot.
 
 This guide is the narrative framework for launch decks. It works for keynotes, press events, internal product reviews, customer webinars, and "here's what we built" moments. The Slides template was built to support this arc.
 
@@ -17,7 +17,7 @@ Start ────────────────────────�
 │ Setup │ Problem │ Reveal │    Demo    │ Specs │ Proof │ OMT │ CTA │ Close │
 ```
 
-Nine beats. Not every launch uses all nine. The "one more thing" is optional. The rest are load-bearing.
+Nine beats. Some launches skip one or two. The "one more thing" is optional. The rest are load-bearing.
 
 | Beat | ~Share | Purpose |
 |------|--------|---------|
@@ -33,17 +33,17 @@ Nine beats. Not every launch uses all nine. The "one more thing" is optional. Th
 
 ---
 
-## Beat 1 — The Setup
+## Beat 1: The Setup
 
 ### Purpose
 
-Why are we here today? What's the context? Not the product yet — the world the product enters. You're setting the stage, not opening the curtain.
+Why are we here today? What's the context? You're setting the stage for the world the product enters. You're orienting the audience before opening the curtain.
 
-The audience should feel oriented. They should understand the landscape, the momentum, the stakes. By the end of this beat, they should be leaning forward — anticipating something.
+The audience should feel oriented. They should understand the landscape, the momentum, the stakes. By the end of this beat, they should be leaning forward, anticipating something.
 
 ### Pacing
 
-Slow. Deliberate. You're building a room before you turn on the lights. Don't rush through context to get to the product. The setup earns the reveal.
+Slow. Deliberate. You're building a room before you turn on the lights. Let the context breathe so it earns the reveal.
 
 ### Example headlines
 
@@ -54,30 +54,30 @@ Slow. Deliberate. You're building a room before you turn on the lights. Don't ru
 
 ### Best components
 
-- **Quote slide** — A single provocative statement to open. No subtitle.
-- **Eyebrow + headline + subtitle** — Context with a category tag ("THE MARKET", "THE SHIFT", "2024 → 2025").
-- **Two-column** — Then vs now. Old paradigm vs new forces.
+- **Quote slide:** A single provocative statement to open. No subtitle.
+- **Eyebrow + headline + subtitle:** Context with a category tag ("THE MARKET", "THE SHIFT", "2024 → 2025").
+- **Two-column:** Then vs now. Old paradigm vs new forces.
 
 ### Common mistakes
 
 - Starting with your company history. Nobody cares yet.
 - Showing the product logo on slide 2. You've killed the anticipation.
-- Making the setup too long. Ten percent means 2–3 slides, not 8.
+- Making the setup too long. Ten percent means 2–3 slides.
 - Being vague. "The world is changing" says nothing. Be specific about *what* changed.
 
 ---
 
-## Beat 2 — The Problem
+## Beat 2: The Problem
 
 ### Purpose
 
 What's broken, missing, or hard? The gap in the market. The friction everyone lives with. Make the audience *feel* the problem before you show the fix.
 
-This is empathy work. If you skip it, the product reveal lands flat — because the audience hasn't felt the pain you're solving.
+This is empathy work. If you skip it, the product reveal lands flat because the audience hasn't felt the pain you're solving.
 
 ### Pacing
 
-Build tension. Each sub-point should make the problem feel worse. Stack frustrations. End with a line that closes the chapter — the "surely there's a better way" moment.
+Build tension. Each sub-point should make the problem feel worse. Stack frustrations. End with a line that closes the chapter, the "surely there's a better way" moment.
 
 ### Example headlines
 
@@ -88,26 +88,26 @@ Build tension. Each sub-point should make the problem feel worse. Stack frustrat
 
 ### Best components
 
-- **Step stack** (in two-column) — Show the painful old workflow with its blockers and friction points.
-- **Capability list** — Rows of problems. Left: the task. Right: what's wrong with the current state.
-- **Dark slide** — One gut-punch line that captures the whole problem. "Your team spends 40% of their time on work about work."
+- **Step stack** (in two-column): Show the painful old workflow with its blockers and friction points.
+- **Capability list:** Rows of problems. Left: the task. Right: what's wrong with the current state.
+- **Dark slide:** One gut-punch line that captures the whole problem. "Your team spends 40% of their time on work about work."
 
 ### Common mistakes
 
 - Describing problems the audience doesn't recognize. If they don't feel it, they won't care about the fix.
-- Straw-manning competitors. Describe the *category* problem, not "Product X is bad."
+- Straw-manning competitors. Describe the *category* problem, the systemic friction.
 - Making it too abstract. Use numbers, timelines, real scenarios.
-- Spending too long here. You need enough pain to motivate the reveal — not so much that the mood tanks.
+- Spending too long here. You need enough pain to motivate the reveal, and enough restraint that the mood stays productive.
 
 ---
 
-## Beat 3 — The Reveal
+## Beat 3: The Reveal
 
 ### Purpose
 
-The product. Name, positioning, one headline. This is the "one more thing" moment — except it's the *main* thing. Let it land. Pause.
+The product. Name, positioning, one headline. This is the "one more thing" moment, the *main* thing. Let it land. Pause.
 
-The reveal is not a feature list. It's a name and a promise. One sentence that captures what this thing *is*. The details come later. Right now, the audience just needs to understand the shape of what you've built.
+The reveal is a name and a promise. One sentence that captures what this thing *is*. The details come later. Right now, the audience just needs to understand the shape of what you've built.
 
 ### Pacing
 
@@ -122,34 +122,35 @@ The reveal is not a feature list. It's a name and a promise. One sentence that c
 
 ### Best components
 
-- **Product slide** (showcase style) — Big product name on the right. Tagline and one-line description on the left.
-- **Dark slide** — Product name, large type, nothing else. Maximum dramatic weight.
-- **Collage slide** — Full-bleed product image or hero screenshot immediately after the name slide. The one-two punch: name → visual.
+- **Product slide** (showcase style): Big product name on the right. Tagline and one-line description on the left.
+- **Dark slide:** Product name, large type, nothing else. Maximum dramatic weight.
+- **Collage slide:** Full-bleed product image or hero screenshot immediately after the name slide. The one-two punch: name then visual.
+- **Art overlay:** The product rendered against a beautiful full-bleed background. Creates an aspirational, premium feeling that pure screenshots lack.
 
 ### Common mistakes
 
 - Burying the reveal in a list of features. The reveal is *one* slide. One name. One line.
-- No pause. If you click past the reveal without letting it breathe, it's just another slide.
-- Weak naming. "Introducing our new analytics dashboard" is not a reveal. Give it a name.
+- Clicking past the reveal without letting it breathe. Give it a full pause.
+- Weak naming. "Introducing our new analytics dashboard" is forgettable. Give it a proper name.
 - Showing the reveal too early. If you haven't earned the tension, the drop doesn't hit.
 
 ---
 
-## Beat 4 — The Demo / Walkthrough
+## Beat 4: The Demo / Walkthrough
 
 ### Purpose
 
-Show it working. This is the longest section — and the most important. The reveal promised something. The demo proves it. Feature by feature, each with its own mini-narrative.
+Show it working. This is the longest section, and the most important. The reveal promised something. The demo proves it. Feature by feature, each with its own mini-narrative.
 
 ### Pacing
 
 Each feature follows the **setup-show-impact** pattern:
 
-1. **Setup** (text slide) — What was hard before. One sentence of context.
-2. **Show** (collage slide) — Screenshot, video, live demo. The product doing the thing.
-3. **Impact** (text slide or stat) — What this means. The result. The number.
+1. **Setup** (text slide): What was hard before. One sentence of context.
+2. **Show** (collage slide): Screenshot, video, live demo. The product doing the thing.
+3. **Impact** (text slide or stat): What this means. The result. The number.
 
-Alternate between text slides and full-bleed visuals. This creates rhythm — read, see, feel, read, see, feel. Three to five features is the sweet spot. More than that and you lose momentum.
+Alternate between text slides and full-bleed visuals. This creates rhythm: read, see, feel, read, see, feel. Three to five features is the sweet spot. More than that and you lose momentum.
 
 ### Example headlines
 
@@ -160,23 +161,26 @@ Alternate between text slides and full-bleed visuals. This creates rhythm — re
 
 ### Best components
 
-- **Eyebrow + headline + subtitle** — Setup slide for each feature. Eyebrow tags the category ("SEARCH", "DEPLOY", "COLLABORATION").
-- **Collage slide** — Full-bleed screenshot or video after each setup. This is the "show" beat.
-- **Two-column** — Old way vs new way, side by side.
-- **Product slide** — For hero features that deserve the showcase treatment.
-- **Dark slide** — One mid-demo moment where you step back and say something big. "This is what three years of R&D looks like."
+- **Eyebrow + headline + subtitle:** Setup slide for each feature. Eyebrow tags the category ("SEARCH", "DEPLOY", "COLLABORATION").
+- **Collage slide:** Full-bleed screenshot or video after each setup. This is the "show" beat.
+- **Two-column:** Old way vs new way, side by side.
+- **Product slide:** For hero features that deserve the showcase treatment.
+- **Dark slide:** One mid-demo moment where you step back and say something big. "This is what three years of R&D looks like."
+- **Feature card row:** Break down a complex capability into three or four cards, each with an icon, title, and one-line benefit. Ideal for showing feature breadth at a glance.
+- **Code slide:** For developer-facing products, show a real snippet of the API or CLI in action. Nothing builds trust faster than seeing the actual interface.
+- **Spec block:** Input/process/output layout. Show what goes in, what the product does, and what comes out. Effective for AI, data, or automation features.
 
 ### The setup-show-impact pattern
 
 For each feature:
 
 ```
-Slide A: "Teams used to wait 3 days for deploy previews."     [text — setup]
-Slide B: [full-bleed screenshot of instant preview]           [collage — show]
-Slide C: "Deploy time: 3 days → 12 seconds."                 [stat — impact]
+Slide A: "Teams used to wait 3 days for deploy previews."     [text: setup]
+Slide B: [full-bleed screenshot of instant preview]           [collage: show]
+Slide C: "Deploy time: 3 days → 12 seconds."                 [stat: impact]
 ```
 
-Don't show all features the same way. Vary the pattern:
+Vary the pattern across features:
 - Feature 1: setup → collage → stat
 - Feature 2: dark slide (big claim) → collage → two-column comparison
 - Feature 3: eyebrow setup → video → quote from a beta user
@@ -186,24 +190,24 @@ Variation keeps the audience alert.
 ### Common mistakes
 
 - Too many features. Pick three to five. The rest go in a blog post.
-- No demo at all — just describing features in text. Show the product. Use screenshots, videos, anything visual.
+- Describing features in text without showing the product. Use screenshots, videos, anything visual.
 - Showing features without context. "Here's feature X" means nothing. "You used to do Y, now you do X" means everything.
 - Same layout for every feature. Monotony kills attention. Vary your components.
-- Rushing. Give each feature its own breathing room. The demo section should feel generous, not frantic.
+- Rushing. Give each feature its own breathing room. The demo section should feel generous.
 
 ---
 
-## Beat 5 — The Specs
+## Beat 5: The Specs
 
 ### Purpose
 
-The details. Performance benchmarks, pricing, availability dates, compatibility, technical requirements. The audience has seen what it does — now they need to know the specifics.
+The details. Performance benchmarks, pricing, availability dates, compatibility, technical requirements. The audience has seen what it does. Now they need to know the specifics.
 
 This beat serves the analytical buyers. The people who were nodding during the demo but need numbers before they commit.
 
 ### Pacing
 
-Faster. This is information delivery, not storytelling. Be crisp. Use grids and lists, not paragraphs. Get in, give the facts, get out.
+Faster. This is information delivery. Be crisp. Use grids and lists. Get in, give the facts, get out.
 
 ### Example headlines
 
@@ -214,21 +218,22 @@ Faster. This is information delivery, not storytelling. Be crisp. Use grids and 
 
 ### Best components
 
-- **Capability list** — Rows of specs. Left: the metric. Right: the value. Clean, scannable.
-- **Three-column** — Pricing tiers or plan comparison.
-- **Stack grid** — Categories of capabilities with checkmarks or feature lists.
-- **Two-column** — Technical details on one side, what it means for the user on the other.
+- **Capability list:** Rows of specs. Left: the metric. Right: the value. Clean, scannable.
+- **Three-column:** Pricing tiers or plan comparison.
+- **Stack grid:** Categories of capabilities with checkmarks or feature lists. Also works well for grouping features into thematic columns.
+- **Two-column:** Technical details on one side, what it means for the user on the other.
+- **Update row:** Release timeline showing what shipped, what's in beta, and what's next. Gives analytical buyers a sense of velocity and roadmap confidence.
 
 ### Common mistakes
 
-- Burying the price. If there's a price, say it clearly. Don't make them hunt.
+- Burying the price. If there's a price, say it clearly.
 - Too many specs. Pick the 5–8 that matter. The spec sheet lives on your website.
 - No context for numbers. "99.99% uptime" means more when you say "That's 52 seconds of downtime per year."
 - Making this section too long. It's 10% of the deck. Two to three slides.
 
 ---
 
-## Beat 6 — Social Proof
+## Beat 6: Social Proof
 
 ### Purpose
 
@@ -236,21 +241,23 @@ Who's already using it? Who believes in it? Testimonials, logos, case studies, b
 
 ### Pacing
 
-Confident but not boastful. Let the names do the talking. A wall of logos says more than a paragraph of self-congratulation.
+Confident but measured. Let the names do the talking. A wall of logos says more than a paragraph of self-congratulation.
 
 ### Example headlines
 
 > **Teams already shipping with it.** <span class="dim">Thousands of them.</span>
-> **Don't take our word for it.** <span class="dim">Take theirs.</span>
+> **Hear it from them.** <span class="dim">Real teams, real results.</span>
 > **In production** <span class="dim">since day one.</span>
 > **Trusted by the teams** <span class="dim">that move fastest.</span>
 
 ### Best components
 
-- **Stack grid** — Logo grid. Four columns of customer logos. No captions needed.
-- **Capability list** — Testimonial rows. Left: company name. Right: quote.
-- **Quote slide** — One powerful testimonial, large type. Attribution below.
-- **Two-column** — Case study format. Left: the challenge. Right: the result with the product.
+- **Logo bar:** A clean horizontal row of recognizable customer logos. High density, zero friction. The fastest way to establish credibility.
+- **Testimonial grid:** Multiple quotes arranged in a grid layout. Each cell: photo, name, role, and a one-line quote. Conveys breadth of adoption at a glance.
+- **Stack grid:** Logo grid. Four columns of customer logos. No captions needed.
+- **Capability list:** Testimonial rows. Left: company name. Right: quote.
+- **Quote slide:** One powerful testimonial, large type. Attribution below.
+- **Two-column:** Case study format. Left: the challenge. Right: the result with the product.
 
 ### Common mistakes
 
@@ -261,7 +268,7 @@ Confident but not boastful. Let the names do the talking. A wall of logos says m
 
 ---
 
-## Beat 7 — One More Thing
+## Beat 7: One More Thing
 
 ### Purpose
 
@@ -273,14 +280,14 @@ This beat is **optional.** Only use it if you genuinely have something surprisin
 
 Ask yourself:
 1. Would this get a genuine reaction if the audience didn't know it was coming?
-2. Is it actually separate from the main product — not just "feature #6"?
+2. Is it actually separate from the main product, a true addition rather than feature #6?
 3. Does it change the audience's mental model of what you're offering?
 
 If you can't answer yes to at least two of these, fold it into the demo or cut it.
 
 ### Pacing
 
-Slow. Dramatic pause before. The preceding slide should feel like a natural ending — the audience should think you're wrapping up. Then: "One more thing." Beat. Click.
+Slow. Dramatic pause before. The preceding slide should feel like a natural ending. The audience should think you're wrapping up. Then: "One more thing." Beat. Click.
 
 ### Example headlines
 
@@ -291,30 +298,30 @@ Slow. Dramatic pause before. The preceding slide should feel like a natural endi
 
 ### Best components
 
-- **Dark slide** — "One more thing." Nothing else. Then the next slide reveals it.
-- **Product slide** — If the surprise is a second product or major feature.
-- **Collage slide** — Full-bleed visual of the surprise in action.
-- **Quote slide** — If the surprise is a partnership, let the partner's words carry it.
+- **Dark slide:** "One more thing." Nothing else. Then the next slide reveals it.
+- **Product slide:** If the surprise is a second product or major feature.
+- **Collage slide:** Full-bleed visual of the surprise in action.
+- **Quote slide:** If the surprise is a partnership, let the partner's words carry it.
 
 ### Common mistakes
 
-- Using this for something that isn't surprising. "And one more thing… we also have an API" is not a surprise. It's a feature.
+- Using this for something that isn't surprising. "And one more thing: we also have an API" is a feature, and belongs in the demo.
 - Multiple "one more things." You get one. That's why it works.
-- Telegraphing the surprise. Don't hint at it earlier in the deck. The whole point is that it's unexpected.
+- Telegraphing the surprise. Keep it out of earlier slides. The whole point is that it's unexpected.
 
 ---
 
-## Beat 8 — Availability & CTA
+## Beat 8: Availability & CTA
 
 ### Purpose
 
 When can they get it? How? What do they do right now? This is the operational close. Clear, specific, actionable.
 
-The audience is excited. Don't lose them to ambiguity. Tell them exactly what happens next.
+The audience is excited. Tell them exactly what happens next.
 
 ### Pacing
 
-Direct. No buildup needed — you've earned the ask. State the facts: date, URL, pricing, next step. Then move to the close.
+Direct. No buildup needed. You've earned the ask. State the facts: date, URL, pricing, next step. Then move to the close.
 
 ### Example headlines
 
@@ -325,31 +332,32 @@ Direct. No buildup needed — you've earned the ask. State the facts: date, URL,
 
 ### Best components
 
-- **Eyebrow + headline + subtitle** — The primary CTA. Eyebrow: "AVAILABILITY". Headline: the date or action. Subtitle: the URL or next step.
-- **Three-column** — If there are multiple paths (try free / talk to sales / join waitlist).
-- **Capability list** — Timeline: what's available now, what's coming in Q2, what's on the roadmap.
-- **Dark slide** — For maximum urgency. White text, single CTA.
+- **Eyebrow + headline + subtitle:** The primary CTA. Eyebrow: "AVAILABILITY". Headline: the date or action. Subtitle: the URL or next step.
+- **Three-column:** If there are multiple paths (try free / talk to sales / join waitlist).
+- **Capability list:** What's available now, what's coming in Q2, what's on the roadmap.
+- **Timeline:** A visual rollout schedule showing launch phases. Use for staged rollouts: "Today: early access. July: public beta. September: GA." Gives urgency and clarity in one slide.
+- **Dark slide:** For maximum urgency. White text, single CTA.
 
 ### Common mistakes
 
-- No clear CTA. "Learn more at our website" is not a call to action. "Start your free trial at relay.app" is.
-- Burying availability in a paragraph. It should be the headline, not the body copy.
-- Too many options. One primary CTA. Maybe one secondary. Don't make them choose between five paths.
+- No clear CTA. "Learn more at our website" is vague. "Start your free trial at relay.app" is actionable.
+- Burying availability in a paragraph. It should be the headline.
+- Too many options. One primary CTA. Maybe one secondary.
 - Forgetting the URL. They need to know where to go. Put it on screen.
 
 ---
 
-## Beat 9 — Close
+## Beat 9: Close
 
 ### Purpose
 
 One memorable line. The tagline. The thing they'll repeat to a colleague. The thing they'll tweet.
 
-This isn't a summary. It's a punctuation mark.
+This is a punctuation mark, a final beat of energy.
 
 ### Pacing
 
-Slow down. Say it once. Stop. Don't explain it. Don't add "and that's it." Don't say "thank you." The line is the end.
+Slow down. Say it once. Stop. Let the line do its work.
 
 ### Example headlines
 
@@ -360,12 +368,12 @@ Slow down. Say it once. Stop. Don't explain it. Don't add "and that's it." Don't
 
 ### Best components
 
-- **Dark slide** — The closing line, nothing else. Maximum weight.
-- **Quote slide** — Large type, centered. The final word.
+- **Dark slide:** The closing line, nothing else. Maximum weight.
+- **Quote slide:** Large type, centered. The final word.
 
 ### Common mistakes
 
-- A summary slide. "In conclusion, we showed you…" kills the energy. End on a high, not a recap.
+- A summary slide. "In conclusion, we showed you…" kills the energy. End on a high.
 - Thanking the audience before the line lands. Say the line first. Then thank them if you must.
 - A weak tagline. Spend more time on this line than any other in the deck. Test it out loud.
 - Adding slides after the close. The close is the last slide. Nothing follows it except applause or a Q&A card.
@@ -386,7 +394,7 @@ One sentence. What was the old way? What was frustrating? This primes the audien
 
 ### Show (20–30 seconds)
 
-The product doing the thing. A screenshot, a video clip, a live demo. No narration during the visual — let the audience absorb it. If it's a video, keep it under 15 seconds.
+The product doing the thing. A screenshot, a video clip, a live demo. No narration during the visual. Let the audience absorb it. If it's a video, keep it under 15 seconds.
 
 ### Impact (5 seconds)
 
@@ -394,7 +402,7 @@ One line. The result. The number. The "so what."
 
 > "Deploy time went from three days to twelve seconds."
 
-Then move to the next feature. Don't linger. The rhythm is: tension → proof → relief → tension → proof → relief.
+Then move to the next feature. The rhythm is: tension → proof → relief → tension → proof → relief.
 
 ---
 
@@ -427,34 +435,34 @@ Full theatrical treatment. Long pauses. One more thing. Big collage slides. The 
 
 - Lean into dark slides for drama
 - Use video over screenshots where possible
-- Keep specs minimal — journalists care about the story, not the implementation
+- Keep specs minimal. Journalists care about the story and the human impact.
 - End with a quotable line they can use as a headline
 
 ### Internal launch (all-hands, team demo)
 
-Drop the theater. Keep the structure. The audience already trusts you — they want clarity, not persuasion.
+Drop the theater. Keep the structure. The audience already trusts you, so they want clarity and directness.
 
-- Skip the "one more thing" — save surprises for external audiences
-- Expand the specs section — internal teams need detail
+- Save the "one more thing" for external audiences
+- Expand the specs section. Internal teams need detail.
 - Add a "what this means for us" slide (staffing, timeline, dependencies)
-- Be honest about what's not done yet
+- Be honest about what's ready and what's still in progress
 
 ### Customer webinar
 
-The audience is evaluating, not celebrating. They need to see themselves in the product.
+The audience is evaluating. They need to see themselves in the product.
 
-- Expand social proof — they want to know who else is using it
+- Expand social proof. They want to know who else is using it.
 - Tailor the problem section to *their* specific pain
-- Demo the workflow they'd actually use, not the flashiest feature
-- CTA should be "talk to us" or "start a trial," not "buy now"
+- Demo the workflow they'd actually use, the one closest to their day-to-day
+- CTA should be "talk to us" or "start a trial," a low-commitment next step
 
 ### Recorded / async (product video, launch page)
 
 No live energy to lean on. The deck must carry itself.
 
-- Tighter pacing — 20% less time per beat than live
-- More collage slides — visuals hold attention without a speaker
-- Subtitles on every slide — the body copy does the speaker's job
+- Tighter pacing, about 20% less time per beat than live
+- More collage slides. Visuals hold attention without a speaker.
+- Subtitles on every slide. The body copy does the speaker's job.
 - Keep it under 5 minutes total if it's a video
 
 ---
@@ -463,7 +471,7 @@ No live energy to lean on. The deck must carry itself.
 
 ### Live keynote (you're presenting)
 
-You are the setup. The slide is the punchline. Talk to the audience, then click to reveal. Never read the slide — they can read faster than you can talk.
+You are the setup. The slide is the punchline. Talk to the audience, then click to reveal. The audience can read faster than you can talk, so let the slides land visually while you provide the narrative frame.
 
 ### Pre-recorded video
 
@@ -479,7 +487,7 @@ The headlines carry the narrative arc. The subtitles carry the detail. Every sli
 
 ### 1. Too many features
 
-You have twelve things to show. Pick five. The audience can't absorb more than that in one sitting. The rest go in a follow-up blog post, a documentation page, or version 2 of the launch.
+You have twelve things to show. Pick five. The audience can absorb that many in one sitting. The rest go in a follow-up blog post, a documentation page, or version 2 of the launch.
 
 ### 2. No demo
 
@@ -487,7 +495,7 @@ If you announce a product without showing it working, the audience fills the gap
 
 ### 3. Burying the price
 
-If you have pricing, say it clearly and say it once. Don't make the audience do math. Don't hide it in a footnote. If the price is good, it's a feature — put it in a headline.
+If you have pricing, say it clearly and say it once. Give the audience the number directly. If the price is good, it's a feature: put it in a headline.
 
 ### 4. Anticlimactic reveals
 
@@ -495,7 +503,7 @@ The reveal should feel like a curtain drop. If it feels like "oh, here's another
 
 ### 5. Feature parity as a selling point
 
-"We do everything they do, plus one more thing" is not a launch narrative. It's a comparison chart. Lead with what's *new*, not what's *equivalent*.
+"We do everything they do, plus one more thing" is a comparison chart, and audiences don't rally behind comparison charts. Lead with what's *new* and uniquely yours.
 
 ### 6. No visual proof
 
@@ -503,11 +511,11 @@ Words describe. Images prove. If your demo section is all text slides, you're te
 
 ### 7. The fake "one more thing"
 
-If your surprise is just the last feature on your roadmap, it's not a surprise. Skip the "one more thing" beat entirely. A clean CTA is more powerful than a forced reveal.
+If your surprise is just the last feature on your roadmap, it doesn't qualify. Skip the "one more thing" beat entirely. A clean CTA is more powerful than a forced reveal.
 
 ### 8. Ending with a whimper
 
-"Thanks, that's all we have today" is not a close. Your last slide should be the most polished, most rehearsed, most memorable moment in the deck. Spend time on it.
+"Thanks, that's all we have today" is a flat ending. Your last slide should be the most polished, most rehearsed, most memorable moment in the deck. Spend time on it.
 
 ---
 
@@ -527,7 +535,7 @@ If you don't know where to start:
 9. Close with one line you've rehearsed.
 ```
 
-Nine beats. Use them. Skip the optional one. Reorder if your product demands it. They're a scaffold, not a script.
+Nine beats. Use them. Skip the optional one. Reorder if your product demands it. They're a scaffold, a flexible framework you adapt to the story.
 
 ---
 
@@ -536,17 +544,17 @@ Nine beats. Use them. Skip the optional one. Reorder if your product demands it.
 Spend more time on your reveal line than any other line in the deck except the close.
 
 It should be:
-- **Named.** Give the product a proper name. Not "our new platform." A name.
+- **Named.** Give the product a proper name. A real, memorable name.
 - **Positioned.** One line that says what it is and who it's for.
-- **Clean.** No jargon, no feature list, no qualifiers. Just the essence.
+- **Clean.** Zero jargon, zero feature lists, zero qualifiers. Just the essence.
 
-Test it by imagining someone texting it to a friend: "They just announced [X] — it's [one-line description]." If that text doesn't make sense or doesn't sound exciting, rewrite the line.
+Test it by imagining someone texting it to a friend: "They just announced [X]. It's [one-line description]." If that text doesn't make sense or doesn't sound exciting, rewrite the line.
 
 ---
 
 ## The visual hierarchy of a launch
 
-Not all slides carry equal weight. Here's the energy curve:
+Each slide carries different weight. Here's the energy curve:
 
 ```
 Energy

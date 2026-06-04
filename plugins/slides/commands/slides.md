@@ -8,7 +8,7 @@ Generate a complete presentation deck from a description.
 
 ## Usage
 
-- `/slides` — then describe your presentation in the follow-up
+- `/slides`, then describe your presentation in the follow-up
 - `/slides "a 20-minute conference talk about AI-assisted development"`
 - `/slides --format sequoia "our Series A pitch for a developer tools company"`
 

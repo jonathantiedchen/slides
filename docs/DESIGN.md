@@ -30,7 +30,7 @@ On-dark dim         #ccc
 On-dark very dim    #888
 ```
 
-Two grays do most of the work. Use color for hierarchy, not decoration.
+Two grays do most of the work. Use color for hierarchy.
 
 ---
 
@@ -52,7 +52,7 @@ Big number           clamp(2.4rem, 4.5vw, 3.5rem) weight 600  letter-spacing -0.
 
 ## The headline pattern
 
-Headlines use a bold-then-dim split. The first phrase carries weight (500). The continuation fades to gray (300, color `#b5b5b0`). This gives every headline a built-in narrative — anchor + extension.
+Headlines use a bold-then-dim split. The first phrase carries weight (500). The continuation fades to gray (300, color `#b5b5b0`). This gives every headline a built-in narrative: anchor + extension.
 
 ```html
 <h1>Anchor. <span class="dim">Extension.</span></h1>
@@ -110,7 +110,7 @@ A vertical flow: dark spec block at top → context pills → "Process" divider 
 Big product name on the right. Description on the left with /0n number, tag, headline, body, stat line.
 
 ### Collage slide
-Full-bleed image or video as its own slide. Used as a punch after a product slide. No text overlay — the image is the slide.
+Full-bleed image or video as its own slide. Used as a punch after a product slide. No text overlay. The image is the slide.
 
 ### JEDUF three-column
 Three columns showing extremes vs middle path. Outer columns light, center column dark as the hero. Steps stacked vertically inside each column.
@@ -129,13 +129,13 @@ Light text on black. Used for pivot moments. Two or three per deck max.
 - **No em-dashes in body copy.** Use periods or split into shorter sentences.
 - **No fluff.** If a sentence doesn't add information, delete it.
 - **Numbers should be specific.** "7×" beats "huge gains." "35 use cases per week" beats "much faster."
-- **Headlines are statements, not questions.** Q&A rows are an exception — the question is the format.
-- **Use names, not pronouns.** The product/feature/concept by name beats "it" or "this thing."
+- **Headlines are statements.** Q&A rows are the exception: the question is the format.
+- **Use names.** The product, feature, or concept by name beats "it" or "this thing."
 
 ---
 
-## What this isn't
+## Scope
 
-- Not a framework. There's no NPM package, no CSS variables file, no build step. Each deck is a single self-contained HTML file with inline styles.
-- Not designed for a real product UI. This is for content pages — decks, one-pagers, overviews. If you build an app, use a real component library.
-- Not pretending to be neutral. The voice is opinionated. Lean into it.
+- A visual system, self-contained. No NPM package, no CSS variables file, no build step. Each deck is a single HTML file with inline styles.
+- Made for content pages: decks, one-pagers, overviews. If you build an app, use a real component library.
+- The voice is opinionated. Lean into it.

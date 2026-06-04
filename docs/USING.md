@@ -26,11 +26,11 @@ This template was made for collaboration with Claude Code (or any AI coding assi
 4. **Iterate by feedback.** *"Make it dark."* *"Move it before slide 5."* *"Shorten the headline."*
 5. **Drop in media** as you go: *"Wire `media/demo.mp4` to the collage on slide 8."*
 
-The key is treating the deck as **a document, not a tool**. You write it like prose. The components are just the vocabulary.
+The key is treating the deck as **a document**. You write it like prose. The components are just the vocabulary.
 
 ### Tips for prompting
 
-- **Say what you want, not how to build it.** "Add a comparison slide" beats "use a three-column grid."
+- **Say what you want.** "Add a comparison slide" beats "use a three-column grid."
 - **Reference existing slides.** "Make slide 5 quieter, like slide 2." Claude will copy the pattern.
 - **Iterate small.** Don't ask for 10 changes at once. One thing, see it, next thing.
 
@@ -82,7 +82,7 @@ Add `?embed` to any deck URL to get an embeddable version. The PDF button hides;
 <iframe src="your-deck.html?embed" style="width:100%; aspect-ratio:16/9; border:none;"></iframe>
 ```
 
-Works in blog posts, Notion, documentation sites, or anywhere that renders HTML. The deck is fully interactive inside the iframe — arrow keys, swipe, and click navigation all work.
+Works in blog posts, Notion, documentation sites, or anywhere that renders HTML. The deck is fully interactive inside the iframe. Arrow keys, swipe, and click navigation all work.
 
 ---
 
@@ -101,9 +101,9 @@ Works in blog posts, Notion, documentation sites, or anywhere that renders HTML.
 Click **Download PDF** (bottom center) or press `P`. In the browser print dialog:
 
 - **Destination:** Save as PDF
-- **Layout:** auto-detected from `@page` (16:9, 13.333in × 7.5in — matches PowerPoint widescreen)
+- **Layout:** auto-detected from `@page` (16:9, 13.333in × 7.5in, matches PowerPoint widescreen)
 - **Margins:** None / Default
-- **Background graphics: ON** *(critical — otherwise dark slides print white)*
+- **Background graphics: ON** *(critical, otherwise dark slides print white)*
 
 This works best in Chrome. Safari and Firefox sometimes mangle backgrounds.
 
@@ -116,7 +116,7 @@ This works best in Chrome. Safari and Firefox sometimes mangle backgrounds.
 3. Paste it after the previous slide.
 4. Edit the content.
 
-The slide counter and progress bar update automatically — no JS changes needed.
+The slide counter and progress bar update automatically. No JS changes needed.
 
 ---
 
@@ -124,7 +124,7 @@ The slide counter and progress bar update automatically — no JS changes needed
 
 **To change colors, type, or spacing:** edit the `<style>` block at the top of `deck.html`.
 
-**To stay on-brand:** see `docs/DESIGN.md` for the design tokens and rules. The design is opinionated — bold-then-dim headlines, no em-dashes in body copy, monochrome with one accent color (black). Lean into it or fork it.
+**To stay on-brand:** see `docs/DESIGN.md` for the design tokens and rules. The design is opinionated: bold-then-dim headlines, no em-dashes in body copy, monochrome with one accent color (black). Lean into it or fork it.
 
 **To use your own fonts:** replace the Inter import line at the top with your own. Update `font-family` in the `body` rule.
 
@@ -136,14 +136,14 @@ The slide counter and progress bar update automatically — no JS changes needed
 
 **Videos won't autoplay with sound.** Browsers block this by default. Use `controls` (let the user click play) or `autoplay muted loop` (silent background).
 
-**PDF export looks wrong.** Make sure "Background graphics" is enabled in the print dialog. Use Chrome — it has the best print engine.
+**PDF export looks wrong.** Make sure "Background graphics" is enabled in the print dialog. Use Chrome. It has the best print engine.
 
 **Fonts look wrong offline.** Inter is loaded from Google Fonts via the `@import` line. If you need offline support, download Inter and reference it locally instead.
 
 ---
 
-## What this isn't
+## Scope
 
-It's not a slideshow framework like Reveal.js or Slidev. It doesn't have transitions, themes, or build steps. It's just HTML and CSS. That's the point.
+Plain HTML and CSS. No transitions, no themes, no build steps. That's the point.
 
-If you need animation, fragments, speaker notes, or a presenter view — use Reveal.js. If you need editing in PowerPoint — use PowerPoint. This template is for people who want to write their deck like a website.
+For animation, fragments, speaker notes, or a presenter view, use Reveal.js. For editing in PowerPoint, use PowerPoint. This template is for people who want to write their deck like a website.

@@ -11,7 +11,7 @@ description: >
   and a professional design system. No build step, no dependencies.
 ---
 
-# Slides — Deck Generation Skill
+# Slides: Deck Generation Skill
 
 You are generating a slide deck using the Slides framework. This skill gives you everything needed to produce correct, on-brand decks.
 
@@ -19,7 +19,7 @@ You are generating a slide deck using the Slides framework. This skill gives you
 
 A single self-contained HTML file (`deck.html`) with inline CSS and JS. No build step, no dependencies beyond Google Fonts (Inter). Navigate with arrow keys, space, swipe. Export to PDF with `P`.
 
-## Step 1 — Choose the storytelling format
+## Step 1. Choose the storytelling format
 
 Based on the user's description, select the right storytelling format. Read the corresponding file for full structure and guidance.
 
@@ -34,7 +34,7 @@ Based on the user's description, select the right storytelling format. Read the 
 
 **Default:** If unclear, use the six-beat TED Talk structure from `docs/STORYTELLING.md`. It adapts to most formats.
 
-## Step 2 — Draft the outline
+## Step 2. Draft the outline
 
 Before writing HTML, produce a slide-by-slide outline:
 - Slide number
@@ -44,7 +44,7 @@ Before writing HTML, produce a slide-by-slide outline:
 
 Share the outline with the user. Get approval before writing HTML.
 
-## Step 3 — Write the HTML
+## Step 3. Write the HTML
 
 Use the component reference below. Copy the exact HTML structure. Change only the text content. Stay on-token.
 
@@ -497,12 +497,25 @@ You can invent new slide layouts when needed. Rules:
 ## Tone rules (follow strictly)
 
 1. **Bold the keyword. Dim the rest.** Every headline.
-2. **No em-dashes in body copy.** Use periods or shorter sentences.
-3. **No fluff.** If a sentence doesn't add information, delete it.
-4. **Specific numbers.** "7×" beats "huge gains."
-5. **Headlines are statements, not questions.** Exception: Q&A rows.
-6. **Use names, not pronouns.** Say the product/feature name, not "it."
-7. **Pick one term and stick with it.** Don't paraphrase your own product.
+2. **No em-dashes.** Anywhere. Use periods, commas, or colons instead.
+3. **No contrast framing.** Never write "Not X. Y." or "X, not Y." Say what it IS. Lead with the positive statement.
+4. **No fluff.** If a sentence does not add information, delete it.
+5. **Specific numbers.** "7x" beats "huge gains."
+6. **Headlines are statements.** Exception: Q&A rows.
+7. **Use names.** Say the product or feature name instead of "it."
+8. **Pick one term and stick with it.** Do not paraphrase your own product.
+
+---
+
+## Component diversity
+
+Use the full component library. Do not default to the same five component types.
+
+- For decks over 10 slides: use at least 5 different component types.
+- For decks over 20 slides: use at least 8 different component types.
+- Every deck should have at least one visual-heavy slide (Collage, Art overlay, or Product slide).
+- Before finalizing, check: did you use any of these components? Timeline, Product slide, JEDUF, Quote pair, Spec block, Stack grid, Art overlay, Testimonial grid, Feature card row, Update row, Code slide, Logo bar, Logo grid, Step stack, Collage slide.
+- If a beat would benefit from a component that does not exist yet, suggest it. Describe what it would look like and ask the user: "This slide would work better with a [description]. Want me to build it?" If yes, follow the freestyle rules to create it on-token before continuing.
 
 ---
 
