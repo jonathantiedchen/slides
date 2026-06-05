@@ -43,10 +43,12 @@ With image (if user provides one later):
 ```css
 .claus-slide {
   position: relative;
+  padding: 0 !important;
+}
+.claus-slide.active {
   display: flex !important;
   align-items: flex-end !important;
   justify-content: flex-start !important;
-  padding: 0 !important;
 }
 .claus-slide img {
   position: absolute;
