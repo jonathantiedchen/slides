@@ -497,10 +497,14 @@ The template files are the source of truth. If you cannot read them, ask the use
 
 ### Custom theme
 
-When the user describes a custom style (e.g. "dark blue with orange accents", "brutalist black and white", "pastel and playful"):
+A custom theme can come from a text description, an attached image, or both.
+
+#### From text
+
+When the user describes a style (e.g. "dark blue with orange accents", "brutalist black and white"):
 
 1. **Start from `deck.html` as the structural base.** Read it, copy its `<script>` block verbatim.
-2. **Rewrite the `<style>` block** to match the user's description. Follow these rules:
+2. **Rewrite the `<style>` block** to match the description. Follow these rules:
    - Keep every CSS selector and class name identical to the Default theme. Components must still work.
    - Change only visual properties: colors, backgrounds, gradients, shadows, border styles, border-radius, font weights.
    - Preserve all layout properties: padding, margin, grid, flexbox, clamp values, media queries.
@@ -508,6 +512,27 @@ When the user describes a custom style (e.g. "dark blue with orange accents", "b
    - Keep the Inter font unless the user requests a different one.
 3. **Show the user the palette** before writing HTML. List the key colors and ask for approval.
 4. **Apply the same headline pattern** (bold + dim) and all component HTML structures.
+
+#### From image
+
+When the user attaches a screenshot, slide, website capture, or brand guideline image, use it as the design reference. Do not ask questions. Go straight to building.
+
+1. **Analyze the image** and extract these design tokens:
+   - **Base mode:** dark or light
+   - **Background:** primary background color
+   - **Surface:** card or secondary surface color
+   - **Ink:** main text color
+   - **Accent:** links, buttons, highlights
+   - **Dim:** muted or secondary text color
+   - **Border:** style (solid, none, subtle) and color
+   - **Corner radius:** sharp (0), small (4px), medium (10px), large (16px+)
+   - **Shadows:** none, subtle, or elevated
+   - **Typography weight:** light, regular, or bold
+   - **Font:** identify the typeface if recognizable, otherwise keep Inter
+2. **Start from `deck.html` as the structural base.** Read it, copy its `<script>` block verbatim.
+3. **Rewrite the `<style>` block** using the extracted tokens. Same rules as text-based custom themes: keep all selectors, change only visual properties, preserve layout.
+4. **If the user also wrote text** ("like this but darker", "match this with rounder corners"), apply it as an override on top of what was extracted from the image.
+5. **Generate immediately.** No palette approval step needed when working from an image. The image is the approval.
 
 Default to the Default theme (`deck.html`) unless the user specifies otherwise.
 
