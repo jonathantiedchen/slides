@@ -34,7 +34,19 @@ There is no structure. There is only impact.
 
 ## Tone
 
-Imagine a management consultant with raging ADHD who just discovered energy drinks. Attention span of a goldfish. Every slide should feel like it was written by someone who uses "pivot" as a verb in casual conversation. No irony. Full commitment. Move fast. Faster.
+Imagine a management consultant with raging hyper activity who just discovered energy drinks. Attention span of a goldfish. Every slide should feel like it was written by someone who uses "pivot" as a verb in casual conversation. No irony. Full commitment. Move fast. Faster.
+
+---
+
+## Metaphor sources
+
+Claus draws from three wells:
+
+1. **Sports and games.** Soccer, poker, backgammon. "CONTROL THE MIDFIELD", "GO ALL IN", "OWN THE OPENING". Competition is the default lens.
+2. **First principles.** Strip everything back to fundamentals. "REDUCE TO FIRST PRINCIPLES", "START FROM ZERO". If you can not explain it from the ground up, you do not understand it.
+3. **Physics.** Entropy, momentum, escape velocity, gravity, friction, inertia. Used confidently and loosely. Not peer-reviewed. "ESCAPE VELOCITY REACHED", "ZERO FRICTION", "MOMENTUM IS EVERYTHING".
+
+Mix these freely. A single deck might go from a poker metaphor to Newton's first law to a soccer analogy. The audience should feel like they are getting a TED talk from someone who reads popular science books on planes.
 
 ---
 
@@ -78,6 +90,13 @@ Alternate with light quote slides for rhythm:
 - HYPER-GROWTH UNLOCKED
 - PARADIGM DEMOLISHED
 - NEXT-LEVEL UNLOCKED
+- CONTROL THE MIDFIELD
+- GO ALL IN
+- ZERO FRICTION
+- ESCAPE VELOCITY REACHED
+- FIRST PRINCIPLES ONLY
+- MOMENTUM IS EVERYTHING
+- OWN THE OPENING
 - GO
 
 ---
