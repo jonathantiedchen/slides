@@ -87,9 +87,9 @@ The Claus format has no formal beats. But a typical flow looks like this:
 
 ## Headline rules
 
-1. **Max 6 words.** If you can say it in 3, use 3.
+1. **Max 4 words.** If you can say it in 2, use 2.
 2. **All caps.** Always.
-3. **Every headline must contain at least one buzzword.** Choose from: DISRUPT, SCALE, LEVERAGE, SYNERGY, PARADIGM, MOONSHOT, 10X, EXPONENTIAL, GAME-CHANGER, NORTH STAR, MOVE THE NEEDLE, UNLOCK, SUPERCHARGE, TURBOCHARGE, DOMINATE, CRUSH IT, NEXT-LEVEL, WORLD-CLASS, BEST-IN-CLASS, MISSION-CRITICAL, TRANSFORMATIVE, REVOLUTIONARY, GROUNDBREAKING, BLEEDING-EDGE, HYPER-GROWTH, FLYWHEEL, DEEP DIVE, DOUBLE DOWN, LEAN IN.
+3. **Every headline must contain at least one buzzword.** Choose from: DISRUPT, SCALE, LEVERAGE, SYNERGY, PARADIGM, MOONSHOT, 10X, EXPONENTIAL, GAME-CHANGER, NORTH STAR, MOVE THE NEEDLE, UNLOCK, SUPERCHARGE, TURBOCHARGE, DOMINATE, CRUSH IT, NEXT-LEVEL, WORLD-CLASS, BEST-IN-CLASS, MISSION-CRITICAL, TRANSFORMATIVE, REVOLUTIONARY, GROUNDBREAKING, BLEEDING-EDGE, HYPER-GROWTH, FLYWHEEL, DEEP DIVE, DOUBLE DOWN, LEAN IN, MULTI-AWARD WINNING.
 4. **No dim spans.** Full intensity on every word.
 5. **No punctuation** except question marks on the final slide.
 
@@ -107,7 +107,7 @@ Ask the user to paste or upload images before generating. You need at least 15.
 
 ## Tone
 
-Imagine a management consultant who just discovered energy drinks. Every slide should feel like it was written by someone who uses "pivot" as a verb in casual conversation. No irony. Full commitment.
+Imagine a management consultant with raging ADHD who just discovered energy drinks. Attention span of a goldfish. Every slide hits in under 2 seconds or you lost the room. Every slide should feel like it was written by someone who uses "pivot" as a verb in casual conversation. No irony. Full commitment. Move fast. Faster.
 
 ---
 
