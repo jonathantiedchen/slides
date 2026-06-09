@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "img": {
-      "type": "http",
-      "url": "https://heyraimg-backend-production.up.railway.app/mcp"
-    }
-  }
-}

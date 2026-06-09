@@ -1,5 +1,5 @@
 ---
-description: Browse and preview images from the Heyra MCP server. Search, filter, and save URLs for use in slides.
+description: Browse and preview images from the Heyra image library. Search, filter, and save URLs for use in slides.
 ---
 
 # /slides-gallery
@@ -14,21 +14,26 @@ Search and browse the Heyra image library.
 
 ## What the command does
 
-1. Connects to the `img` MCP server
-2. Runs a semantic search (or fetches random/recent images)
-3. Displays results with thumbnails, IDs, and relevance scores
-4. Lets the user pick images to use in their deck
+1. Fetches images from the Heyra REST API based on the search mode
+2. Displays results with thumbnails, filenames, and relevance scores
+3. Lets the user pick images to use in their deck
 
-## Search modes
+## API endpoints
 
-| Mode | Description |
-|------|-------------|
-| `"query"` | Semantic search by description |
-| `random` | Random selection from the index |
-| `recent` | Recently indexed images |
+Base URL: `https://heyraimg-backend-production.up.railway.app`
+
+| Mode | Endpoint | Description |
+|------|----------|-------------|
+| `"query"` | `GET /api/search?q={query}&limit=6` | Semantic search by description |
+| `random` | `GET /api/random?limit=6` | Random selection from the index |
+| `recent` | `GET /api/recent?limit=6` | Recently indexed images |
+
+All endpoints return a list of image objects with `image_url`, `thumb_url`, `filename`, and `score` (for search).
+
+Use `image_url` values directly in any slide component's `src` attribute.
 
 ## Tips
 
 - Queries are semantic. "warm sunset over water" finds relevant images even if titles differ
 - Use this to explore before building a deck, or to find replacement images for specific slides
-- Image URLs from results can be used directly in any image component's `src` attribute
+- The library contains ~1,500 royalty-free images, mostly abstract and design-oriented

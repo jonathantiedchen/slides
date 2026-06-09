@@ -1,5 +1,5 @@
 ---
-description: Generate a visually-rich slide deck that automatically sources images from the Heyra MCP server for every visual beat.
+description: Generate a visually-rich slide deck that automatically sources images from the Heyra image library for every visual beat.
 ---
 
 # /slides-visual
@@ -14,9 +14,19 @@ Generate a complete slide deck with images sourced automatically.
 ## What the command does
 
 1. Runs the full `/slides` workflow (outline, approval, generation)
-2. For every slide that benefits from an image, searches the `img` MCP server for a matching photo
-3. Uses the new image components (split, hero, image cards, caption, photo grid) alongside the standard text components
+2. For every slide that benefits from an image, fetches a matching photo from the Heyra REST API
+3. Uses the image components (split, hero, image cards, caption, photo grid) alongside standard text components
 4. Produces a visually-rich deck where at least 30% of slides include real images
+
+## How to fetch images
+
+For each image needed, call the Heyra search API:
+
+```
+GET https://heyraimg-backend-production.up.railway.app/api/search?q={description}&limit=3
+```
+
+Pick the highest-scoring result and use its `image_url` in the slide component.
 
 ## How it differs from `/slides`
 
@@ -38,4 +48,4 @@ Same as `/slides`. Override with `--format`:
 
 - The more specific your topic, the better the image matches
 - You can mix `/slides-visual` with `/slides-image` to add or replace specific slides later
-- All images are royalty-free from the Heyra index
+- All images are royalty-free from the Heyra library (~1,500 images, mostly abstract and design-oriented)
