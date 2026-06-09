@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slides + Heyra: Images that find themselves</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f5f3;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .deck {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 6vh 8vw;
+  }
+
+  .slide.active { display: flex; }
+
+  .slide-inner {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  /* --- Typography --- */
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a0a09a;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 span.dim, h2 span.dim, h3 span.dim {
+    color: #b5b5b0;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    color: #a0a09a;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 720px;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: #a0a09a;
+    font-weight: 400;
+    margin-top: 3rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* --- Quote slide --- */
+  .quote-slide h1 {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+  }
+
+  /* --- Two col --- */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .two-col h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .two-col p {
+    font-size: 0.95rem;
+    color: #a0a09a;
+    line-height: 1.6;
+  }
+
+  .col-stack > * + * { margin-top: 0.6rem; }
+
+  .step {
+    font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+    color: #1a1a1a;
+    font-weight: 400;
+    padding: 0.4rem 0;
+    border-top: 1px solid #d5d5d0;
+    letter-spacing: -0.005em;
+  }
+
+  .step:first-child { border-top: none; padding-top: 0; }
+  .step.dim { color: #b5b5b0; }
+  .step.kill { color: #1a1a1a; font-weight: 500; }
+  .step.kill::before { content: '×'; margin-right: 0.5rem; }
+  .step.live { color: #1a1a1a; font-weight: 500; }
+  .step.live::before { content: '✓'; margin-right: 0.5rem; }
+
+  /* --- Three col --- */
+  .three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .three-col h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  .three-col p {
+    font-size: 0.85rem;
+    color: #a0a09a;
+    line-height: 1.6;
+  }
+
+  /* --- Capability list (Q&A) --- */
+  .cap-list { display: flex; flex-direction: column; }
+
+  .cap-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 1.1rem 0;
+    border-top: 1px solid #e0e0db;
+    align-items: baseline;
+  }
+
+  .cap-row:last-child { border-bottom: 1px solid #e0e0db; }
+  .cap-q { font-size: 1rem; font-weight: 500; }
+  .cap-a { font-size: 0.9rem; color: #a0a09a; line-height: 1.55; }
+
+  /* --- Callout --- */
+  .callout {
+    background: #1a1a1a;
+    color: #f5f5f3;
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+  }
+
+  .callout h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+  }
+
+  .callout p {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #ccc;
+  }
+
+  .callout p strong { color: #f5f5f3; font-weight: 500; }
+
+  /* --- Dot flow --- */
+  .dot-flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 2.5rem 0;
+    position: relative;
+  }
+
+  .dot-flow::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 8%;
+    right: 8%;
+    height: 1px;
+    background: #d5d5d0;
+  }
+
+  .dot-step { text-align: center; }
+
+  .dot-step .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    margin: 0 auto 0.85rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .dot-step h4 { font-size: 0.85rem; font-weight: 500; margin-bottom: 0.25rem; }
+  .dot-step p { font-size: 0.72rem; color: #a0a09a; line-height: 1.4; padding: 0 0.5rem; }
+
+  /* --- Stack grid --- */
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .stack-card {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.1rem 1.1rem 1.25rem;
+    background: #fafaf8;
+  }
+
+  .stack-card-label {
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a0a09a;
+    margin-bottom: 0.85rem;
+  }
+
+  .stack-tool {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.25rem 0;
+  }
+
+  .stack-tool .mark {
+    width: 14px;
+    height: 14px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* --- Spec flow --- */
+  .spec-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .spec-block {
+    background: #1a1a1a;
+    color: #f5f5f3;
+    border-radius: 10px;
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .spec-block h4 { font-size: 1rem; font-weight: 500; }
+  .spec-block p { font-size: 0.8rem; color: #888; font-weight: 300; }
+
+  .ctx-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+
+  .ctx-label {
+    font-size: 0.7rem;
+    color: #c5c5c0;
+    margin-right: 0.4rem;
+    font-style: italic;
+  }
+
+  .ctx-pill {
+    font-size: 0.72rem;
+    color: #a0a09a;
+    background: #eeeee9;
+    border-radius: 100px;
+    padding: 0.3rem 0.85rem;
+  }
+
+  .ai-divider { display: flex; align-items: center; gap: 1rem; }
+  .ai-divider .line { flex: 1; height: 1px; background: #d5d5d0; }
+
+  .ai-pill {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #a0a09a;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .outputs-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+  .output-card {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    background: #fff;
+  }
+
+  .output-card h5 { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.2rem; }
+  .output-card p { font-size: 0.72rem; color: #a0a09a; line-height: 1.45; }
+
+  /* --- Product slide (showcase style) --- */
+  .product-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .product-meta { max-width: 460px; }
+  .product-num { font-size: 0.75rem; color: #a0a09a; margin-bottom: 1.25rem; letter-spacing: 0.04em; }
+  .product-tag { font-size: 0.85rem; font-weight: 500; margin-bottom: 0.75rem; }
+
+  .product-headline {
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+
+  .product-desc {
+    font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+    color: #6a6a66;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-stat { font-size: 0.8rem; color: #a0a09a; }
+
+  .product-name {
+    font-size: clamp(4rem, 9vw, 8rem);
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    line-height: 0.95;
+    text-align: right;
+  }
+
+  .product-name sup {
+    font-size: 0.25em;
+    font-weight: 400;
+    color: #b5b5b0;
+    vertical-align: super;
+    margin-left: 0.1em;
+  }
+
+  /* --- Collage slide --- */
+  .slide.collage-slide {
+    background: #f5f5f3;
+    padding: 4vh 4vw;
+  }
+
+  .collage {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+  }
+
+  .collage img,
+  .collage video {
+    max-height: 92vh;
+    max-width: 90vw;
+    height: auto;
+    width: auto;
+    display: block;
+  }
+
+  .collage .placeholder {
+    color: #b5b5b0;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 4rem;
+    text-align: center;
+    background: #eeeee9;
+    aspect-ratio: 3 / 4;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* --- Stat grid --- */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .stat-card {
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 1.5rem 1.4rem;
+    background: #fafaf8;
+  }
+
+  .stat-card.stat-dark {
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #f5f5f3;
+  }
+
+  .stat-number {
+    font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-card.stat-dark .stat-number { color: #f5f5f3; }
+
+  .stat-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a0a09a;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-card.stat-dark .stat-label { color: #888; }
+
+  .stat-desc {
+    font-size: 0.82rem;
+    color: #a0a09a;
+    line-height: 1.5;
+  }
+
+  .stat-card.stat-dark .stat-desc { color: #ccc; }
+
+  /* --- Code slide --- */
+  .code-frame {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem 1.75rem;
+    margin-top: 2rem;
+    overflow-x: auto;
+  }
+
+  .code-frame-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .code-frame-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3a3a3a;
+  }
+
+  .code-frame-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    color: #555;
+    margin-left: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  .code-frame pre {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: #f5f5f3;
+    margin: 0;
+    background: none;
+  }
+
+  .code-frame .code-comment { color: #555; }
+  .code-frame .code-keyword { color: #b5b5b0; font-weight: 500; }
+  .code-frame .code-string { color: #ccc; }
+  .code-frame .code-dim { color: #888; }
+
+  /* --- Dark slide --- */
+  .slide.dark { background: #1a1a1a; color: #f5f5f3; }
+  .slide.dark h1 { color: #f5f5f3; }
+  .slide.dark h1 span.dim { color: #888; }
+  .slide.dark .subtitle { color: #888; }
+  .slide.dark .eyebrow { color: #666; }
+
+  /* --- Search preview (NEW COMPONENT) --- */
+  .search-preview {
+    margin-top: 2rem;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e0e0db;
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .search-bar-icon {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #b5b5b0;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .search-bar-icon::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    background: #b5b5b0;
+    bottom: -3px;
+    right: -4px;
+    transform: rotate(45deg);
+    border-radius: 1px;
+  }
+
+  .search-bar-query {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    flex: 1;
+  }
+
+  .search-bar-count {
+    font-size: 0.72rem;
+    color: #a0a09a;
+  }
+
+  .search-results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+
+  .search-result-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0db;
+    background: #fafaf8;
+  }
+
+  .search-result-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .search-result-meta {
+    padding: 0.5rem 0.65rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-result-name {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+
+  .search-result-score {
+    font-size: 0.6rem;
+    color: #a0a09a;
+    font-weight: 400;
+  }
+
+  /* --- Nav --- */
+  .nav {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.7rem;
+    color: #b5b5b0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-buttons { display: flex; gap: 0.5rem; }
+
+  .nav-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #d5d5d0;
+    background: transparent;
+    color: #b5b5b0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0;
+  }
+
+  .nav-btn:hover { border-color: #1a1a1a; color: #1a1a1a; }
+
+  .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: #1a1a1a;
+    transition: width 0.3s ease;
+    z-index: 100;
+  }
+
+  /* --- PDF download button --- */
+  .pdf-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    background: #1a1a1a;
+    color: #f5f5f3;
+    border: none;
+    padding: 0.55rem 1.25rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  .pdf-btn:hover { background: #000; }
+
+  /* --- Print: each slide becomes one 16:9 PDF page --- */
+  @page { size: 13.333in 7.5in; margin: 0; }
+
+  @media print {
+    html, body {
+      width: 13.333in;
+      height: auto !important;
+      overflow: visible !important;
+      background: #f5f5f3;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .deck { width: 13.333in; height: auto; position: static; }
+    .slide {
+      display: flex !important;
+      position: relative !important;
+      inset: auto !important;
+      width: 13.333in !important;
+      height: 7.5in !important;
+      page-break-after: always !important;
+      break-after: page !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+    .slide:last-child { page-break-after: auto !important; }
+    .slide.dark { background: #1a1a1a !important; }
+    .nav, .progress, .pdf-btn { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="deck">
+
+  <!-- ========== 1. COVER ========== -->
+  <section class="slide active">
+    <div class="slide-inner">
+      <div class="eyebrow">Product Launch · June 2026</div>
+      <h1>Slides + Heyra.<br><span class="dim">Images that find themselves.</span></h1>
+      <div class="meta">noskillish · Open source</div>
+    </div>
+  </section>
+
+  <!-- ========== 2. QUOTE (HOOK) ========== -->
+  <section class="slide quote-slide">
+    <div class="slide-inner">
+      <h1>Every deck needs visuals. <span class="dim">Nobody wants to source them.</span></h1>
+    </div>
+  </section>
+
+  <!-- ========== 3. THE PROBLEM (TWO-COL STEP STACK) ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="two-col">
+        <div>
+          <div class="eyebrow">The old workflow</div>
+          <h2>Building a deck today. <span class="dim">Step by painful step.</span></h2>
+          <p class="subtitle">You write the content. Then you spend twice as long finding images to go with it.</p>
+        </div>
+        <div class="col-stack">
+          <div class="step">Write the slide content</div>
+          <div class="step">Open a stock photo site</div>
+          <div class="step">Search for something relevant</div>
+          <div class="step dim">Scroll through 400 generic results</div>
+          <div class="step dim">Download, resize, re-upload</div>
+          <div class="step dim">Realize it looks wrong, start over</div>
+          <div class="step kill">2 hours lost on visuals alone</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. THE TURN (DARK) ========== -->
+  <section class="slide dark">
+    <div class="slide-inner">
+      <div class="eyebrow">The shift</div>
+      <h1>What if your AI agent <span class="dim">could find the right image in the same breath it writes the slide?</span></h1>
+    </div>
+  </section>
+
+  <!-- ========== 5. PRODUCT REVEAL ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="product-row">
+        <div class="product-meta">
+          <div class="product-num">/01</div>
+          <div class="product-tag">Semantic image search, built into your deck workflow.</div>
+          <h3 class="product-headline">1,489 royalty-free images. One MCP server. Zero manual sourcing.</h3>
+          <p class="product-desc">Heyra is an image search engine that connects to your AI agent via MCP. Describe what you need in natural language. The right image appears in your slide.</p>
+          <div class="product-stat">One JSON config · Instant setup</div>
+        </div>
+        <div class="product-name">Heyra</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. COLLAGE (VISUAL PROOF) ========== -->
+  <section class="slide collage-slide">
+    <div class="collage">
+      <img src="https://pub-d84682b173804d50ab71dd0c0672b099.r2.dev/images/HEYRA455.png" alt="Abstract minimal photography from the Heyra library" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </section>
+
+  <!-- ========== 7. HOW IT WORKS (SPEC FLOW) ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">The mechanism</div>
+      <h2>One sentence in. <span class="dim">Matching images out.</span></h2>
+      <div class="spec-flow">
+        <div class="spec-block">
+          <h4>"Make me a deck about sustainable architecture"</h4>
+          <p>Natural language prompt</p>
+        </div>
+        <div class="ctx-row">
+          <span class="ctx-label">searches</span>
+          <span class="ctx-pill">1,489 indexed images</span>
+          <span class="ctx-pill">CLIP embeddings</span>
+          <span class="ctx-pill">Semantic ranking</span>
+        </div>
+        <div class="ai-divider">
+          <div class="line"></div>
+          <span class="ai-pill">Heyra MCP</span>
+          <div class="line"></div>
+        </div>
+        <div class="outputs-row">
+          <div class="output-card"><h5>Collage slides</h5><p>Full-bleed images embedded directly in the HTML.</p></div>
+          <div class="output-card"><h5>Art overlays</h5><p>Product mockups layered on curated backgrounds.</p></div>
+          <div class="output-card"><h5>CDN URLs</h5><p>Cloudflare R2 links. Fast, reliable, no hosting needed.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. CODE SLIDE (.mcp.json) ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Setup</div>
+      <h2>The entire integration. <span class="dim">Seven lines of JSON.</span></h2>
+      <div class="code-frame">
+        <div class="code-frame-header">
+          <div class="code-frame-dot"></div>
+          <div class="code-frame-dot"></div>
+          <div class="code-frame-dot"></div>
+          <div class="code-frame-title">.mcp.json</div>
+        </div>
+<pre><span class="code-keyword">{</span>
+  <span class="code-string">"mcpServers"</span><span class="code-dim">:</span> <span class="code-keyword">{</span>
+    <span class="code-string">"img"</span><span class="code-dim">:</span> <span class="code-keyword">{</span>
+      <span class="code-string">"type"</span><span class="code-dim">:</span> <span class="code-string">"http"</span><span class="code-dim">,</span>
+      <span class="code-string">"url"</span><span class="code-dim">:</span>  <span class="code-string">"https://heyraimg-backend-production.up.railway.app/mcp"</span>
+    <span class="code-keyword">}</span>
+  <span class="code-keyword">}</span>
+<span class="code-keyword">}</span></pre>
+      </div>
+      <p class="subtitle" style="margin-top: 1.5rem;">Drop this file in your project root. Your AI agent picks it up automatically. Claude Code, Cursor, any MCP client.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. SEARCH PREVIEW (NEW COMPONENT) ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Live search</div>
+      <h2>Describe what you see. <span class="dim">Heyra finds it.</span></h2>
+      <div class="search-preview">
+        <div class="search-bar">
+          <div class="search-bar-icon"></div>
+          <div class="search-bar-query">abstract minimal photography</div>
+          <div class="search-bar-count">1,489 images indexed</div>
+        </div>
+        <div class="search-results">
+          <div class="search-result-card">
+            <img src="https://pub-d84682b173804d50ab71dd0c0672b099.r2.dev/thumbs/HEYRA455.webp" alt="Abstract minimal">
+            <div class="search-result-meta">
+              <span class="search-result-name">HEYRA455</span>
+              <span class="search-result-score">0.31</span>
+            </div>
+          </div>
+          <div class="search-result-card">
+            <img src="https://pub-d84682b173804d50ab71dd0c0672b099.r2.dev/thumbs/HEYRA621.webp" alt="Abstract photography">
+            <div class="search-result-meta">
+              <span class="search-result-name">HEYRA621</span>
+              <span class="search-result-score">0.30</span>
+            </div>
+          </div>
+          <div class="search-result-card">
+            <img src="https://pub-d84682b173804d50ab71dd0c0672b099.r2.dev/thumbs/HEYRA67.webp" alt="Minimal composition">
+            <div class="search-result-meta">
+              <span class="search-result-name">HEYRA67</span>
+              <span class="search-result-score">0.30</span>
+            </div>
+          </div>
+          <div class="search-result-card">
+            <img src="https://pub-d84682b173804d50ab71dd0c0672b099.r2.dev/thumbs/HEYRA407.webp" alt="Abstract art">
+            <div class="search-result-meta">
+              <span class="search-result-name">HEYRA407</span>
+              <span class="search-result-score">0.29</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. COLLAGE (SECOND VISUAL) ========== -->
+  <section class="slide collage-slide">
+    <div class="collage">
+      <img src="https://pub-d84682b173804d50ab71dd0c0672b099.r2.dev/images/HEYRA520.jpg" alt="Creative workspace from Heyra library" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </section>
+
+  <!-- ========== 11. STAT GRID ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">The numbers</div>
+      <h2>Built to scale. <span class="dim">Lean by design.</span></h2>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">Image library</div>
+          <div class="stat-number">1,489</div>
+          <div class="stat-desc">Royalty-free images. Indexed with CLIP embeddings for semantic search.</div>
+        </div>
+        <div class="stat-card stat-dark">
+          <div class="stat-label">Components</div>
+          <div class="stat-number">25</div>
+          <div class="stat-desc">Slide components in the design system. Cover to closing.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Dependencies</div>
+          <div class="stat-number">0</div>
+          <div class="stat-desc">No build step. No npm install. One HTML file per deck.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 12. CAPABILITY LIST ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">What it solves</div>
+      <h2>Questions you already have. <span class="dim">Answered.</span></h2>
+      <div class="cap-list" style="margin-top: 2rem;">
+        <div class="cap-row">
+          <div class="cap-q">Where do the images come from?</div>
+          <div class="cap-a">The Heyra collection. 1,489 royalty-free photos, hosted on Cloudflare R2. No licensing issues.</div>
+        </div>
+        <div class="cap-row">
+          <div class="cap-q">How does the AI find the right image?</div>
+          <div class="cap-a">CLIP-based semantic search. The agent describes what the slide needs. Heyra returns ranked matches with relevance scores.</div>
+        </div>
+        <div class="cap-row">
+          <div class="cap-q">Does it work in Cursor?</div>
+          <div class="cap-a">Any MCP-compatible client. Claude Code, Cursor, or any tool that reads .mcp.json.</div>
+        </div>
+        <div class="cap-row">
+          <div class="cap-q">Can I add my own images?</div>
+          <div class="cap-a">Yes. The /api/index endpoint lets you index new folders. Your library grows with your content.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 13. DARK CALLOUT ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="callout">
+        <h3>Why this matters</h3>
+        <p>AI agents can write slide content. They can pick the right component. They can follow a storytelling framework. <strong>The missing piece was always the visuals.</strong> Heyra closes that gap. One MCP server gives every agent access to a curated image library with semantic search. The deck goes from outline to finished, visuals included, in a single conversation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 14. CLOSING (DARK QUOTE) ========== -->
+  <section class="slide dark quote-slide">
+    <div class="slide-inner">
+      <h1>Describe the deck.<br><span class="dim">The images show up.</span></h1>
+    </div>
+  </section>
+
+  <!-- ========== 15. THANKS ========== -->
+  <section class="slide">
+    <div class="slide-inner">
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4rem);">Thanks.</h1>
+      <p class="subtitle">github.com/noskillish/slides</p>
+      <div class="meta">MIT License · Open source</div>
+    </div>
+  </section>
+
+</div>
+
+<button class="pdf-btn" onclick="downloadPDF()">Download PDF</button>
+
+<div class="nav">
+  <span id="counter">1 / 15</span>
+  <div class="nav-buttons">
+    <button class="nav-btn" onclick="prev()">‹</button>
+    <button class="nav-btn" onclick="next()">›</button>
+  </div>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const counter = document.getElementById('counter');
+  const progress = document.getElementById('progress');
+  let current = 0;
+
+  function show(i) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[i].classList.add('active');
+    counter.textContent = `${i + 1} / ${slides.length}`;
+    progress.style.width = `${((i + 1) / slides.length) * 100}%`;
+    current = i;
+  }
+
+  function next() { if (current < slides.length - 1) show(current + 1); }
+  function prev() { if (current > 0) show(current - 1); }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+    if (e.key === 'Home') { show(0); }
+    if (e.key === 'End') { show(slides.length - 1); }
+    if (e.key === 'p' || e.key === 'P') { e.preventDefault(); downloadPDF(); }
+  });
+
+  function downloadPDF() {
+    const originalTitle = document.title;
+    document.title = 'deck';
+    window.print();
+    setTimeout(() => { document.title = originalTitle; }, 1000);
+  }
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const SWIPE_THRESHOLD = 50;
+
+  document.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    const dy = e.changedTouches[0].screenY - touchStartY;
+    if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dy) > Math.abs(dx)) return;
+    if (dx < 0) next();
+    else prev();
+  }, { passive: true });
+
+  const isEmbed = new URLSearchParams(window.location.search).has('embed');
+
+  show(0);
+</script>
+
+</body>
+</html>
