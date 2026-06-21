@@ -131,7 +131,9 @@ This is the most consistent visual identity in the system. Use it.
 ## Tone & voice rules
 
 - **Bold the keyword. Dim the rest.** That's the rhythm of every headline.
-- **No em-dashes in body copy.** Use periods or split into shorter sentences.
+- **Never use the "—" character.** The em-dash (`—`) and en-dash (`–`) are banned everywhere: headlines, body copy, meta text. Use periods or split into shorter sentences.
+- **No contrast framing.** Don't write "X is not X, it is Y" or "Not X. Y." Say what the thing IS, positively.
+- **No text blocks.** Concise bullets only, never paragraphs. If a line reads like prose, break it up or move it to another slide.
 - **No fluff.** If a sentence doesn't add information, delete it.
 - **Numbers should be specific.** "7×" beats "huge gains." "35 use cases per week" beats "much faster."
 - **Headlines are statements.** Q&A rows are the exception: the question is the format.

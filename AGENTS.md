@@ -694,13 +694,14 @@ Use the new image components (26–31) to integrate images into slides. Choose t
 ## Tone rules (follow strictly)
 
 1. **Bold the keyword. Dim the rest.** Every headline.
-2. **No em-dashes.** Anywhere: headlines, body copy, meta text. Use periods, commas, or colons instead.
-3. **No contrast framing.** Never write "Not X. Y." or "X, not Y." Say what it IS. Lead with the positive statement. Rewrite "Three capabilities, not thirty features" as "Three capabilities. Keep it tight."
-4. **No fluff.** If a sentence doesn't add information, delete it.
-5. **Specific numbers.** "7x" beats "huge gains." "35 use cases per week" beats "much faster."
-6. **Headlines are statements.** Exception: Q&A rows.
-7. **Use names.** Say the product or feature name. Avoid generic pronouns like "it."
-8. **Pick one term and stick with it.** Do not paraphrase your own product.
+2. **Never use the "—" character.** Not in headlines, body copy, meta text, or comments. This is the em-dash (`—`, U+2014). Use a period, comma, colon, or just two short sentences instead. The en-dash (`–`) is also banned.
+3. **No contrast framing.** Never write "Not X. Y.", "X, not Y.", or "X is not X, it is Y." Say what the thing IS. Lead with the positive statement. Rewrite "Three capabilities, not thirty features" as "Three capabilities. Keep it tight." Rewrite "This is not a demo, it is production" as "This runs in production."
+4. **No text blocks.** Slides carry concise bullets, not paragraphs. Never write a dense run-on like "Deterministic properties are tests. 14 in test_planner.py, every hard requirement has an automated check. A mock client makes the full pipeline testable offline..." Break it into short bullets or separate it across slides. Rule of thumb: no bullet over ~12 words, no slide that reads like prose.
+5. **No fluff.** If a sentence doesn't add information, delete it.
+6. **Specific numbers.** "7x" beats "huge gains." "35 use cases per week" beats "much faster."
+7. **Headlines are statements.** Exception: Q&A rows.
+8. **Use names.** Say the product or feature name. Avoid generic pronouns like "it."
+9. **Pick one term and stick with it.** Do not paraphrase your own product.
 
 ---
 
