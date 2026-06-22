@@ -2015,6 +2015,14 @@
   let fileHandle = null;
   let justPicked = false;     // true when this save triggered the one-time file pick
   const undoStack = [];
+  let autoSaveTimer = null;
+  let saving = false;
+
+  function scheduleAutoSave() {
+    if (!fileHandle || saving) return;
+    clearTimeout(autoSaveTimer);
+    autoSaveTimer = setTimeout(() => { if (typeof autoSave === 'function') autoSave(); }, 2000);
+  }
 
   /* ---------- editor styles (theme-adaptive via --ed-* tokens) ---------- */
   const css = document.createElement('style');
@@ -2117,7 +2125,11 @@
 
   /* ---------- dirty tracking ---------- */
   const hasChanges = () => structuralChanged || !!deck.querySelector('[data-ed-dirty]');
-  function markDirty() { $('edSave').classList.toggle('ed-dirty', hasChanges()); }
+  function markDirty() {
+    const btn = $('edSave');
+    if (btn) btn.classList.toggle('ed-dirty', hasChanges());
+    if (hasChanges()) scheduleAutoSave();
+  }
 
   function watchMutations() {
     new MutationObserver(muts => {
@@ -2291,13 +2303,62 @@
     '<button id="edExit">Exit</button>';
   document.body.appendChild(bar);
   $('edSave').addEventListener('click', doSave);
-  $('edExit').addEventListener('click', () => {
-    if (hasChanges() && !confirm('Unsaved changes. Exit anyway?')) return;
-    location.href = location.pathname;
-  });
-  function status(msg) { $('edStatus').textContent = msg; }
+
+  function showExitConfirm() {
+    bar.innerHTML = '<span class="ed-status">Unsaved changes</span>' +
+      '<button id="edDiscard">Discard & Exit</button>' +
+      '<button id="edCancel">Cancel</button>';
+    $('edDiscard').addEventListener('click', () => {
+      structuralChanged = false;
+      deck.querySelectorAll('[data-ed-dirty]').forEach(s => delete s.dataset.edDirty);
+      location.href = location.pathname;
+    });
+    $('edCancel').addEventListener('click', restoreToolbar);
+  }
+
+  function restoreToolbar() {
+    bar.innerHTML = '<span class="ed-status" id="edStatus">Edit mode</span>' +
+      '<button class="ed-save" id="edSave" title="Save (Cmd/Ctrl+S). The first save asks you to pick this file once.">Save</button>' +
+      '<button id="edExit">Exit</button>';
+    $('edSave').addEventListener('click', doSave);
+    $('edExit').addEventListener('click', handleExit);
+    markDirty();
+  }
+
+  function handleExit() {
+    if (!hasChanges()) { location.href = location.pathname; return; }
+    showExitConfirm();
+  }
+  $('edExit').addEventListener('click', handleExit);
+
+  function status(msg) { const s = $('edStatus'); if (s) s.textContent = msg; }
 
   addEventListener('beforeunload', e => { if (hasChanges()) e.preventDefault(); });
+
+  /* ---------- auto-save (debounced, only when file handle exists) ---------- */
+  async function autoSave() {
+    if (!fileHandle || !hasChanges() || saving) return;
+    saving = true;
+    status('Saving...');
+    try {
+      const src = await (await fileHandle.getFile()).text();
+      const out = splice(src);
+      if (out == null) { status('Auto-save skipped (file changed externally)'); saving = false; return; }
+      const w = await fileHandle.createWritable();
+      await w.write(out); await w.close();
+      liveSlides().forEach((s, i) => { delete s.dataset.edDirty; s.dataset.srcIdx = i; });
+      baseCount = liveSlides().length;
+      structuralChanged = false;
+      markDirty(); renderRail();
+      status('Saved');
+      setTimeout(() => status('Edit mode'), 1500);
+    } catch (err) {
+      console.error('Auto-save failed:', err);
+      status('Auto-save failed');
+      setTimeout(() => status('Edit mode'), 3000);
+    }
+    saving = false;
+  }
 
   /* ---------- save: File System Access + slide-anchored splice ---------- */
   const IDB_KEY = 'deckHandle:' + location.pathname;
@@ -2435,8 +2496,8 @@
       baseCount = liveSlides().length;
       structuralChanged = false;
       markDirty(); renderRail();
-      status(justPicked ? 'Saved in place — future saves are silent' : 'Saved');
-      setTimeout(() => status('Edit mode'), justPicked ? 6000 : 2500);
+      status(justPicked ? 'Saved. Auto-save is now active.' : 'Saved');
+      setTimeout(() => status('Edit mode'), justPicked ? 4000 : 1500);
       justPicked = false;
     } catch (err) {
       if (err && err.name === 'AbortError') { status('Edit mode'); return; }
