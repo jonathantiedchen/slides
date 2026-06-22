@@ -48,7 +48,7 @@ The storytelling guides are bundled in the `deck-system` skill folder. The skill
 
 ## How themes work
 
-For predefined themes (default, craft, solid), the skill reads the actual template file and copies its `<style>` and `<script>` blocks verbatim. Only the slide content is generated.
+For predefined themes (default, craft, solid), the skill reads the actual template file and copies its `<style>` block, both `<script>` blocks (navigation + edit mode), and the `.btn-row` buttons verbatim. Only the slide content is generated.
 
 For custom themes, the user describes the visual style in plain language (e.g. "dark blue with orange accents", "brutalist black and white"). The skill starts from the Default template structure, rewrites the CSS to match the description, and shows the palette for approval before generating slides.
 
