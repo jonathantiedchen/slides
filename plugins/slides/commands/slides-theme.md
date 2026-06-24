@@ -28,9 +28,10 @@ Convert a deck from one visual theme to another.
 
 1. Read the target template file (`deck.html`, `deck-craft.html`, or `deck-solid.html`) from the repo
 2. Copy the entire `<style>` block from the template file verbatim into the deck
-3. Copy the entire `<script>` block from the template file verbatim into the deck
-4. Preserve all slide content and structure unchanged
-5. Always read the actual template file. Never generate theme CSS from memory or descriptions.
+3. Copy BOTH `<script>` blocks from the template file verbatim into the deck (navigation + edit mode)
+4. Copy the `.btn-row` with Edit and Download PDF buttons
+5. Preserve all slide content and structure unchanged
+6. Always read the actual template file. Never generate theme CSS from memory or descriptions.
 
 ## Custom theme
 
@@ -38,7 +39,7 @@ When the argument does not match "default", "craft", or "solid", treat it as a c
 
 ### From text
 
-1. Read `deck.html` from the repo as the structural base. Copy the `<script>` block verbatim.
+1. Read `deck.html` from the repo as the structural base. Copy both `<script>` blocks verbatim (navigation + edit mode) and the `.btn-row`.
 2. Rewrite the `<style>` block to match the description:
    - Keep every CSS selector and class name identical to the Default theme.
    - Change only visual properties: colors, backgrounds, gradients, shadows, border styles, border-radius, font weights.
@@ -52,7 +53,7 @@ When the argument does not match "default", "craft", or "solid", treat it as a c
 When the user attaches a screenshot, slide, website capture, or brand guideline:
 
 1. Analyze the image and extract: base mode (dark/light), background, surface, ink, accent, dim text, border style, corner radius, shadows, typography weight, and font if recognizable.
-2. Read `deck.html` as the structural base. Copy the `<script>` block verbatim.
+2. Read `deck.html` as the structural base. Copy both `<script>` blocks verbatim (navigation + edit mode) and the `.btn-row`.
 3. Rewrite the `<style>` block using the extracted tokens. Same rules as text-based: keep all selectors, change only visual properties.
 4. If the user also wrote text, apply it as an override on top of what was extracted.
 5. Generate immediately. No approval step needed. The image is the approval.

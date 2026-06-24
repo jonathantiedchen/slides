@@ -39,7 +39,7 @@ Dark slides add the `.dark` class to `<section>`:
 <section class="slide dark">
 ```
 
-Each deck contains two `<script>` blocks: the navigation script and the edit-mode script (`?edit`). Both are part of the template. Copy both verbatim into every deck you produce, together with the `.btn-row` buttons near the end of `<body>`. Never rewrite or drop them.
+**CRITICAL: Every deck must include BOTH `<script>` blocks from the template.** The first handles navigation, progress bar, and PDF export. The second is the edit-mode script (`?edit`) that turns any deck into a live editor. Copy both verbatim into every deck you produce. Also copy the `.btn-row` with the Edit and Download PDF buttons. Never rewrite, shorten, or drop any of these. If you produce a deck without the edit-mode script, it is broken.
 
 Keep one HTML comment line directly above each `<section>` (e.g. `<!-- ========== 3. QUOTE ========== -->`). Edit mode uses these comments as anchors when saving in-place edits back to the file, and they keep the file scannable.
 

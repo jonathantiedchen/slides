@@ -589,8 +589,9 @@ Four options are available. The first three are predefined templates. The fourth
 
 1. **Read the actual template file** from the repo root (two levels up from this skill: `../../deck.html`, `../../deck-craft.html`, or `../../deck-solid.html`). If those paths fail, search the repo for `deck.html`, `deck-craft.html`, or `deck-solid.html`.
 2. **Copy the entire `<style>` block verbatim.** Every CSS variable, every component style, every media query. Do not modify it. Do not improvise colors, gradients, or effects.
-3. **Copy the entire `<script>` block verbatim.** Navigation, progress bar, PDF export. Do not rewrite it.
-4. **Only write the slide content.** Replace the `<section class="slide">` elements with the new deck content. Keep the `<head>`, `<style>`, `<script>`, `.progress`, and `.deck` wrapper structure identical to the template.
+3. **Copy BOTH `<script>` blocks verbatim.** The template has two script blocks: (a) navigation, progress bar, PDF export, and (b) the edit-mode script (`?edit`). Copy both. Do not rewrite or drop either one.
+4. **Copy the `.btn-row` buttons verbatim.** The template has `Edit` and `Download PDF` buttons. Include them.
+5. **Only write the slide content.** Replace the `<section class="slide">` elements with the new deck content. Keep the `<head>`, `<style>`, `<script>`, `.progress`, `.btn-row`, and `.deck` wrapper structure identical to the template. Keep one HTML comment line directly above each `<section>` (e.g. `<!-- ========== 3. QUOTE ========== -->`); edit mode uses these as anchors for in-place saving.
 
 The template files are the source of truth. If you cannot read them, ask the user to provide the template file. Never generate CSS from memory or from the token table above.
 
@@ -598,7 +599,7 @@ The template files are the source of truth. If you cannot read them, ask the use
 
 When the user describes a custom style (e.g. "dark blue with orange accents", "brutalist black and white", "pastel and playful"):
 
-1. **Start from `deck.html` as the structural base.** Read it, copy its `<script>` block verbatim.
+1. **Start from `deck.html` as the structural base.** Read it, copy both of its `<script>` blocks verbatim (navigation and edit mode), and the `.btn-row` buttons.
 2. **Rewrite the `<style>` block** to match the user's description. Follow these rules:
    - Keep every CSS selector and class name identical to the Default theme. Components must still work.
    - Change only visual properties: colors, backgrounds, gradients, shadows, border styles, border-radius, font weights.
